@@ -5,10 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "aiohttp>=3.12.13",
     "fastmcp>=2.8.0",
     "gitpython>=3.1.44",
-    "httpx>=0.28.1",
-    "mcp-llm>=0.1.0",
-    "requests>=2.32.4",
     "uvicorn>=0.34.3",
 ]
+
+[tool.rye]

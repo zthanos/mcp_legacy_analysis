@@ -1,9 +1,9 @@
 
     
-def cobol_flow_extraction(source_code: str) -> str:
-    return {
-        "system_prompt": "You are an expert mainframe programmer and CLIST (Command List) analyst with deep knowledge of TSO/ISPF scripting.", 
-        "llm_messages": f"""
+def clist_flow_extraction(source_code: str) -> str:
+
+  system_prompt = "You are an expert mainframe programmer and CLIST (Command List) analyst with deep knowledge of TSO/ISPF scripting."
+  llm_messages = f"""
 Your task is to analyze the provided CLIST code and extract its execution flow, starting from its primary entry points.
 
 CLIST is a TSO command procedure language that supports:
@@ -96,4 +96,4 @@ The JSON should contain:
   ]
 }}
 """
-}
+  return system_prompt, llm_messages

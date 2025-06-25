@@ -1,9 +1,10 @@
+from templates.cobol_context_prompt import cobol_context_prompt
 
-    
-def cobol_flow_extraction(source_code: str) -> str:
-    return {
-        "system_prompt": "You are an expert COBOL programmer and a seasoned static analysis tool.", 
-        "llm_messages": f"""
+def cobol_flow_extraction(filename: str,source_code: str) -> tuple[str, str]:
+
+    system_prompt = cobol_context_prompt
+    # 'You are an expert COBOL programmer and a seasoned static analysis tool.' 
+    llm_message = f"""
 Your task is to analyze the provided COBOL code and extract its execution flow, starting from its primary entry point (typically the first executable statement after PROCEDURE DIVISION, or an explicit ENTRY point).
 
 Represent the flow as a directed graph in JSON format, where:
@@ -14,12 +15,15 @@ Represent the flow as a directed graph in JSON format, where:
 - If a method is an entry point, include that information for the corresponding node.
 - Identify the main entry point(s) of the program.
 
+Filename: {filename}
 COBOL CODE:
 {source_code}
 
 Please return the JSON output only, ensuring it's valid and complete.
 The JSON should contain:
 {{
+"filename": "{filename}",
+"language": "COBOL",
 "main_entry_points": ["MAIN-PROG-ENTRY"],
 "flow_graph": [
     {{
@@ -44,4 +48,4 @@ The JSON should contain:
 ]
 }}
 """
-}
+    return system_prompt, llm_message

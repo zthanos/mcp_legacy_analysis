@@ -1,22 +1,40 @@
 from pathlib import Path
     
-def cobol_flow_extraction(filename, content: str) -> str:
-    return {
-        "system_prompt": "You are an expert in programming languages and file formats, especially legacy systems including COBOL, JCL, and mainframe technologies.", 
-        "llm_messages": f"""
-Analyze the following file content and determine its type.
+def classify_file_template(filename, content: str, repository: str) -> tuple[str, str]:
+    system_prompt = "You are an expert in programming languages and file formats, including legacy systems such as COBOL, CLIST, JCL, BMS maps, and other mainframe technologies."
+    llm_message = f"""
+### You must return ONLY a JSON object with the following format:
 
-Rules:
-- If it's source code, return ONLY the programming language name (e.g., "Python", "COBOL", "Java", "JavaScript", "C", "C++", "TypeScript", "CLIST", "PL/I")
-- If it's not source code, return a precise file type (e.g., "JCL", "BMS Map", "Configuration", "Shell Script", "SQL Script", "Plain Text", "Data File")
-- Consider both filename extension and content
-- For mainframe files: JCL jobs, BMS maps, copybooks should be identified correctly
-- Return ONLY the classification label, nothing else
+{{
+  "filename": "example.cbl",
+  "repository": "SAMPLE-REPO",
+  "classification": "Programming Language source file",
+  "language": "COBOL",
+  "description": "Main COBOL program for processing transactions"
+}}
 
-Filename: {filename}
-File extension: {Path(filename).suffix}
-Content preview:
-{content[:2000]}
+### Rules:
+- classification: one of ["Programming Language source file", "JCL Script", "BMS Map", "Copybook", "Text File", "Unknown"]
+- language: one of ["COBOL", "CLIST", "JCL", "Java", "Python", "None", "Unknown"]
+- Return **JSON only**. Do NOT add explanations.
+- Use the content preview below to decide, but do not include it in output.
+
+### File Metadata:
+- filename: {filename}
+- repository: {repository}
+- file extension: {Path(filename).suffix}
+
+### File Content (DO NOT OUTPUT THIS):
+---START FILE PREVIEW---
+{content[:1500]}
+---END FILE PREVIEW---
+
+### OUTPUT ONLY THE JSON OBJECT BELOW:
+---END---
+
+Now return the JSON object:
 """
-}
+    return system_prompt, llm_message
+
+
     

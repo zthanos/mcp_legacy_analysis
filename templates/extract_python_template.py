@@ -1,9 +1,9 @@
 
     
-def cobol_flow_extraction(source_code: str) -> str:
-    return {
-        "system_prompt": "You are an expert Python programmer and a seasoned static analysis tool.", 
-        "llm_messages": f"""
+def python_flow_extraction(source_code: str) -> tuple[str, str]:
+
+  system_prompt = "You are an expert Python programmer and a seasoned static analysis tool."
+  llm_messages = f"""
 Your task is to analyze the provided Python code and extract its execution flow, starting from its primary entry points (such as if __name__ == "__main__", function definitions, class methods, etc.).
 
 Represent the flow as a directed graph in JSON format, where:
@@ -61,4 +61,4 @@ The JSON should contain:
   ]
 }}
 """
-}
+  return system_prompt, llm_messages

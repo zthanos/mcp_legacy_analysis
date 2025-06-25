@@ -1,0 +1,1074 @@
+[
+    {
+        "label": "cobol_context_prompt",
+        "importPath": "templates.cobol_context_prompt",
+        "description": "templates.cobol_context_prompt",
+        "isExtraImport": true,
+        "detail": "templates.cobol_context_prompt",
+        "documentation": {}
+    },
+    {
+        "label": "cobol_flow_extraction",
+        "importPath": "templates.extract_cobol_template",
+        "description": "templates.extract_cobol_template",
+        "isExtraImport": true,
+        "detail": "templates.extract_cobol_template",
+        "documentation": {}
+    },
+    {
+        "label": "clist_flow_extraction",
+        "importPath": "templates.extract_clist_template",
+        "description": "templates.extract_clist_template",
+        "isExtraImport": true,
+        "detail": "templates.extract_clist_template",
+        "documentation": {}
+    },
+    {
+        "label": "python_flow_extraction",
+        "importPath": "templates.extract_python_template",
+        "description": "templates.extract_python_template",
+        "isExtraImport": true,
+        "detail": "templates.extract_python_template",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "socket",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "socket",
+        "description": "socket",
+        "detail": "socket",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "configparser",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "configparser",
+        "description": "configparser",
+        "detail": "configparser",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "os.path",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.path",
+        "description": "os.path",
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "pprint",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_content",
+        "importPath": "analysis",
+        "description": "analysis",
+        "isExtraImport": true,
+        "detail": "analysis",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_content",
+        "importPath": "analysis",
+        "description": "analysis",
+        "isExtraImport": true,
+        "detail": "analysis",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_content",
+        "importPath": "analysis",
+        "description": "analysis",
+        "isExtraImport": true,
+        "detail": "analysis",
+        "documentation": {}
+    },
+    {
+        "label": "classify_file",
+        "importPath": "analysis",
+        "description": "analysis",
+        "isExtraImport": true,
+        "detail": "analysis",
+        "documentation": {}
+    },
+    {
+        "label": "analyze_map",
+        "importPath": "analysis",
+        "description": "analysis",
+        "isExtraImport": true,
+        "detail": "analysis",
+        "documentation": {}
+    },
+    {
+        "label": "TextResource",
+        "importPath": "fastmcp.resources",
+        "description": "fastmcp.resources",
+        "isExtraImport": true,
+        "detail": "fastmcp.resources",
+        "documentation": {}
+    },
+    {
+        "label": "TextResource",
+        "importPath": "fastmcp.resources",
+        "description": "fastmcp.resources",
+        "isExtraImport": true,
+        "detail": "fastmcp.resources",
+        "documentation": {}
+    },
+    {
+        "label": "resource_manager",
+        "importPath": "fastmcp.resources",
+        "description": "fastmcp.resources",
+        "isExtraImport": true,
+        "detail": "fastmcp.resources",
+        "documentation": {}
+    },
+    {
+        "label": "TextResource",
+        "importPath": "fastmcp.resources",
+        "description": "fastmcp.resources",
+        "isExtraImport": true,
+        "detail": "fastmcp.resources",
+        "documentation": {}
+    },
+    {
+        "label": "get_flow_extraction_prompt",
+        "importPath": "templates.prompt_templates",
+        "description": "templates.prompt_templates",
+        "isExtraImport": true,
+        "detail": "templates.prompt_templates",
+        "documentation": {}
+    },
+    {
+        "label": "sample_helper",
+        "importPath": "sampling",
+        "description": "sampling",
+        "isExtraImport": true,
+        "detail": "sampling",
+        "documentation": {}
+    },
+    {
+        "label": "sample_helper",
+        "importPath": "sampling",
+        "description": "sampling",
+        "isExtraImport": true,
+        "detail": "sampling",
+        "documentation": {}
+    },
+    {
+        "label": "mcp",
+        "importPath": "legacy_analysis_server",
+        "description": "legacy_analysis_server",
+        "isExtraImport": true,
+        "detail": "legacy_analysis_server",
+        "documentation": {}
+    },
+    {
+        "label": "init_database",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "init_database",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "insert_repository",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_repository",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_repository_by_classification",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "classify_file_template",
+        "importPath": "templates.classify_file_template",
+        "description": "templates.classify_file_template",
+        "isExtraImport": true,
+        "detail": "templates.classify_file_template",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_bms_analysis_prompt",
+        "importPath": "templates.analyze_cobol_map",
+        "description": "templates.analyze_cobol_map",
+        "isExtraImport": true,
+        "detail": "templates.analyze_cobol_map",
+        "documentation": {}
+    },
+    {
+        "label": "FastMCP",
+        "importPath": "fastmcp",
+        "description": "fastmcp",
+        "isExtraImport": true,
+        "detail": "fastmcp",
+        "documentation": {}
+    },
+    {
+        "label": "Context",
+        "importPath": "fastmcp",
+        "description": "fastmcp",
+        "isExtraImport": true,
+        "detail": "fastmcp",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "fastmcp",
+        "description": "fastmcp",
+        "isExtraImport": true,
+        "detail": "fastmcp",
+        "documentation": {}
+    },
+    {
+        "label": "FastMCP",
+        "importPath": "fastmcp",
+        "description": "fastmcp",
+        "isExtraImport": true,
+        "detail": "fastmcp",
+        "documentation": {}
+    },
+    {
+        "label": "AnyUrl",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "cobol_data_structure",
+        "importPath": "data_structure",
+        "description": "data_structure",
+        "isExtraImport": true,
+        "detail": "data_structure",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_flow",
+        "importPath": "flow_analysis",
+        "description": "flow_analysis",
+        "isExtraImport": true,
+        "detail": "flow_analysis",
+        "documentation": {}
+    },
+    {
+        "label": "git",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "git",
+        "description": "git",
+        "detail": "git",
+        "documentation": {}
+    },
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "ollama",
+        "description": "ollama",
+        "isExtraImport": true,
+        "detail": "ollama",
+        "documentation": {}
+    },
+    {
+        "label": "SamplingMessage",
+        "importPath": "fastmcp.client.sampling",
+        "description": "fastmcp.client.sampling",
+        "isExtraImport": true,
+        "detail": "fastmcp.client.sampling",
+        "documentation": {}
+    },
+    {
+        "label": "SamplingParams",
+        "importPath": "fastmcp.client.sampling",
+        "description": "fastmcp.client.sampling",
+        "isExtraImport": true,
+        "detail": "fastmcp.client.sampling",
+        "documentation": {}
+    },
+    {
+        "label": "RequestContext",
+        "importPath": "mcp.shared.context",
+        "description": "mcp.shared.context",
+        "isExtraImport": true,
+        "detail": "mcp.shared.context",
+        "documentation": {}
+    },
+    {
+        "label": "tabulate",
+        "importPath": "tabulate",
+        "description": "tabulate",
+        "isExtraImport": true,
+        "detail": "tabulate",
+        "documentation": {}
+    },
+    {
+        "label": "cobol_flow_extraction",
+        "kind": 2,
+        "importPath": "templates.extract_cobol_template",
+        "description": "templates.extract_cobol_template",
+        "peekOfCode": "def cobol_flow_extraction(filename: str,source_code: str) -> tuple[str, str]:\n    system_prompt = cobol_context_prompt\n    # 'You are an expert COBOL programmer and a seasoned static analysis tool.' \n    llm_message = f\"\"\"\nYour task is to analyze the provided COBOL code and extract its execution flow, starting from its primary entry point (typically the first executable statement after PROCEDURE DIVISION, or an explicit ENTRY point).\nRepresent the flow as a directed graph in JSON format, where:\n- Each node is a COBOL paragraph, section, or program/subprogram name.\n- Each edge represents a control flow transfer (e.g., PERFORM, CALL, GO TO, implicit fall-through).\n- For each node, include its type (e.g., \"paragraph\", \"section\", \"program\").\n- For each edge, specify the type of transfer (e.g., \"PERFORM\", \"CALL\", \"GO TO\", \"FALLTHROUGH\").",
+        "detail": "templates.extract_cobol_template",
+        "documentation": {}
+    },
+    {
+        "label": "get_flow_extraction_prompt",
+        "kind": 2,
+        "importPath": "templates.prompt_templates",
+        "description": "templates.prompt_templates",
+        "peekOfCode": "def get_flow_extraction_prompt(filename: str, classification: str, source_code: str) -> str:\n    classification = classification.lower()\n    if classification == \"cobol\":\n        return cobol_flow_extraction(filename=filename, source_code=source_code)\n    elif classification == \"clist\":\n        return clist_flow_extraction(filename=filename, source_code=source_code)    \n    elif classification == \"python\":\n        return python_flow_extraction(filename=filename, source_code=source_code)\n    else:\n        raise ValueError(f\"Unknown classification: {classification}\")",
+        "detail": "templates.prompt_templates",
+        "documentation": {}
+    },
+    {
+        "label": "python_flow_extraction",
+        "kind": 2,
+        "importPath": "templates.extract_python_template",
+        "description": "templates.extract_python_template",
+        "peekOfCode": "def python_flow_extraction(source_code: str) -> tuple[str, str]:\n  system_prompt = \"You are an expert Python programmer and a seasoned static analysis tool.\"\n  llm_messages = f\"\"\"\nYour task is to analyze the provided Python code and extract its execution flow, starting from its primary entry points (such as if __name__ == \"__main__\", function definitions, class methods, etc.).\nRepresent the flow as a directed graph in JSON format, where:\n- Each node is a Python function, method, class, or code block name.\n- Each edge represents a control flow transfer (e.g., function call, method call, class instantiation, conditional execution).\n- For each node, include its type (e.g., \"function\", \"method\", \"class\", \"main_block\", \"conditional\", \"loop\").\n- For each edge, specify the type of transfer (e.g., \"CALL\", \"METHOD_CALL\", \"INSTANTIATION\", \"CONDITIONAL\", \"LOOP\", \"EXCEPTION_HANDLER\").\n- If a function/method is an entry point (like main), include that information for the corresponding node.",
+        "detail": "templates.extract_python_template",
+        "documentation": {}
+    },
+    {
+        "label": "clist_flow_extraction",
+        "kind": 2,
+        "importPath": "templates.extract_clist_template",
+        "description": "templates.extract_clist_template",
+        "peekOfCode": "def clist_flow_extraction(source_code: str) -> str:\n  system_prompt = \"You are an expert mainframe programmer and CLIST (Command List) analyst with deep knowledge of TSO/ISPF scripting.\"\n  llm_messages = f\"\"\"\nYour task is to analyze the provided CLIST code and extract its execution flow, starting from its primary entry points.\nCLIST is a TSO command procedure language that supports:\n- PROC statements (procedure definitions)\n- Control statements (IF/THEN/ELSE, DO/END, SELECT/WHEN/OTHERWISE)\n- TSO commands and utilities\n- Variable definitions and assignments (&VAR)\n- Built-in functions (&SYSDSN, &STR, &SUBSTR, etc.)",
+        "detail": "templates.extract_clist_template",
+        "documentation": {}
+    },
+    {
+        "label": "classify_file_template",
+        "kind": 2,
+        "importPath": "templates.classify_file_template",
+        "description": "templates.classify_file_template",
+        "peekOfCode": "def classify_file_template(filename, content: str, repository: str) -> tuple[str, str]:\n    system_prompt = \"You are an expert in programming languages and file formats, including legacy systems such as COBOL, CLIST, JCL, BMS maps, and other mainframe technologies.\"\n    llm_message = f\"\"\"\n### You must return ONLY a JSON object with the following format:\n{{\n  \"filename\": \"example.cbl\",\n  \"repository\": \"SAMPLE-REPO\",\n  \"classification\": \"Programming Language source file\",\n  \"language\": \"COBOL\",\n  \"description\": \"Main COBOL program for processing transactions\"",
+        "detail": "templates.classify_file_template",
+        "documentation": {}
+    },
+    {
+        "label": "cobol_context_prompt",
+        "kind": 5,
+        "importPath": "templates.cobol_context_prompt",
+        "description": "templates.cobol_context_prompt",
+        "peekOfCode": "cobol_context_prompt = \"\"\"\nCOBOL (Common Business-Oriented Language) is a procedural, structured language widely used in legacy enterprise systems such as banking, insurance, and government infrastructure.\nA COBOL program consists of four main DIVISIONS:\n1. **IDENTIFICATION DIVISION**: Contains metadata such as the program name.\n2. **ENVIRONMENT DIVISION**: Describes input/output devices and runtime context.\n3. **DATA DIVISION**: Declares variables, files, records, constants, and memory layouts.\n4. **PROCEDURE DIVISION**: Contains the actual business logic and control flow.\n---\n### 💡 Key Syntax and Concepts:\n#### 🧱 Program Structure:",
+        "detail": "templates.cobol_context_prompt",
+        "documentation": {}
+    },
+    {
+        "label": "extract_useful_bms_lines",
+        "kind": 2,
+        "importPath": "templates.analyze_cobol_map",
+        "description": "templates.analyze_cobol_map",
+        "peekOfCode": "def extract_useful_bms_lines(content: str) -> str:\n    \"\"\"\n    Κρατά μόνο:\n    - MAP όνομα από DFHMDI\n    - Όλες τις labeled DFHMDF γραμμές\n    \"\"\"\n    lines = content.splitlines()\n    useful_lines = []\n    inside_map = False\n    for line in lines:",
+        "detail": "templates.analyze_cobol_map",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_bms_analysis_prompt",
+        "kind": 2,
+        "importPath": "templates.analyze_cobol_map",
+        "description": "templates.analyze_cobol_map",
+        "peekOfCode": "def prepare_bms_analysis_prompt(clean_content: str) -> tuple[str, str]:\n    system_prompt = \"You are an expert in COBOL, HLASM, and CICS BMS MAP screen parsing. Output only valid JSON, no explanations.\"\n    llm_message = f\"\"\"\nI will provide a filtered BMS copybook definition written in HLASM syntax.\nYour task:\n- Locate all labeled DFHMDF fields\n- Output a JSON array with:\n    - `name`: Field name as defined before DFHMDF\n    - `type`: 'X' for alphanumeric, '9' for numeric\n    - `size`: Length from LENGTH attribute",
+        "detail": "templates.analyze_cobol_map",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"mcp-legacy-analysis\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"mcp-legacy-analysis\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"mcp-legacy-analysis\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"mcp-legacy-analysis\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"mcp-legacy-analysis\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\\\Lib\\\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "generate_fake_records",
+        "kind": 2,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "def generate_fake_records(number_of_records=100):\n    ''' Generates fake records JCL '''\n    fake_labels = ['CIBC', 'DOGE Bank LLC', 'SUCH FUNDS', 'WOW MONEY','Fake','Banco do Brazil','Kraken','MTGOX']\n    logger.debug(\"Generating {} fake records.\".format(number_of_records))\n    record = \"{key:010d} {address:<034} {label:<10.10} {amount:+018.8f}\"\n    records = []\n    records.append(record.format(key=1,address=0,label=\"Available\", amount=+87654321.12345678))\n    records.append(record.format(key=2,address=0,label=\"Pending\", amount=-123456.654321))\n    for i in range(1,int(number_of_records)):\n        records.append(record.format(key=random.randint(1000000000,int(time.time())),address=\"nYLEKeZtqNSCAhMNKTFpFgZcnvf1DbFiSu\",label=fake_labels[random.randint(0,7)], amount=random.uniform(-10000000,10000000)))",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "get_records",
+        "kind": 2,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "def get_records(host='localhost', rpcUser=None, rpcPass=None, rpcPort=22555):\n    ''' Gets DOGECOIN records from dogecoin RPC server '''\n    try:\n        with open(path.join(path.expanduser(\"~\"), '.dogecoin', 'dogecoin.conf'), mode='r') as f:\n            config_string = '[dogecoin]\\n' + f.read()\n    except:\n        config_string = None\n    config = configparser.ConfigParser()\n    config.read_string(config_string)\n    if not rpcUser and 'rpcuser' in config['dogecoin']:",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "test",
+        "kind": 2,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "def test(user='DOGE', password='DOGECOIN',target='localhost', port=3505):\n    ''' send IEFBR14 job to hercules sockdev '''\n    logger.debug(\"Sending IEFBR14 to {}:{}\".format(target,port))\n    send_jcl(hostname=target, port=port, jcl=IEFBR14.format(user=user,password=password))\ndef test_print(user='DOGE', password='DOGECOIN',target='localhost', port=3505):\n    ''' send IEFBR14 job to hercules sockdev '''\n    print(IEFBR14.format(user=user,password=password))\ndef send_jcl(hostname='localhost',port=3505, jcl=\"\", print_jcl=False):\n    logger.debug(\"Sending VSAM update JCL to tk4- reader using {}:{}\".format(hostname,port))\n    if print_jcl:",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "test_print",
+        "kind": 2,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "def test_print(user='DOGE', password='DOGECOIN',target='localhost', port=3505):\n    ''' send IEFBR14 job to hercules sockdev '''\n    print(IEFBR14.format(user=user,password=password))\ndef send_jcl(hostname='localhost',port=3505, jcl=\"\", print_jcl=False):\n    logger.debug(\"Sending VSAM update JCL to tk4- reader using {}:{}\".format(hostname,port))\n    if print_jcl:\n        print(\"PRINTING JCL:\\n{}\\n{}\\n{}\\n\".format('-'*80,jcl, '-'*80))\n    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    s.connect((hostname,port))\n    s.sendall(jcl.encode())",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "send_jcl",
+        "kind": 2,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "def send_jcl(hostname='localhost',port=3505, jcl=\"\", print_jcl=False):\n    logger.debug(\"Sending VSAM update JCL to tk4- reader using {}:{}\".format(hostname,port))\n    if print_jcl:\n        print(\"PRINTING JCL:\\n{}\\n{}\\n{}\\n\".format('-'*80,jcl, '-'*80))\n    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    s.connect((hostname,port))\n    s.sendall(jcl.encode())\n    s.close()\ndef generate_IDCAMS_JCL(user='herc01',password='cul8tr',vsam_file='DOGE.VSAM',records='', volume='pub012', reverse=True):\n    if len(records) > 7648:",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "generate_IDCAMS_JCL",
+        "kind": 2,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "def generate_IDCAMS_JCL(user='herc01',password='cul8tr',vsam_file='DOGE.VSAM',records='', volume='pub012', reverse=True):\n    if len(records) > 7648:\n        if reverse:\n            logger.debug(\"Records exceeds maximum records length of 7648. Getting last 7648 records. To get first 7648 records use --start-records-at-one\")\n            record0000000001 = records[0]\n            record0000000002 = records[1]\n            records = records[-7648:]\n            records[0] = record0000000001\n            records[1] = record0000000002\n        else:",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "new_records",
+        "kind": 2,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "def new_records(old_records, new_records):\n    if old_records == new_records:\n        logger.debug(\"no new records, update not required, force update with --force\".format(running_folder,tmp_file))\n        return False\n    else:\n        logger.debug(\"new records in wallet, sending update\")\n        return True\ndef get_commands(timeout=2, hostname='localhost', port=3506):\n# From https://www.binarytides.com/receive-full-data-with-the-recv-socket-function-in-python/\n    logger.debug('Connecting to tk4- printer {}:{} to get transactions.'.format(hostname,port))",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "get_commands",
+        "kind": 2,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "def get_commands(timeout=2, hostname='localhost', port=3506):\n# From https://www.binarytides.com/receive-full-data-with-the-recv-socket-function-in-python/\n    logger.debug('Connecting to tk4- printer {}:{} to get transactions.'.format(hostname,port))\n    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n    s.connect((hostname,port))\n    s.setblocking(0)\n    total_data=[]\n    data=''\n    begin=time.time()\n    while 1:",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "send_doge",
+        "kind": 2,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "def send_doge(address, amount=0, host='localhost', rpcUser=None, rpcPass=None, rpcPort=22555):\n    ''' Sends amount of dogecoin to address '''\n    logger.debug('Connecting to {}:{} to send {} to {}'.format(host,rpcPort, amount, address))\n    try:\n        with open(path.join(path.expanduser(\"~\"), '.dogecoin', 'dogecoin.conf'), mode='r') as f:\n            config_string = '[dogecoin]\\n' + f.read()\n    except:\n        config_string = None\n    config = configparser.ConfigParser()\n    config.read_string(config_string)",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "tmp_file",
+        "kind": 5,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "tmp_file = \"doge.tmp\"\nrunning_folder = os.path.dirname(os.path.abspath(__file__))\nIEFBR14 = '''//DOGEBR14 JOB CLASS=C,MSGCLASS=Z,MSGLEVEL=(1,1),\n//*        NOTIFY={user},\n//        USER={user},PASSWORD={password}\n//DOGELOL EXEC PGM=IEFBR14''' \nIDCAMS = '''//DOGEVSM JOB (BAL),\n//             'DOGEBANK VSAM',\n//             CLASS=A,\n//             MSGCLASS=Z,",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "running_folder",
+        "kind": 5,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "running_folder = os.path.dirname(os.path.abspath(__file__))\nIEFBR14 = '''//DOGEBR14 JOB CLASS=C,MSGCLASS=Z,MSGLEVEL=(1,1),\n//*        NOTIFY={user},\n//        USER={user},PASSWORD={password}\n//DOGELOL EXEC PGM=IEFBR14''' \nIDCAMS = '''//DOGEVSM JOB (BAL),\n//             'DOGEBANK VSAM',\n//             CLASS=A,\n//             MSGCLASS=Z,\n//             TIME=1440,",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "IEFBR14",
+        "kind": 5,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "IEFBR14 = '''//DOGEBR14 JOB CLASS=C,MSGCLASS=Z,MSGLEVEL=(1,1),\n//*        NOTIFY={user},\n//        USER={user},PASSWORD={password}\n//DOGELOL EXEC PGM=IEFBR14''' \nIDCAMS = '''//DOGEVSM JOB (BAL),\n//             'DOGEBANK VSAM',\n//             CLASS=A,\n//             MSGCLASS=Z,\n//             TIME=1440,\n//             MSGLEVEL=(1,1),",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "IDCAMS",
+        "kind": 5,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "IDCAMS = '''//DOGEVSM JOB (BAL),\n//             'DOGEBANK VSAM',\n//             CLASS=A,\n//             MSGCLASS=Z,\n//             TIME=1440,\n//             MSGLEVEL=(1,1),\n//*             NOTIFY={user},\n//             USER={user},PASSWORD={password}\n//DOGECAMS EXEC PGM=IDCAMS\n//SYSPRINT DD   SYSOUT=*",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "desc",
+        "kind": 5,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "desc = '''DOGEdcams data generator for DOGE Bank. Used to send and receive funds between KICKS on TK4- and DogeCICS.'''\narg_parser = argparse.ArgumentParser(description=desc, \n                    usage='%(prog)s [options]', \n                    formatter_class=argparse.ArgumentDefaultsHelpFormatter)\narg_parser.add_argument('-d', '--debug', help=\"Print lots of debugging statements\", action=\"store_const\", dest=\"loglevel\", const=logging.DEBUG, default=logging.WARNING)\narg_parser.add_argument('-t', '--test', help=\"Test sending JCL to TK4-\", action=\"store_true\")\narg_parser.add_argument('-p', '--print', help=\"Print JCL being sent to TK4\", action=\"store_true\")\narg_parser.add_argument('-f', '--force', help=\"Force VSAM update even if no changes to wallet\", action=\"store_true\")\narg_parser.add_argument('--fake', help=\"Generate fake records\", default=None)\narg_parser.add_argument('--username', help=\"TK4- username for JCL\", default='herc01')",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "arg_parser",
+        "kind": 5,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "arg_parser = argparse.ArgumentParser(description=desc, \n                    usage='%(prog)s [options]', \n                    formatter_class=argparse.ArgumentDefaultsHelpFormatter)\narg_parser.add_argument('-d', '--debug', help=\"Print lots of debugging statements\", action=\"store_const\", dest=\"loglevel\", const=logging.DEBUG, default=logging.WARNING)\narg_parser.add_argument('-t', '--test', help=\"Test sending JCL to TK4-\", action=\"store_true\")\narg_parser.add_argument('-p', '--print', help=\"Print JCL being sent to TK4\", action=\"store_true\")\narg_parser.add_argument('-f', '--force', help=\"Force VSAM update even if no changes to wallet\", action=\"store_true\")\narg_parser.add_argument('--fake', help=\"Generate fake records\", default=None)\narg_parser.add_argument('--username', help=\"TK4- username for JCL\", default='herc01')\narg_parser.add_argument('--password', help=\"TK4- password for JCL\", default='cul8tr')",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "args = arg_parser.parse_args()\t\n# Create the Logger\nlogger = logging.getLogger(__name__)\nlogger.setLevel(args.loglevel)\nlogger_formatter = logging.Formatter('%(levelname)-8s :: %(funcName)-22s :: %(message)s')\nch = logging.StreamHandler()\nch.setFormatter(logger_formatter)\nch.setLevel(args.loglevel)\nlogger.addHandler(ch)\n# Print debug information",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nlogger.setLevel(args.loglevel)\nlogger_formatter = logging.Formatter('%(levelname)-8s :: %(funcName)-22s :: %(message)s')\nch = logging.StreamHandler()\nch.setFormatter(logger_formatter)\nch.setLevel(args.loglevel)\nlogger.addHandler(ch)\n# Print debug information\nlogger.debug(\"Using the following script options - Debug: True, Test: {}, Print: {}, Force: {}\".format(args.test, args.print, args.force))\nlogger.debug(\"Using the following TK4- options - Hostname: {}, Username: {}, Password: {}, VSAM File: {}, Volume: {}, Reader Port: {}, Printer Port: {}\".format(",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "logger_formatter",
+        "kind": 5,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "logger_formatter = logging.Formatter('%(levelname)-8s :: %(funcName)-22s :: %(message)s')\nch = logging.StreamHandler()\nch.setFormatter(logger_formatter)\nch.setLevel(args.loglevel)\nlogger.addHandler(ch)\n# Print debug information\nlogger.debug(\"Using the following script options - Debug: True, Test: {}, Print: {}, Force: {}\".format(args.test, args.print, args.force))\nlogger.debug(\"Using the following TK4- options - Hostname: {}, Username: {}, Password: {}, VSAM File: {}, Volume: {}, Reader Port: {}, Printer Port: {}\".format(\n            args.hostname, args.username, \"*\"*len(args.password), args.vsam_file, args.volume, args.rdrport, args.prtport))\nlogger.debug(\"Using the following Dogecoin options - RPC Host: {}, RPC User: {}, RPC Pass: {} RPC Port: {}\".format(",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "ch",
+        "kind": 5,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "ch = logging.StreamHandler()\nch.setFormatter(logger_formatter)\nch.setLevel(args.loglevel)\nlogger.addHandler(ch)\n# Print debug information\nlogger.debug(\"Using the following script options - Debug: True, Test: {}, Print: {}, Force: {}\".format(args.test, args.print, args.force))\nlogger.debug(\"Using the following TK4- options - Hostname: {}, Username: {}, Password: {}, VSAM File: {}, Volume: {}, Reader Port: {}, Printer Port: {}\".format(\n            args.hostname, args.username, \"*\"*len(args.password), args.vsam_file, args.volume, args.rdrport, args.prtport))\nlogger.debug(\"Using the following Dogecoin options - RPC Host: {}, RPC User: {}, RPC Pass: {} RPC Port: {}\".format(\n            args.rpchost, args.rpcuser, \"*\"*len(args.rpchost), args.rpcport))",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "doge_vsam_jcl",
+        "kind": 5,
+        "importPath": "workspace.DOGECICS.PYTHON.dogedcams",
+        "description": "workspace.DOGECICS.PYTHON.dogedcams",
+        "peekOfCode": "doge_vsam_jcl = generate_IDCAMS_JCL(user=args.username,password=args.password,vsam_file=args.vsam_file,volume=args.volume,records=vsam_records, reverse=args.start_records_at_one)\nif not os.path.isfile(\"{}/{}\".format(running_folder,tmp_file)) or args.force:\n    # If the tmp file doesn't exist or we need to force an update for some reason\n    if not os.path.isfile(\"{}/{}\".format(running_folder,tmp_file)):\n        logger.debug(\"temp file {}/{} does not exist, creating\".format(running_folder,tmp_file))\n    else:\n        logger.debug(\"forced update\")\n    if not args.test:\n        send_jcl(hostname=args.hostname,port=args.rdrport, jcl=doge_vsam_jcl, print_jcl=args.print)\n        logger.debug(\"creating: {}/{}\".format(running_folder,tmp_file) )",
+        "detail": "workspace.DOGECICS.PYTHON.dogedcams",
+        "documentation": {}
+    },
+    {
+        "label": "query_mcp_http",
+        "kind": 2,
+        "importPath": "local_llm",
+        "description": "local_llm",
+        "peekOfCode": "def query_mcp_http(prompt: str) -> str:\n    \"\"\"\n    Στέλνει το prompt στον MCP server μέσω HTTP και επιστρέφει την απάντηση.\n    Ο MCP server πρέπει να τρέχει με transport 'http' (π.χ. --transport http --port 8000).\n    \"\"\"\n    mcp_url = os.getenv(\"MCP_SERVER_URL\", \"http://localhost:8000/request\")\n    try:\n        payload = {\"prompt\": prompt}\n        headers = {\"Content-Type\": \"application/json\"}\n        resp = requests.post(mcp_url, json=payload, headers=headers, timeout=30)",
+        "detail": "local_llm",
+        "documentation": {}
+    },
+    {
+        "label": "query_mcp_stdio",
+        "kind": 2,
+        "importPath": "local_llm",
+        "description": "local_llm",
+        "peekOfCode": "def query_mcp_stdio(prompt: str) -> str:\n    \"\"\"\n    Στέλνει το prompt στον MCP server μέσω STDIO.\n    Εκκινήστε τον server με transport 'stdio'.\n    Χρήση:\n      export MCP_SERVER_CMD=\"python your_server.py\"\n      export MCP_USE_STDIO=true\n    \"\"\"\n    cmd = os.getenv(\"MCP_SERVER_CMD\", \"python main.py\")\n    try:",
+        "detail": "local_llm",
+        "documentation": {}
+    },
+    {
+        "label": "query_ollama",
+        "kind": 2,
+        "importPath": "local_llm",
+        "description": "local_llm",
+        "peekOfCode": "def query_ollama(prompt: str) -> str:\n    \"\"\"\n    Στέλνει το prompt στον Ollama HTTP API και επιστρέφει την απάντηση.\n    Βεβαιωθείτε ότι έχετε τρέξει `ollama serve`.\n    \"\"\"\n    ollama_url = os.getenv(\"OLLAMA_URL\", \"http://localhost:11434/v1/chat/completions\")\n    model = os.getenv(\"OLLAMA_MODEL\", \"deepseek-coder\")\n    headers = {\"Content-Type\": \"application/json\"}\n    payload = {\n        \"model\": model,",
+        "detail": "local_llm",
+        "documentation": {}
+    },
+    {
+        "label": "check_servers",
+        "kind": 2,
+        "importPath": "local_llm",
+        "description": "local_llm",
+        "peekOfCode": "def check_servers():\n    \"\"\"Ελέγχει την κατάσταση των servers\"\"\"\n    print(\"Έλεγχος κατάστασης servers...\")\n    # Έλεγχος MCP server\n    use_stdio = os.getenv(\"MCP_USE_STDIO\", \"false\").lower() == \"true\"\n    if use_stdio:\n        print(\"✓ MCP: Configured για STDIO transport\")\n        mcp_cmd = os.getenv(\"MCP_SERVER_CMD\", \"python your_server.py\")\n        print(f\"  Command: {mcp_cmd}\")\n    else:",
+        "detail": "local_llm",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "local_llm",
+        "description": "local_llm",
+        "peekOfCode": "def main():\n    print(\"Πρόγραμμα ερωτήσεων σε MCP server & Ollama\")\n    print(\"=\" * 50)\n    # Έλεγχος servers\n    check_servers()\n    print(\"Πληκτρολογήστε 'exit' για έξοδο, 'status' για έλεγχο servers.\")\n    print(\"Περιβαλλοντικές μεταβλητές:\")\n    print(f\"  MCP_USE_STDIO: {os.getenv('MCP_USE_STDIO', 'false')}\")\n    print(f\"  MCP_SERVER_URL: {os.getenv('MCP_SERVER_URL', 'http://localhost:8000/request')}\")\n    print(f\"  MCP_SERVER_CMD: {os.getenv('MCP_SERVER_CMD', 'python your_server.py')}\")",
+        "detail": "local_llm",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_content_full_path",
+        "kind": 2,
+        "importPath": "analysis",
+        "description": "analysis",
+        "peekOfCode": "def get_file_content_full_path(full_path: str) -> str:\n    with open(full_path, \"r\") as f:\n        return f.read()\ndef get_file_content(repository_name: str, filename: str) -> str:\n    \"\"\"\n    Helper function to retrieve file content from the repository.\n    This is used internally by the retrieve_file_content tool.\n    \"\"\"\n    try:\n        repo_alias = repository_name.replace(\"resource://\", \"\")",
+        "detail": "analysis",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_content",
+        "kind": 2,
+        "importPath": "analysis",
+        "description": "analysis",
+        "peekOfCode": "def get_file_content(repository_name: str, filename: str) -> str:\n    \"\"\"\n    Helper function to retrieve file content from the repository.\n    This is used internally by the retrieve_file_content tool.\n    \"\"\"\n    try:\n        repo_alias = repository_name.replace(\"resource://\", \"\")\n        repo_path = WORKSPACE / repo_alias\n        # Handle both absolute and relative paths\n        if os.path.isabs(filename):",
+        "detail": "analysis",
+        "documentation": {}
+    },
+    {
+        "label": "WORKSPACE",
+        "kind": 5,
+        "importPath": "analysis",
+        "description": "analysis",
+        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\ndef get_file_content_full_path(full_path: str) -> str:\n    with open(full_path, \"r\") as f:\n        return f.read()\ndef get_file_content(repository_name: str, filename: str) -> str:\n    \"\"\"\n    Helper function to retrieve file content from the repository.\n    This is used internally by the retrieve_file_content tool.\n    \"\"\"",
+        "detail": "analysis",
+        "documentation": {}
+    },
+    {
+        "label": "extract_alias_from_url",
+        "kind": 2,
+        "importPath": "legacy_analysis_server",
+        "description": "legacy_analysis_server",
+        "peekOfCode": "def extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    alias = extract_alias_from_url(repo_url)\n    repo_path = WORKSPACE / alias\n    if not repo_path.exists():\n        subprocess.run([\"git\", \"clone\", repo_url, str(repo_path)], check=True)\n    # Register the alias as MCP resource\n    @mcp.resource(f\"resource://{alias}\")",
+        "detail": "legacy_analysis_server",
+        "documentation": {}
+    },
+    {
+        "label": "find_copy_definition",
+        "kind": 2,
+        "importPath": "legacy_analysis_server",
+        "description": "legacy_analysis_server",
+        "peekOfCode": "def find_copy_definition(ctx: Context, resource_uri: str, copy_name: str) -> dict:\n    import re\n    # ctx.log.info(f\"Searching for COPY definition: {copy_name} in {resource_uri}\")\n    repo_alias = resource_uri.replace(\"resource://\", \"\")\n    base_path = WORKSPACE / repo_alias\n    matched_files = []\n    # Traverse all files like list_cobol_files does\n    for file_path in base_path.rglob(\"*\"):\n        # ctx.log.info(f\"Checking file: {file_path}\")\n        if not file_path.is_file():",
+        "detail": "legacy_analysis_server",
+        "documentation": {}
+    },
+    {
+        "label": "mcp",
+        "kind": 5,
+        "importPath": "legacy_analysis_server",
+        "description": "legacy_analysis_server",
+        "peekOfCode": "mcp = FastMCP(name=\"Legacy Code Analysis Service\")\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ninit_database()\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    alias = extract_alias_from_url(repo_url)",
+        "detail": "legacy_analysis_server",
+        "documentation": {}
+    },
+    {
+        "label": "WORKSPACE",
+        "kind": 5,
+        "importPath": "legacy_analysis_server",
+        "description": "legacy_analysis_server",
+        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ninit_database()\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    alias = extract_alias_from_url(repo_url)\n    repo_path = WORKSPACE / alias",
+        "detail": "legacy_analysis_server",
+        "documentation": {}
+    },
+    {
+        "label": "_repo_registry",
+        "kind": 5,
+        "importPath": "legacy_analysis_server",
+        "description": "legacy_analysis_server",
+        "peekOfCode": "_repo_registry = {}  # Keeps track of aliases and paths\ninit_database()\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    alias = extract_alias_from_url(repo_url)\n    repo_path = WORKSPACE / alias\n    if not repo_path.exists():\n        subprocess.run([\"git\", \"clone\", repo_url, str(repo_path)], check=True)",
+        "detail": "legacy_analysis_server",
+        "documentation": {}
+    },
+    {
+        "label": "server",
+        "kind": 5,
+        "importPath": "mcp_client",
+        "description": "mcp_client",
+        "peekOfCode": "server = FastMCP()\nollama_client = OllamaClient(host='http://localhost:11434')\nasync def sampling_handler(\n    messages: list,\n    params,\n    context,\n    model=\"deepseek-coder:latest\",\n) -> str:\n    prompt = \"\"\n    if params.systemPrompt:",
+        "detail": "mcp_client",
+        "documentation": {}
+    },
+    {
+        "label": "ollama_client",
+        "kind": 5,
+        "importPath": "mcp_client",
+        "description": "mcp_client",
+        "peekOfCode": "ollama_client = OllamaClient(host='http://localhost:11434')\nasync def sampling_handler(\n    messages: list,\n    params,\n    context,\n    model=\"deepseek-coder:latest\",\n) -> str:\n    prompt = \"\"\n    if params.systemPrompt:\n        prompt += f\"{params.systemPrompt}\\n\\n\"",
+        "detail": "mcp_client",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "mcp_client",
+        "description": "mcp_client",
+        "peekOfCode": "client = Client(\"http://localhost:9000/sse\", sampling_handler=sampling_handler)\n# client = Client(\"main.py\")\nasync def workflow(client: Client):\n    print(\"Fetching repository\")\n    repo_url = \"https://github.com/mainframed/DOGECICS.git\"\n    # result = await client.call_tool(\"fetch_repository\", {\"repo_url\": repo_url})\n    # repository_name = result[0].text\n    repository_name = \"DOGECICS\"\n    files_in_repository = await client.call_tool(\"processed_repository\", {\"repository\": repository_name})\n    data = json.loads(files_in_repository[0].text)",
+        "detail": "mcp_client",
+        "documentation": {}
+    },
+    {
+        "label": "connect_to_database",
+        "kind": 2,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "def connect_to_database() -> sqlite3.Connection:\n    return sqlite3.connect(DATABASE_PATH)\ndef init_database():\n    with connect_to_database() as conn:\n        cursor = conn.cursor()\n        cursor.execute(\"\"\"\n            CREATE TABLE IF NOT EXISTS repository (\n                id INTEGER PRIMARY KEY AUTOINCREMENT,\n                repository_name TEXT,\n                full_path TEXT,",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "init_database",
+        "kind": 2,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "def init_database():\n    with connect_to_database() as conn:\n        cursor = conn.cursor()\n        cursor.execute(\"\"\"\n            CREATE TABLE IF NOT EXISTS repository (\n                id INTEGER PRIMARY KEY AUTOINCREMENT,\n                repository_name TEXT,\n                full_path TEXT,\n                filename TEXT,\n                classification TEXT,",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "insert_repository",
+        "kind": 2,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "def insert_repository(repository_name: str, full_path: str, filename: str, language: str, classification: str):\n    try:\n        with connect_to_database() as conn:\n            conn.execute(\"\"\"\n                INSERT INTO repository (repository_name, full_path, filename, language, classification)\n                VALUES (?, ?, ?, ?, ?)\n            \"\"\", (repository_name, full_path, filename, language, classification))\n    except sqlite3.Error as e:\n        print(f\"Database error: {e}\")\ndef get_repository(repository_name: str):",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_repository",
+        "kind": 2,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "def get_repository(repository_name: str):\n    with connect_to_database() as conn:\n        cursor = conn.cursor()\n        cursor.execute(\"SELECT * FROM repository WHERE repository_name = ?\", (repository_name,))\n        return cursor.fetchall()\ndef get_all_repositories():\n    with connect_to_database() as conn:\n        cursor = conn.cursor()\n        cursor.execute(\"SELECT * FROM repository\")\n        return cursor.fetchall()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_repositories",
+        "kind": 2,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "def get_all_repositories():\n    with connect_to_database() as conn:\n        cursor = conn.cursor()\n        cursor.execute(\"SELECT * FROM repository\")\n        return cursor.fetchall()\ndef get_repository_by_filename(filename: str):\n    with connect_to_database() as conn:\n        cursor = conn.cursor()\n        cursor.execute(\"SELECT * FROM repository WHERE filename = ?\", (filename,))\n        return cursor.fetchall()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_repository_by_filename",
+        "kind": 2,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "def get_repository_by_filename(filename: str):\n    with connect_to_database() as conn:\n        cursor = conn.cursor()\n        cursor.execute(\"SELECT * FROM repository WHERE filename = ?\", (filename,))\n        return cursor.fetchall()\ndef get_repository_by_classification(classification: str, repository_name: str):\n    with connect_to_database() as conn:\n        cursor = conn.cursor()\n        cursor.execute(\"SELECT * FROM repository WHERE classification = ? AND repository_name = ?\", (classification, repository_name))\n        return cursor.fetchall()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_repository_by_classification",
+        "kind": 2,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "def get_repository_by_classification(classification: str, repository_name: str):\n    with connect_to_database() as conn:\n        cursor = conn.cursor()\n        cursor.execute(\"SELECT * FROM repository WHERE classification = ? AND repository_name = ?\", (classification, repository_name))\n        return cursor.fetchall()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_PATH",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "DATABASE_PATH = \"mcp_analysis_data.db\"\ndef connect_to_database() -> sqlite3.Connection:\n    return sqlite3.connect(DATABASE_PATH)\ndef init_database():\n    with connect_to_database() as conn:\n        cursor = conn.cursor()\n        cursor.execute(\"\"\"\n            CREATE TABLE IF NOT EXISTS repository (\n                id INTEGER PRIMARY KEY AUTOINCREMENT,\n                repository_name TEXT,",
+        "detail": "database",
+        "documentation": {}
+    }
+]

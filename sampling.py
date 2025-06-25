@@ -1,4 +1,4 @@
-async def sample_helper(ctx, messages_for_llm: str, system_prompt: str, temperature: float = 0.7) -> str:
+async def sample_helper(ctx, messages_for_llm: str, system_prompt: str, temperature: float = 0.7, json_output: bool = False) -> str:
     """
     This function is a placeholder for sampling-related functionality.
     It currently does not perform any operations but can be extended in the future.
@@ -9,15 +9,19 @@ async def sample_helper(ctx, messages_for_llm: str, system_prompt: str, temperat
                 "role": "user",
                 "content": {
                     "type": "text",
-                    "text": messages_for_llm,
+                    "text": f"{system_prompt}\n\n{messages_for_llm}",
                 }
             }
         ]
+        
+        prefs = None
+        if json_output:
+            prefs = {"response_format": {"type": "json_object"}}
             
         response = await ctx.sample(
             messages=messages,
-            system_prompt="You are an expert COBOL programmer and a seasoned static analysis tool.",
-            temperature=0.7
+            temperature=temperature,
+            model_preferences=prefs
         )
             
         return response.text.strip() if response.text else ""
