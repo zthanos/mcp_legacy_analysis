@@ -9,6 +9,8 @@
         "--with",
         "gitpython>=3.1.44",
         "--with",
+        "mcp-llm>=0.1.0",
+        "--with",
         "uvicorn>=0.34.3",
         "--with",
         "aiohttp>=3.12.13",

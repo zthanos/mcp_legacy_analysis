@@ -43,14 +43,14 @@ async def get_file_flow(mcp, repository: str, filename: str, classification, ctx
         resource_content = json.dumps(parsed, indent=2) if isinstance(parsed, (dict, list)) else str(parsed)
         
         # Save as resource
-        resource = TextResource(
-            uri=resource_uri_flow,
-            name=f"Program Flow for {repository}",
-            description=f"Program execution flow extracted from {repository}",
-            tags=[classification, "program-flow"],
-            text=resource_content
-        )
-        mcp.add_resource(resource)
+        # resource = TextResource(
+        #     uri=resource_uri_flow,
+        #     name=f"Program Flow for {repository}",
+        #     description=f"Program execution flow extracted from {repository}",
+        #     tags=[classification, "program-flow"],
+        #     text=resource_content
+        # )
+        # mcp.add_resource(resource)
         
         return resource_content
         

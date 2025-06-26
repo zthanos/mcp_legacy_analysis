@@ -1,6 +1,6 @@
 from fastmcp import FastMCP, Context
 from pathlib import Path
-from analysis import get_file_content, classify_file, analyze_map
+from analysis import *
 from fastmcp.resources import TextResource
 from pydantic import AnyUrl
 from data_structure import cobol_data_structure
@@ -11,13 +11,16 @@ import json
 import git
 import re
 import sqlite3
-from database import  init_database, insert_repository, get_repository, get_repository_by_classification
+from database import  *
 import json
-
-
+from cobol_analysis import extract_edges
+from graph_db import get_session, get_driver
+from tools.fetch_repository import execute_fetch_repository
 
 # Create MCP Server
 mcp = FastMCP(name="Legacy Code Analysis Service")
+driver = get_driver()
+session = get_session(driver)
 
 
 WORKSPACE = Path("./workspace")
@@ -31,11 +34,7 @@ def extract_alias_from_url(repo_url: str) -> str:
 
 @mcp.tool(name="fetch_repository", description="Clones a COBOL repository and registers it as a resource.")
 async def fetch_repository(repo_url: str, ctx: Context) -> str:
-    alias = extract_alias_from_url(repo_url)
-    repo_path = WORKSPACE / alias
-
-    if not repo_path.exists():
-        subprocess.run(["git", "clone", repo_url, str(repo_path)], check=True)
+    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  
 
     # Register the alias as MCP resource
     @mcp.resource(f"resource://{alias}")
@@ -198,4 +197,25 @@ async def retrieve_file_content(repository_name: str, filename: str, ctx: Contex
     Returns just the file content for use by other tools.
     """
     return get_file_content(repository_name, filename)
+
+
+@mcp.tool("find_edges", description="identify all points of interaction with external or internal components.")
+async def find_edges(repository: str, filename: str, ctx: Context) -> str:
+    """
+    all points of interaction with external or internal components
+    """
+    print(f"repository_name: {repository} filename: {filename}")
+    try:
+        # content = get_file_content(repository, filename)
+        full_path = get_file_full_path(repository, filename)
+        print(f"full_path: {full_path[0]}")
+        content = get_file_content_full_path(full_path[0])
+        await ctx.info(f"Extracting edges from {filename}...")
+        response = await extract_edges(content=content, ctx=ctx)
+        return response
+    except Exception as e:
+        print(f"Error finding edges: {e}")
+        await ctx.error(f"Error finding edges: {e}")
+        return f"Error: {e}"    
+
 

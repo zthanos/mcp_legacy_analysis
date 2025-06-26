@@ -65,3 +65,10 @@ def get_repository_by_classification(classification: str, repository_name: str):
         cursor = conn.cursor()
         cursor.execute("SELECT * FROM repository WHERE classification = ? AND repository_name = ?", (classification, repository_name))
         return cursor.fetchall()
+
+def get_file_full_path(repository_name: str, filename: str):
+    with connect_to_database() as conn:
+        cursor = conn.cursor()
+        cursor.execute("SELECT full_path FROM repository WHERE repository_name = ? AND filename = ?", (repository_name, filename))
+        return cursor.fetchone()
+
