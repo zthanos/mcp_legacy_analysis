@@ -88,6 +88,14 @@
         "documentation": {}
     },
     {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "re",
         "kind": 6,
         "isExtraImport": true,
@@ -272,7 +280,31 @@
         "documentation": {}
     },
     {
-        "label": "insert_repository",
+        "label": "get_file_full_path",
+        "importPath": "graph_db",
+        "description": "graph_db",
+        "isExtraImport": true,
+        "detail": "graph_db",
+        "documentation": {}
+    },
+    {
+        "label": "get_driver",
+        "importPath": "graph_db",
+        "description": "graph_db",
+        "isExtraImport": true,
+        "detail": "graph_db",
+        "documentation": {}
+    },
+    {
+        "label": "get_session",
+        "importPath": "graph_db",
+        "description": "graph_db",
+        "isExtraImport": true,
+        "detail": "graph_db",
+        "documentation": {}
+    },
+    {
+        "label": "insert_flow_graph",
         "importPath": "graph_db",
         "description": "graph_db",
         "isExtraImport": true,
@@ -296,6 +328,14 @@
         "documentation": {}
     },
     {
+        "label": "get_repository",
+        "importPath": "graph_db",
+        "description": "graph_db",
+        "isExtraImport": true,
+        "detail": "graph_db",
+        "documentation": {}
+    },
+    {
         "label": "classify_file",
         "importPath": "analysis",
         "description": "analysis",
@@ -304,7 +344,7 @@
         "documentation": {}
     },
     {
-        "label": "classify_file",
+        "label": "get_file_content_full_path",
         "importPath": "analysis",
         "description": "analysis",
         "isExtraImport": true,
@@ -320,7 +360,7 @@
         "documentation": {}
     },
     {
-        "label": "get_file_content",
+        "label": "get_file_content_full_path",
         "importPath": "analysis",
         "description": "analysis",
         "isExtraImport": true,
@@ -336,11 +376,51 @@
         "documentation": {}
     },
     {
-        "label": "TextResource",
-        "importPath": "fastmcp.resources",
-        "description": "fastmcp.resources",
+        "label": "extract_edges_prompt",
+        "importPath": "templates.extract_edges",
+        "description": "templates.extract_edges",
         "isExtraImport": true,
-        "detail": "fastmcp.resources",
+        "detail": "templates.extract_edges",
+        "documentation": {}
+    },
+    {
+        "label": "extract_edges_prompt",
+        "importPath": "templates.extract_edges",
+        "description": "templates.extract_edges",
+        "isExtraImport": true,
+        "detail": "templates.extract_edges",
+        "documentation": {}
+    },
+    {
+        "label": "sample_helper",
+        "importPath": "sampling",
+        "description": "sampling",
+        "isExtraImport": true,
+        "detail": "sampling",
+        "documentation": {}
+    },
+    {
+        "label": "sample_helper",
+        "importPath": "sampling",
+        "description": "sampling",
+        "isExtraImport": true,
+        "detail": "sampling",
+        "documentation": {}
+    },
+    {
+        "label": "sample_helper",
+        "importPath": "sampling",
+        "description": "sampling",
+        "isExtraImport": true,
+        "detail": "sampling",
+        "documentation": {}
+    },
+    {
+        "label": "sample_helper",
+        "importPath": "sampling",
+        "description": "sampling",
+        "isExtraImport": true,
+        "detail": "sampling",
         "documentation": {}
     },
     {
@@ -353,6 +433,14 @@
     },
     {
         "label": "resource_manager",
+        "importPath": "fastmcp.resources",
+        "description": "fastmcp.resources",
+        "isExtraImport": true,
+        "detail": "fastmcp.resources",
+        "documentation": {}
+    },
+    {
+        "label": "TextResource",
         "importPath": "fastmcp.resources",
         "description": "fastmcp.resources",
         "isExtraImport": true,
@@ -392,30 +480,6 @@
         "documentation": {}
     },
     {
-        "label": "sample_helper",
-        "importPath": "sampling",
-        "description": "sampling",
-        "isExtraImport": true,
-        "detail": "sampling",
-        "documentation": {}
-    },
-    {
-        "label": "sample_helper",
-        "importPath": "sampling",
-        "description": "sampling",
-        "isExtraImport": true,
-        "detail": "sampling",
-        "documentation": {}
-    },
-    {
-        "label": "sample_helper",
-        "importPath": "sampling",
-        "description": "sampling",
-        "isExtraImport": true,
-        "detail": "sampling",
-        "documentation": {}
-    },
-    {
         "label": "mcp",
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
@@ -425,14 +489,6 @@
     },
     {
         "label": "init_database",
-        "importPath": "database",
-        "description": "database",
-        "isExtraImport": true,
-        "detail": "database",
-        "documentation": {}
-    },
-    {
-        "label": "*",
         "importPath": "database",
         "description": "database",
         "isExtraImport": true,
@@ -546,6 +602,30 @@
         "documentation": {}
     },
     {
+        "label": "execute_classify_repository",
+        "importPath": "tools.classify_repository",
+        "description": "tools.classify_repository",
+        "isExtraImport": true,
+        "detail": "tools.classify_repository",
+        "documentation": {}
+    },
+    {
+        "label": "execute_extract_edges",
+        "importPath": "tools.extract_edges",
+        "description": "tools.extract_edges",
+        "isExtraImport": true,
+        "detail": "tools.extract_edges",
+        "documentation": {}
+    },
+    {
+        "label": "execute_expose_workspace",
+        "importPath": "tools.expose_workspace",
+        "description": "tools.expose_workspace",
+        "isExtraImport": true,
+        "detail": "tools.expose_workspace",
+        "documentation": {}
+    },
+    {
         "label": "asyncio",
         "kind": 6,
         "isExtraImport": true,
@@ -595,11 +675,11 @@
         "documentation": {}
     },
     {
-        "label": "extract_edges_prompt",
-        "importPath": "templates.extract_edges",
-        "description": "templates.extract_edges",
+        "label": "GraphDatabase",
+        "importPath": "neo4j",
+        "description": "neo4j",
         "isExtraImport": true,
-        "detail": "templates.extract_edges",
+        "detail": "neo4j",
         "documentation": {}
     },
     {
@@ -615,7 +695,7 @@
         "kind": 2,
         "importPath": "templates.extract_cobol_template",
         "description": "templates.extract_cobol_template",
-        "peekOfCode": "def cobol_flow_extraction(filename: str,source_code: str) -> tuple[str, str]:\n    system_prompt = cobol_context_prompt\n    # 'You are an expert COBOL programmer and a seasoned static analysis tool.' \n    llm_message = f\"\"\"\nYour task is to analyze the provided COBOL code and extract its execution flow, starting from its primary entry point (typically the first executable statement after PROCEDURE DIVISION, or an explicit ENTRY point).\nRepresent the flow as a directed graph in JSON format, where:\n- Each node is a COBOL paragraph, section, or program/subprogram name.\n- Each edge represents a control flow transfer (e.g., PERFORM, CALL, GO TO, implicit fall-through).\n- For each node, include its type (e.g., \"paragraph\", \"section\", \"program\").\n- For each edge, specify the type of transfer (e.g., \"PERFORM\", \"CALL\", \"GO TO\", \"FALLTHROUGH\").",
+        "peekOfCode": "def cobol_flow_extraction(filename: str, source_code: str) -> tuple[str, str]:\n    system_prompt = cobol_context_prompt\n    llm_message = f\"\"\"\nYou are an expert COBOL programmer and a seasoned static analysis tool.\nYour task is to analyze the provided COBOL code and extract its execution flow, starting from its primary entry point (typically the first executable statement after PROCEDURE DIVISION, or an explicit ENTRY point).\nRepresent the flow as a directed graph in JSON format, where:\n- Each node is a COBOL paragraph, section, or program/subprogram name.\n- Each edge represents a control flow transfer (e.g., PERFORM, CALL, GO TO, implicit fall-through).\n- For each node, include:\n  - \"type\" (e.g., \"paragraph\", \"section\", \"program\")",
         "detail": "templates.extract_cobol_template",
         "documentation": {}
     },
@@ -957,7 +1037,7 @@
         "kind": 2,
         "importPath": "tools.fetch_repository",
         "description": "tools.fetch_repository",
-        "peekOfCode": "def extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\nasync def execute_fetch_repository(session, ctx, repo_url):\n    print(f\"repo_url: {repo_url}\")\n    repository_name = extract_alias_from_url(repo_url)\n    repo_path = WORKSPACE / repository_name    \n    # if repo_path.exists():\n    #     await ctx.info(f\"Repository {repository_name} already exists\")\n    #     return repository_name\n    await ctx.info(f\"Cloning repository {repository_name}...\")",
+        "peekOfCode": "def extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\nasync def execute_fetch_repository(session, ctx, repo_url):\n    print(f\"repo_url: {repo_url}\")\n    repository_name = extract_alias_from_url(repo_url)\n    repo_path = WORKSPACE / repository_name    \n    if repo_path.exists():\n        await ctx.info(f\"Repository {repository_name} already exists\")\n        return repository_name\n    await ctx.info(f\"Cloning repository {repository_name}...\")",
         "detail": "tools.fetch_repository",
         "documentation": {}
     },
@@ -966,7 +1046,7 @@
         "kind": 5,
         "importPath": "tools.fetch_repository",
         "description": "tools.fetch_repository",
-        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\nasync def execute_fetch_repository(session, ctx, repo_url):\n    print(f\"repo_url: {repo_url}\")\n    repository_name = extract_alias_from_url(repo_url)\n    repo_path = WORKSPACE / repository_name    \n    # if repo_path.exists():\n    #     await ctx.info(f\"Repository {repository_name} already exists\")",
+        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\nasync def execute_fetch_repository(session, ctx, repo_url):\n    print(f\"repo_url: {repo_url}\")\n    repository_name = extract_alias_from_url(repo_url)\n    repo_path = WORKSPACE / repository_name    \n    if repo_path.exists():\n        await ctx.info(f\"Repository {repository_name} already exists\")",
         "detail": "tools.fetch_repository",
         "documentation": {}
     },
@@ -975,7 +1055,7 @@
         "kind": 2,
         "importPath": "tools.classify_repository",
         "description": "tools.classify_repository",
-        "peekOfCode": "def extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\nasync def execute_classify_repository(session, ctx, repository_name, repo_path):\n    await ctx.info(f\"Starting file classification for repository {repository_name}...\")\n    for file_path in repo_path.rglob(\"*\"):\n        if file_path.is_file():\n            if \".git\" in file_path.parts:\n                continue\n            if file_path.suffix == \".md\":\n                print(f\"Skipping markdown file: {file_path}\")",
+        "peekOfCode": "def extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\nasync def execute_classify_repository(session, ctx, repository_name):\n    repo_path = WORKSPACE / repository_name\n    await ctx.info(f\"Starting file classification for repository {repository_name}...\")\n    for file_path in repo_path.rglob(\"*\"):\n        if file_path.is_file():\n            if \".git\" in file_path.parts:\n                continue\n            if file_path.suffix == \".md\":",
         "detail": "tools.classify_repository",
         "documentation": {}
     },
@@ -984,8 +1064,26 @@
         "kind": 5,
         "importPath": "tools.classify_repository",
         "description": "tools.classify_repository",
-        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\nasync def execute_classify_repository(session, ctx, repository_name, repo_path):\n    await ctx.info(f\"Starting file classification for repository {repository_name}...\")\n    for file_path in repo_path.rglob(\"*\"):\n        if file_path.is_file():\n            if \".git\" in file_path.parts:\n                continue",
+        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\nasync def execute_classify_repository(session, ctx, repository_name):\n    repo_path = WORKSPACE / repository_name\n    await ctx.info(f\"Starting file classification for repository {repository_name}...\")\n    for file_path in repo_path.rglob(\"*\"):\n        if file_path.is_file():\n            if \".git\" in file_path.parts:",
         "detail": "tools.classify_repository",
+        "documentation": {}
+    },
+    {
+        "label": "execute_expose_workspace",
+        "kind": 2,
+        "importPath": "tools.expose_workspace",
+        "description": "tools.expose_workspace",
+        "peekOfCode": "def execute_expose_workspace(ctx):\n    results = []\n    repo_path = WORKSPACE\n    for file_path in repo_path.rglob(\"*\"):\n        if file_path.is_file():\n            results.append(file_path)\n    return results",
+        "detail": "tools.expose_workspace",
+        "documentation": {}
+    },
+    {
+        "label": "WORKSPACE",
+        "kind": 5,
+        "importPath": "tools.expose_workspace",
+        "description": "tools.expose_workspace",
+        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\ndef execute_expose_workspace(ctx):\n    results = []\n    repo_path = WORKSPACE\n    for file_path in repo_path.rglob(\"*\"):\n        if file_path.is_file():\n            results.append(file_path)\n    return results",
+        "detail": "tools.expose_workspace",
         "documentation": {}
     },
     {
@@ -1065,7 +1163,7 @@
         "kind": 2,
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
-        "peekOfCode": "def extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  \n    # Register the alias as MCP resource\n    @mcp.resource(f\"resource://{alias}\")\n    def repo_root() -> str:\n        return str(repo_path)\n    await ctx.info(f\"Starting file classification for repository {alias}...\")",
+        "peekOfCode": "def extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  \n@mcp.tool(name=\"classify_repository\", description=\"Classifies a repository by programming language or file type.\")\nasync def classify_repository(repository_name: str, ctx: Context) -> str:\n    return await execute_classify_repository(session=session, ctx=ctx, repository_name=repository_name)\n@mcp.tool(name=\"processed_repository\", description=\"Returns a list of file from a processed repository by name.\")\nasync def processed_repository(repository: str, ctx: Context) -> list[dict]:",
         "detail": "legacy_analysis_server",
         "documentation": {}
     },
@@ -1079,11 +1177,20 @@
         "documentation": {}
     },
     {
+        "label": "return_workspace",
+        "kind": 2,
+        "importPath": "legacy_analysis_server",
+        "description": "legacy_analysis_server",
+        "peekOfCode": "def return_workspace(ctx: Context) -> list[str]:\n    results = execute_expose_workspace(ctx)\n    if results is None:\n        return []\n    return results\n@mcp.tool(\"file_classification\", description=\"Classifies file content by programming language or file type.\")\nasync def file_classification(repository_name: str, filename: str, ctx: Context) -> str:\n    \"\"\"\n    Classifies a file based on its content and filename.\n    Takes filename and content as input to avoid file system operations.",
+        "detail": "legacy_analysis_server",
+        "documentation": {}
+    },
+    {
         "label": "mcp",
         "kind": 5,
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
-        "peekOfCode": "mcp = FastMCP(name=\"Legacy Code Analysis Service\")\ndriver = get_driver()\nsession = get_session(driver)\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ninit_database()\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")",
+        "peekOfCode": "mcp = FastMCP(name=\"Legacy Code Analysis Service\")\ndriver = get_driver()\nsession = get_session(driver)\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:",
         "detail": "legacy_analysis_server",
         "documentation": {}
     },
@@ -1092,7 +1199,7 @@
         "kind": 5,
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
-        "peekOfCode": "driver = get_driver()\nsession = get_session(driver)\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ninit_database()\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:",
+        "peekOfCode": "driver = get_driver()\nsession = get_session(driver)\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  ",
         "detail": "legacy_analysis_server",
         "documentation": {}
     },
@@ -1101,7 +1208,7 @@
         "kind": 5,
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
-        "peekOfCode": "session = get_session(driver)\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ninit_database()\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  ",
+        "peekOfCode": "session = get_session(driver)\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  \n@mcp.tool(name=\"classify_repository\", description=\"Classifies a repository by programming language or file type.\")",
         "detail": "legacy_analysis_server",
         "documentation": {}
     },
@@ -1110,7 +1217,7 @@
         "kind": 5,
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
-        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ninit_database()\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  \n    # Register the alias as MCP resource",
+        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  \n@mcp.tool(name=\"classify_repository\", description=\"Classifies a repository by programming language or file type.\")\nasync def classify_repository(repository_name: str, ctx: Context) -> str:",
         "detail": "legacy_analysis_server",
         "documentation": {}
     },
@@ -1119,7 +1226,7 @@
         "kind": 5,
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
-        "peekOfCode": "_repo_registry = {}  # Keeps track of aliases and paths\ninit_database()\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  \n    # Register the alias as MCP resource\n    @mcp.resource(f\"resource://{alias}\")\n    def repo_root() -> str:",
+        "peekOfCode": "_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  \n@mcp.tool(name=\"classify_repository\", description=\"Classifies a repository by programming language or file type.\")\nasync def classify_repository(repository_name: str, ctx: Context) -> str:\n    return await execute_classify_repository(session=session, ctx=ctx, repository_name=repository_name)\n@mcp.tool(name=\"processed_repository\", description=\"Returns a list of file from a processed repository by name.\")",
         "detail": "legacy_analysis_server",
         "documentation": {}
     },
@@ -1236,7 +1343,7 @@
         "kind": 2,
         "importPath": "graph_db",
         "description": "graph_db",
-        "peekOfCode": "def get_driver():\n    uri = os.getenv(\"NEO4J_URI\")\n    username = os.getenv(\"NEO4J_USERNAME\")\n    password = os.getenv(\"NEO4J_PASSWORD\")\n    if not uri or not username or not password:\n        raise ValueError(\"Missing required Neo4j environment variables\")\n    return GraphDatabase.driver(uri, auth=(username, password))\ndef get_session(driver):\n    database = os.getenv(\"NEO4J_DATABASE\")\n    if not database:",
+        "peekOfCode": "def get_driver():\n    uri = os.getenv(\"NEO4J_URI\")\n    username = os.getenv(\"NEO4J_USERNAME\")\n    password = os.getenv(\"NEO4J_PASSWORD\")\n    if not uri or not username or not password:\n        raise ValueError(\"Missing required Neo4j connection info\")\n    return GraphDatabase.driver(uri, auth=(username, password))\ndef get_session(driver):\n    database = os.getenv(\"NEO4J_DATABASE\")\n    if not database:",
         "detail": "graph_db",
         "documentation": {}
     },
@@ -1245,7 +1352,16 @@
         "kind": 2,
         "importPath": "graph_db",
         "description": "graph_db",
-        "peekOfCode": "def get_session(driver):\n    database = os.getenv(\"NEO4J_DATABASE\")\n    if not database:\n        raise ValueError(\"Missing required NEO4J_DATABASE environment variable\")\n    return driver.session(database=database)\n# ----------------- Συναρτήσεις MCP -----------------\ndef insert_repository(session, repository_name, full_path, filename, language, classification):\n    \"\"\"Δημιουργεί ή ενημερώνει ένα Repository node\"\"\"\n    session.run(\"\"\"\n        MERGE (r:Repository {repository_name: $repository_name, filename: $filename})",
+        "peekOfCode": "def get_session(driver):\n    database = os.getenv(\"NEO4J_DATABASE\")\n    if not database:\n        raise ValueError(\"Missing required NEO4J_DATABASE\")\n    return driver.session(database=database)\n# ----------------- Βοηθητικά -----------------\ndef node_to_dict(node):\n    return {\n        \"id\": node.id,\n        \"labels\": list(node.labels),",
+        "detail": "graph_db",
+        "documentation": {}
+    },
+    {
+        "label": "node_to_dict",
+        "kind": 2,
+        "importPath": "graph_db",
+        "description": "graph_db",
+        "peekOfCode": "def node_to_dict(node):\n    return {\n        \"id\": node.id,\n        \"labels\": list(node.labels),\n        **node._properties\n    }\n# ----------------- Repositories -----------------\ndef insert_repository(session, repository_name, full_path, filename, language, classification):\n    session.run(\"\"\"\n        MERGE (r:Repository {repository_name: $repository_name, filename: $filename})",
         "detail": "graph_db",
         "documentation": {}
     },
@@ -1254,7 +1370,7 @@
         "kind": 2,
         "importPath": "graph_db",
         "description": "graph_db",
-        "peekOfCode": "def insert_repository(session, repository_name, full_path, filename, language, classification):\n    \"\"\"Δημιουργεί ή ενημερώνει ένα Repository node\"\"\"\n    session.run(\"\"\"\n        MERGE (r:Repository {repository_name: $repository_name, filename: $filename})\n        SET r.full_path = $full_path,\n            r.language = $language,\n            r.classification = $classification\n    \"\"\", repository_name=repository_name, full_path=full_path, filename=filename, language=language, classification=classification)\ndef insert_field(session, repository_name, filename, name, type_, size, sudoType):\n    \"\"\"Συνδέει Field node με Repository\"\"\"",
+        "peekOfCode": "def insert_repository(session, repository_name, full_path, filename, language, classification):\n    session.run(\"\"\"\n        MERGE (r:Repository {repository_name: $repository_name, filename: $filename})\n        SET r.full_path = $full_path,\n            r.language = $language,\n            r.classification = $classification\n    \"\"\", repository_name=repository_name, full_path=full_path, filename=filename, language=language, classification=classification)\ndef insert_field(session, repository_name, filename, name, type_, size, sudoType):\n    session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, filename: $filename})",
         "detail": "graph_db",
         "documentation": {}
     },
@@ -1263,7 +1379,7 @@
         "kind": 2,
         "importPath": "graph_db",
         "description": "graph_db",
-        "peekOfCode": "def insert_field(session, repository_name, filename, name, type_, size, sudoType):\n    \"\"\"Συνδέει Field node με Repository\"\"\"\n    session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, filename: $filename})\n        CREATE (f:Field {name: $name, type: $type, size: $size, sudoType: $sudoType})\n        CREATE (r)-[:HAS_FIELD]->(f)\n    \"\"\", repository_name=repository_name, filename=filename, name=name, type=type_, size=size, sudoType=sudoType)\ndef get_all_repositories(session):\n    \"\"\"Λίστα όλων των Repositories\"\"\"\n    result = session.run(\"MATCH (r:Repository) RETURN r\")",
+        "peekOfCode": "def insert_field(session, repository_name, filename, name, type_, size, sudoType):\n    session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, filename: $filename})\n        CREATE (f:Field {name: $name, type: $type, size: $size, sudoType: $sudoType})\n        CREATE (r)-[:HAS_FIELD]->(f)\n    \"\"\", repository_name=repository_name, filename=filename, name=name, type=type_, size=size, sudoType=sudoType)\ndef get_all_repositories(session):\n    result = session.run(\"MATCH (r:Repository) RETURN r\")\n    return [node_to_dict(record[\"r\"]) for record in result]\ndef get_repository(session, repository_name):",
         "detail": "graph_db",
         "documentation": {}
     },
@@ -1272,7 +1388,7 @@
         "kind": 2,
         "importPath": "graph_db",
         "description": "graph_db",
-        "peekOfCode": "def get_all_repositories(session):\n    \"\"\"Λίστα όλων των Repositories\"\"\"\n    result = session.run(\"MATCH (r:Repository) RETURN r\")\n    return [record[\"r\"] for record in result]\ndef get_repository(session, repository_name):\n    \"\"\"Επιστροφή Repository με βάση το όνομα\"\"\"\n    result = session.run(\"MATCH (r:Repository {repository_name: $repository_name}) RETURN r\", repository_name=repository_name)\n    return [record[\"r\"] for record in result]\ndef get_repository_by_filename(session, filename):\n    \"\"\"Αναζήτηση με βάση filename\"\"\"",
+        "peekOfCode": "def get_all_repositories(session):\n    result = session.run(\"MATCH (r:Repository) RETURN r\")\n    return [node_to_dict(record[\"r\"]) for record in result]\ndef get_repository(session, repository_name):\n    result = session.run(\"MATCH (r:Repository {repository_name: $repository_name}) RETURN r\", repository_name=repository_name)\n    return [node_to_dict(record[\"r\"]) for record in result]\ndef get_repository_by_filename(session, filename):\n    result = session.run(\"MATCH (r:Repository {filename: $filename}) RETURN r\", filename=filename)\n    return [node_to_dict(record[\"r\"]) for record in result]\ndef get_repository_by_classification(session, classification, repository_name):",
         "detail": "graph_db",
         "documentation": {}
     },
@@ -1281,7 +1397,7 @@
         "kind": 2,
         "importPath": "graph_db",
         "description": "graph_db",
-        "peekOfCode": "def get_repository(session, repository_name):\n    \"\"\"Επιστροφή Repository με βάση το όνομα\"\"\"\n    result = session.run(\"MATCH (r:Repository {repository_name: $repository_name}) RETURN r\", repository_name=repository_name)\n    return [record[\"r\"] for record in result]\ndef get_repository_by_filename(session, filename):\n    \"\"\"Αναζήτηση με βάση filename\"\"\"\n    result = session.run(\"MATCH (r:Repository {filename: $filename}) RETURN r\", filename=filename)\n    return [record[\"r\"] for record in result]\ndef get_repository_by_classification(session, classification, repository_name):\n    \"\"\"Αναζήτηση με βάση classification και repository\"\"\"",
+        "peekOfCode": "def get_repository(session, repository_name):\n    result = session.run(\"MATCH (r:Repository {repository_name: $repository_name}) RETURN r\", repository_name=repository_name)\n    return [node_to_dict(record[\"r\"]) for record in result]\ndef get_repository_by_filename(session, filename):\n    result = session.run(\"MATCH (r:Repository {filename: $filename}) RETURN r\", filename=filename)\n    return [node_to_dict(record[\"r\"]) for record in result]\ndef get_repository_by_classification(session, classification, repository_name):\n    result = session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, classification: $classification})\n        RETURN r",
         "detail": "graph_db",
         "documentation": {}
     },
@@ -1290,7 +1406,7 @@
         "kind": 2,
         "importPath": "graph_db",
         "description": "graph_db",
-        "peekOfCode": "def get_repository_by_filename(session, filename):\n    \"\"\"Αναζήτηση με βάση filename\"\"\"\n    result = session.run(\"MATCH (r:Repository {filename: $filename}) RETURN r\", filename=filename)\n    return [record[\"r\"] for record in result]\ndef get_repository_by_classification(session, classification, repository_name):\n    \"\"\"Αναζήτηση με βάση classification και repository\"\"\"\n    result = session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, classification: $classification})\n        RETURN r\n    \"\"\", repository_name=repository_name, classification=classification)",
+        "peekOfCode": "def get_repository_by_filename(session, filename):\n    result = session.run(\"MATCH (r:Repository {filename: $filename}) RETURN r\", filename=filename)\n    return [node_to_dict(record[\"r\"]) for record in result]\ndef get_repository_by_classification(session, classification, repository_name):\n    result = session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, classification: $classification})\n        RETURN r\n    \"\"\", repository_name=repository_name, classification=classification)\n    return [node_to_dict(record[\"r\"]) for record in result]\ndef get_file_full_path(session, repository_name, filename):",
         "detail": "graph_db",
         "documentation": {}
     },
@@ -1299,7 +1415,7 @@
         "kind": 2,
         "importPath": "graph_db",
         "description": "graph_db",
-        "peekOfCode": "def get_repository_by_classification(session, classification, repository_name):\n    \"\"\"Αναζήτηση με βάση classification και repository\"\"\"\n    result = session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, classification: $classification})\n        RETURN r\n    \"\"\", repository_name=repository_name, classification=classification)\n    return [record[\"r\"] for record in result]\ndef get_file_full_path(session, repository_name, filename):\n    \"\"\"Λήψη του full_path ενός αρχείου\"\"\"\n    result = session.run(\"\"\"",
+        "peekOfCode": "def get_repository_by_classification(session, classification, repository_name):\n    result = session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, classification: $classification})\n        RETURN r\n    \"\"\", repository_name=repository_name, classification=classification)\n    return [node_to_dict(record[\"r\"]) for record in result]\ndef get_file_full_path(session, repository_name, filename):\n    result = session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, filename: $filename})\n        RETURN r.full_path AS path",
         "detail": "graph_db",
         "documentation": {}
     },
@@ -1308,17 +1424,125 @@
         "kind": 2,
         "importPath": "graph_db",
         "description": "graph_db",
-        "peekOfCode": "def get_file_full_path(session, repository_name, filename):\n    \"\"\"Λήψη του full_path ενός αρχείου\"\"\"\n    result = session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, filename: $filename})\n        RETURN r.full_path AS path\n    \"\"\", repository_name=repository_name, filename=filename)\n    record = result.single()\n    return record[\"path\"] if record else None\ndef close_driver(session):\n    \"\"\"Κλείσιμο της σύνδεσης\"\"\"",
+        "peekOfCode": "def get_file_full_path(session, repository_name, filename):\n    result = session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, filename: $filename})\n        RETURN r.full_path AS path\n    \"\"\", repository_name=repository_name, filename=filename)\n    record = result.single()\n    return record[\"path\"] if record else None\n# ----------------- Flow Graph -----------------\ndef insert_flow_node(session, filename, node_name, node_type, is_entry_point):\n    label = \"Program\" if node_type == \"program\" else \"Paragraph\"",
         "detail": "graph_db",
+        "documentation": {}
+    },
+    {
+        "label": "insert_flow_node",
+        "kind": 2,
+        "importPath": "graph_db",
+        "description": "graph_db",
+        "peekOfCode": "def insert_flow_node(session, filename, node_name, node_type, is_entry_point):\n    label = \"Program\" if node_type == \"program\" else \"Paragraph\"\n    session.run(f\"\"\"\n        MERGE (n:{label} {{name: $node_name, filename: $filename}})\n        SET n.is_entry_point = $is_entry_point\n    \"\"\", node_name=node_name, filename=filename, is_entry_point=is_entry_point)\ndef insert_flow_edge(session, src_name, tgt_name, filename, transfer_type):\n    session.run(\"\"\"\n        MATCH (src {name: $src_name, filename: $filename})\n        MATCH (tgt {name: $tgt_name, filename: $filename})",
+        "detail": "graph_db",
+        "documentation": {}
+    },
+    {
+        "label": "insert_flow_edge",
+        "kind": 2,
+        "importPath": "graph_db",
+        "description": "graph_db",
+        "peekOfCode": "def insert_flow_edge(session, src_name, tgt_name, filename, transfer_type):\n    session.run(\"\"\"\n        MATCH (src {name: $src_name, filename: $filename})\n        MATCH (tgt {name: $tgt_name, filename: $filename})\n        MERGE (src)-[:CONTROL_FLOW {transfer_type: $transfer_type}]->(tgt)\n    \"\"\", src_name=src_name, tgt_name=tgt_name, filename=filename, transfer_type=transfer_type)\ndef insert_flow_graph(session, analyzed_data):\n    filename = analyzed_data[\"filename\"]\n    for node in analyzed_data[\"flow_graph\"]:\n        insert_flow_node(session, filename, node[\"node\"], node[\"type\"], node[\"is_entry_point\"])",
+        "detail": "graph_db",
+        "documentation": {}
+    },
+    {
+        "label": "insert_flow_graph",
+        "kind": 2,
+        "importPath": "graph_db",
+        "description": "graph_db",
+        "peekOfCode": "def insert_flow_graph(session, analyzed_data):\n    filename = analyzed_data[\"filename\"]\n    for node in analyzed_data[\"flow_graph\"]:\n        insert_flow_node(session, filename, node[\"node\"], node[\"type\"], node[\"is_entry_point\"])\n        for edge in node.get(\"edges_to\", []):\n            insert_flow_edge(session, node[\"node\"], edge[\"target\"], filename, edge[\"transfer_type\"])",
+        "detail": "graph_db",
+        "documentation": {}
+    },
+    {
+        "label": "get_driver",
+        "kind": 2,
+        "importPath": "graph_db copy",
+        "description": "graph_db copy",
+        "peekOfCode": "def get_driver():\n    # uri = os.getenv(\"NEO4J_URI\")\n    # username = os.getenv(\"NEO4J_USERNAME\")\n    # password = os.getenv(\"NEO4J_PASSWORD\")\n    uri=\"neo4j+s://e9a178b5.databases.neo4j.io\"\n    username=\"neo4j\"\n    password=\"wVycp7TYM4N3-VBFwNkY3iUEAkF4ZmZCLw7mERqqQRQ\"\n    if not uri or not username or not password:\n        raise ValueError(\"Missing required Neo4j environment variables\")\n    return GraphDatabase.driver(uri, auth=(username, password))",
+        "detail": "graph_db copy",
+        "documentation": {}
+    },
+    {
+        "label": "get_session",
+        "kind": 2,
+        "importPath": "graph_db copy",
+        "description": "graph_db copy",
+        "peekOfCode": "def get_session(driver):\n    # database = os.getenv(\"NEO4J_DATABASE\")\n    database=\"neo4j\"\n    if not database:\n        raise ValueError(\"Missing required NEO4J_DATABASE environment variable\")\n    return driver.session(database=database)\n# ----------------- Συναρτήσεις MCP -----------------\ndef insert_repository(session, repository_name, full_path, filename, language, classification):\n    \"\"\"Δημιουργεί ή ενημερώνει ένα Repository node\"\"\"\n    session.run(\"\"\"",
+        "detail": "graph_db copy",
+        "documentation": {}
+    },
+    {
+        "label": "insert_repository",
+        "kind": 2,
+        "importPath": "graph_db copy",
+        "description": "graph_db copy",
+        "peekOfCode": "def insert_repository(session, repository_name, full_path, filename, language, classification):\n    \"\"\"Δημιουργεί ή ενημερώνει ένα Repository node\"\"\"\n    session.run(\"\"\"\n        MERGE (r:Repository {repository_name: $repository_name, filename: $filename})\n        SET r.full_path = $full_path,\n            r.language = $language,\n            r.classification = $classification\n    \"\"\", repository_name=repository_name, full_path=full_path, filename=filename, language=language, classification=classification)\ndef insert_field(session, repository_name, filename, name, type_, size, sudoType):\n    \"\"\"Συνδέει Field node με Repository\"\"\"",
+        "detail": "graph_db copy",
+        "documentation": {}
+    },
+    {
+        "label": "insert_field",
+        "kind": 2,
+        "importPath": "graph_db copy",
+        "description": "graph_db copy",
+        "peekOfCode": "def insert_field(session, repository_name, filename, name, type_, size, sudoType):\n    \"\"\"Συνδέει Field node με Repository\"\"\"\n    session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, filename: $filename})\n        CREATE (f:Field {name: $name, type: $type, size: $size, sudoType: $sudoType})\n        CREATE (r)-[:HAS_FIELD]->(f)\n    \"\"\", repository_name=repository_name, filename=filename, name=name, type=type_, size=size, sudoType=sudoType)\ndef get_all_repositories(session):\n    \"\"\"Λίστα όλων των Repositories\"\"\"\n    result = session.run(\"MATCH (r:Repository) RETURN r\")",
+        "detail": "graph_db copy",
+        "documentation": {}
+    },
+    {
+        "label": "get_all_repositories",
+        "kind": 2,
+        "importPath": "graph_db copy",
+        "description": "graph_db copy",
+        "peekOfCode": "def get_all_repositories(session):\n    \"\"\"Λίστα όλων των Repositories\"\"\"\n    result = session.run(\"MATCH (r:Repository) RETURN r\")\n    return [record[\"r\"] for record in result]\ndef get_repository(session, repository_name):\n    result = session.run(\n        \"MATCH (r:Repository {repository_name: $repository_name}) RETURN r\",\n        repository_name=repository_name\n    )\n    repositories = []",
+        "detail": "graph_db copy",
+        "documentation": {}
+    },
+    {
+        "label": "get_repository",
+        "kind": 2,
+        "importPath": "graph_db copy",
+        "description": "graph_db copy",
+        "peekOfCode": "def get_repository(session, repository_name):\n    result = session.run(\n        \"MATCH (r:Repository {repository_name: $repository_name}) RETURN r\",\n        repository_name=repository_name\n    )\n    repositories = []\n    for record in result:\n        node = record[\"r\"]\n        flat_data = {\n            \"id\": node.id,",
+        "detail": "graph_db copy",
+        "documentation": {}
+    },
+    {
+        "label": "get_repository_by_filename",
+        "kind": 2,
+        "importPath": "graph_db copy",
+        "description": "graph_db copy",
+        "peekOfCode": "def get_repository_by_filename(session, filename):\n    \"\"\"Αναζήτηση με βάση filename\"\"\"\n    result = session.run(\"MATCH (r:Repository {filename: $filename}) RETURN r\", filename=filename)\n    return [record[\"r\"] for record in result]\ndef get_repository_by_classification(session, classification, repository_name):\n    \"\"\"Αναζήτηση με βάση classification και repository\"\"\"\n    result = session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, classification: $classification})\n        RETURN r\n    \"\"\", repository_name=repository_name, classification=classification)",
+        "detail": "graph_db copy",
+        "documentation": {}
+    },
+    {
+        "label": "get_repository_by_classification",
+        "kind": 2,
+        "importPath": "graph_db copy",
+        "description": "graph_db copy",
+        "peekOfCode": "def get_repository_by_classification(session, classification, repository_name):\n    \"\"\"Αναζήτηση με βάση classification και repository\"\"\"\n    result = session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, classification: $classification})\n        RETURN r\n    \"\"\", repository_name=repository_name, classification=classification)\n    return [record[\"r\"] for record in result]\ndef get_file_full_path(session, repository_name, filename):\n    \"\"\"Λήψη του full_path ενός αρχείου\"\"\"\n    result = session.run(\"\"\"",
+        "detail": "graph_db copy",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_full_path",
+        "kind": 2,
+        "importPath": "graph_db copy",
+        "description": "graph_db copy",
+        "peekOfCode": "def get_file_full_path(session, repository_name, filename):\n    \"\"\"Λήψη του full_path ενός αρχείου\"\"\"\n    result = session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name, filename: $filename})\n        RETURN r.full_path AS path\n    \"\"\", repository_name=repository_name, filename=filename)\n    record = result.single()\n    return record[\"path\"] if record else None\ndef close_driver(session):\n    \"\"\"Κλείσιμο της σύνδεσης\"\"\"",
+        "detail": "graph_db copy",
         "documentation": {}
     },
     {
         "label": "close_driver",
         "kind": 2,
-        "importPath": "graph_db",
-        "description": "graph_db",
+        "importPath": "graph_db copy",
+        "description": "graph_db copy",
         "peekOfCode": "def close_driver(session):\n    \"\"\"Κλείσιμο της σύνδεσης\"\"\"\n    session.driver.close()",
-        "detail": "graph_db",
+        "detail": "graph_db copy",
         "documentation": {}
     }
 ]

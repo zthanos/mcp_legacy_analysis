@@ -14,6 +14,8 @@
         "uvicorn>=0.34.3",
         "--with",
         "aiohttp>=3.12.13",
+        "--with",
+        "neo4j>=5.28.1",
         "python",
         "G:\\source\\python\\mcp_legacy_analysis\\main.py"
       ]

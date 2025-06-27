@@ -9,3 +9,5 @@ wheels/
 workspace/
 # Virtual environments
 .venv
+.env
+.uv.config.toml
