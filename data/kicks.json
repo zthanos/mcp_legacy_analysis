@@ -1,0 +1,390 @@
+{
+    "program_id": "KICKS",
+    "filename": "KICKS",
+    "language": "CLIST",
+    "main_entry_points": ["MAIN"],
+    "flow_graph": [
+      {
+        "node": "MAIN",
+        "type": "program",
+        "is_entry_point": true,
+        "line_number": 1,
+        "edges_to": [
+          {
+            "target": "STARTUP_VALIDATION",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 5
+          }
+        ]
+      },
+      {
+        "node": "STARTUP_VALIDATION",
+        "type": "section",
+        "is_entry_point": false,
+        "line_number": 5,
+        "edges_to": [
+          {
+            "target": "ALLOC_CHECK_KICKSSYS",
+            "transfer_type": "COMMAND",
+            "command": "ALLOC",
+            "integration_type": "file",
+            "line_number": 8
+          }
+        ]
+      },
+      {
+        "node": "ALLOC_CHECK_KICKSSYS",
+        "type": "conditional",
+        "is_entry_point": false,
+        "line_number": 8,
+        "edges_to": [
+          {
+            "target": "FREE_X1_SUCCESS",
+            "transfer_type": "COMMAND",
+            "command": "FREE",
+            "integration_type": "file",
+            "condition": "&LASTCC = 0",
+            "line_number": 9
+          },
+          {
+            "target": "STARTUP_DENIED",
+            "transfer_type": "BRANCH",
+            "integration_type": "internal",
+            "condition": "&LASTCC NE 0",
+            "line_number": 10
+          }
+        ]
+      },
+      {
+        "node": "STARTUP_DENIED",
+        "type": "error_handler",
+        "is_entry_point": false,
+        "line_number": 10,
+        "edges_to": [
+          {
+            "target": "EXIT_PROGRAM",
+            "transfer_type": "EXIT",
+            "integration_type": "internal",
+            "line_number": 13
+          }
+        ]
+      },
+      {
+        "node": "FREE_X1_SUCCESS",
+        "type": "command",
+        "is_entry_point": false,
+        "line_number": 9,
+        "edges_to": [
+          {
+            "target": "TSOID_VALIDATION",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 18
+          }
+        ]
+      },
+      {
+        "node": "TSOID_VALIDATION",
+        "type": "conditional",
+        "is_entry_point": false,
+        "line_number": 18,
+        "edges_to": [
+          {
+            "target": "SET_TSOID_TO_SYSUID",
+            "transfer_type": "COMMAND",
+            "command": "SET",
+            "integration_type": "variable",
+            "condition": "&LENGTH(&TSOID) = 0",
+            "line_number": 18
+          },
+          {
+            "target": "FILE_CREATION_SECTION",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 22
+          }
+        ]
+      },
+      {
+        "node": "SET_TSOID_TO_SYSUID",
+        "type": "command",
+        "is_entry_point": false,
+        "line_number": 18,
+        "edges_to": [
+          {
+            "target": "FILE_CREATION_SECTION",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 22
+          }
+        ]
+      },
+      {
+        "node": "FILE_CREATION_SECTION",
+        "type": "section",
+        "is_entry_point": false,
+        "line_number": 22,
+        "edges_to": [
+          {
+            "target": "CREATE_SKIKLOAD",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 25
+          }
+        ]
+      },
+      {
+        "node": "CREATE_SKIKLOAD",
+        "type": "conditional",
+        "is_entry_point": false,
+        "line_number": 25,
+        "edges_to": [
+          {
+            "target": "FREE_SKIKLOAD_EXISTS",
+            "transfer_type": "COMMAND",
+            "command": "FREE",
+            "integration_type": "file",
+            "condition": "&LASTCC = 0",
+            "line_number": 26
+          },
+          {
+            "target": "CREATE_SKIKLOAD_NEW",
+            "transfer_type": "BRANCH",
+            "integration_type": "internal",
+            "condition": "&LASTCC NE 0",
+            "line_number": 27
+          }
+        ]
+      },
+      {
+        "node": "CREATE_SKIKLOAD_NEW",
+        "type": "block",
+        "is_entry_point": false,
+        "line_number": 27,
+        "edges_to": [
+          {
+            "target": "CREATE_KIKRPL",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 38
+          }
+        ]
+      },
+      {
+        "node": "FREE_SKIKLOAD_EXISTS",
+        "type": "command",
+        "is_entry_point": false,
+        "line_number": 26,
+        "edges_to": [
+          {
+            "target": "CREATE_KIKRPL",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 38
+          }
+        ]
+      },
+      {
+        "node": "CREATE_KIKRPL",
+        "type": "conditional",
+        "is_entry_point": false,
+        "line_number": 38,
+        "edges_to": [
+          {
+            "target": "FREE_KIKRPL_EXISTS",
+            "transfer_type": "COMMAND",
+            "command": "FREE",
+            "integration_type": "file",
+            "condition": "&LASTCC = 0",
+            "line_number": 39
+          },
+          {
+            "target": "CREATE_KIKRPL_NEW",
+            "transfer_type": "BRANCH",
+            "integration_type": "internal",
+            "condition": "&LASTCC NE 0",
+            "line_number": 40
+          }
+        ]
+      },
+      {
+        "node": "CREATE_KIKRPL_NEW",
+        "type": "block",
+        "is_entry_point": false,
+        "line_number": 40,
+        "edges_to": [
+          {
+            "target": "CREATE_COBCOPY",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 51
+          }
+        ]
+      },
+      {
+        "node": "FREE_KIKRPL_EXISTS",
+        "type": "command",
+        "is_entry_point": false,
+        "line_number": 39,
+        "edges_to": [
+          {
+            "target": "CREATE_COBCOPY",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 51
+          }
+        ]
+      },
+      {
+        "node": "CREATE_COBCOPY",
+        "type": "conditional",
+        "is_entry_point": false,
+        "line_number": 51,
+        "edges_to": [
+          {
+            "target": "FREE_COBCOPY_EXISTS",
+            "transfer_type": "COMMAND",
+            "command": "FREE",
+            "integration_type": "file",
+            "condition": "&LASTCC = 0",
+            "line_number": 52
+          },
+          {
+            "target": "CREATE_COBCOPY_NEW",
+            "transfer_type": "BRANCH",
+            "integration_type": "internal",
+            "condition": "&LASTCC NE 0",
+            "line_number": 53
+          }
+        ]
+      },
+      {
+        "node": "CREATE_COBCOPY_NEW",
+        "type": "block",
+        "is_entry_point": false,
+        "line_number": 53,
+        "edges_to": [
+          {
+            "target": "CREATE_GCCCOPY",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 64
+          }
+        ]
+      },
+      {
+        "node": "FREE_COBCOPY_EXISTS",
+        "type": "command",
+        "is_entry_point": false,
+        "line_number": 52,
+        "edges_to": [
+          {
+            "target": "CREATE_GCCCOPY",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 64
+          }
+        ]
+      },
+      {
+        "node": "CREATE_GCCCOPY",
+        "type": "conditional",
+        "is_entry_point": false,
+        "line_number": 64,
+        "edges_to": [
+          {
+            "target": "FREE_GCCCOPY_EXISTS",
+            "transfer_type": "COMMAND",
+            "command": "FREE",
+            "integration_type": "file",
+            "condition": "&LASTCC = 0",
+            "line_number": 65
+          },
+          {
+            "target": "CREATE_GCCCOPY_NEW",
+            "transfer_type": "BRANCH",
+            "integration_type": "internal",
+            "condition": "&LASTCC NE 0",
+            "line_number": 66
+          }
+        ]
+      },
+      {
+        "node": "CREATE_GCCCOPY_NEW",
+        "type": "block",
+        "is_entry_point": false,
+        "line_number": 66,
+        "edges_to": [
+          {
+            "target": "FREE_SYSTEM_FILES",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 77
+          }
+        ]
+      },
+      {
+        "node": "FREE_GCCCOPY_EXISTS",
+        "type": "command",
+        "is_entry_point": false,
+        "line_number": 65,
+        "edges_to": [
+          {
+            "target": "FREE_SYSTEM_FILES",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 77
+          }
+        ]
+      },
+      {
+        "node": "FREE_SYSTEM_FILES",
+        "type": "section",
+        "is_entry_point": false,
+        "line_number": 77,
+        "edges_to": [
+          {
+            "target": "FREE_CRLP_CHECK",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 119
+          }
+        ]
+      },
+      {
+        "node": "FREE_CRLP_CHECK",
+        "type": "conditional",
+        "is_entry_point": false,
+        "line_number": 119,
+        "edges_to": [
+          {
+            "target": "FREE_CRLP_FILES",
+            "transfer_type": "BRANCH",
+            "integration_type": "internal",
+            "condition": "&CRLP NE USE",
+            "line_number": 119
+          },
+          {
+            "target": "FREE_USER_FILES",
+            "transfer_type": "CALL",
+            "integration_type": "internal"
+          }
+        ]
+      },
+      {
+        "node": "FREE_USER_FILES",
+        "type": "section",
+        "is_entry_point": false,
+        "line_number": 119,
+        "edges_to": [
+          {
+            "target": "FREE_USER_FILES",
+            "transfer_type": "CALL",
+            "integration_type": "internal",
+            "line_number": 119
+          }
+        ]
+      }
+    ]
+}

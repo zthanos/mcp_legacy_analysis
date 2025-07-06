@@ -1,0 +1,174 @@
+{
+    "program_id": "DOGECOIN",
+    "filename": "DOGEMAIN",
+    "language": "COBOL",
+    "main_entry_points": ["00000-MAIN"],
+    "flow_graph": [
+      {
+        "node": "00000-MAIN",
+        "type": "paragraph",
+        "is_entry_point": true,
+        "edges_to": [
+          {"target": "DOGE-WTO", "transfer_type": "PERFORM", "integration_type": "internal"},
+          {"target": "DOGECN1", "transfer_type": "EXEC CICS SEND MAP", "integration_type": "service"},
+          {"target": "DOGEQUIT", "transfer_type": "EXEC CICS XCTL", "integration_type": "external"},
+          {"target": "DOGE-MAIN-SCREEN", "transfer_type": "PERFORM", "integration_type": "internal"},
+          {"target": "RECEIVE-OPTION", "transfer_type": "PERFORM", "integration_type": "internal"},
+          {"target": "PARSE-OPTION", "transfer_type": "PERFORM", "integration_type": "internal"},
+          {"target": "DOGE", "transfer_type": "EXEC CICS RETURN TRANSID", "integration_type": "service"},
+          {"target": "DOGE-EXIT", "transfer_type": "FALLTHROUGH", "integration_type": "internal"}
+        ]
+      },
+      {
+        "node": "DOGE-EXIT",
+        "type": "paragraph",
+        "is_entry_point": false,
+        "edges_to": [
+          {"target": "GOBACK", "transfer_type": "GOBACK", "integration_type": "internal"}
+        ]
+      },
+      {
+        "node": "RECEIVE-OPTION",
+        "type": "paragraph",
+        "is_entry_point": false,
+        "edges_to": [
+          {"target": "DOGE-WTO", "transfer_type": "PERFORM", "integration_type": "internal"},
+          {"target": "DOGEMN1", "transfer_type": "EXEC CICS RECEIVE MAP", "integration_type": "service"}
+        ]
+      },
+      {
+        "node": "PARSE-OPTION",
+        "type": "paragraph",
+        "is_entry_point": false,
+        "edges_to": [
+          {"target": "DOGE-WTO", "transfer_type": "PERFORM", "integration_type": "internal"},
+          {"target": "DOGETRAN", "transfer_type": "EXEC CICS XCTL", "integration_type": "external"},
+          {"target": "DOGECOIN", "transfer_type": "EXEC CICS XCTL", "integration_type": "external"},
+          {"target": "DOGEDEET", "transfer_type": "EXEC CICS XCTL", "integration_type": "external"},
+          {"target": "DOGESEND", "transfer_type": "EXEC CICS XCTL", "integration_type": "external"}
+        ]
+      },
+      {
+        "node": "DOGE-MAIN-SCREEN",
+        "type": "paragraph",
+        "is_entry_point": false,
+        "edges_to": [
+          {"target": "DOGE-WTO", "transfer_type": "PERFORM", "integration_type": "internal"},
+          {"target": "DOGEVSAM", "transfer_type": "EXEC CICS STARTBR FILE", "integration_type": "file"},
+          {"target": "DOGEVSAM", "transfer_type": "EXEC CICS READPREV FILE", "integration_type": "file"},
+          {"target": "CONVERT-DATE", "transfer_type": "PERFORM", "integration_type": "internal"},
+          {"target": "CONVERT-AMOUNT-TO-DISPLAY", "transfer_type": "PERFORM", "integration_type": "internal"},
+          {"target": "DOGEVSAM", "transfer_type": "EXEC CICS RESETBR FILE", "integration_type": "file"},
+          {"target": "DOGEVSAM", "transfer_type": "EXEC CICS READNEXT FILE", "integration_type": "file"},
+          {"target": "DOGEVSAM", "transfer_type": "EXEC CICS ENDBR FILE", "integration_type": "file"},
+          {"target": "DOGEMN1", "transfer_type": "EXEC CICS SEND MAP", "integration_type": "service"}
+        ]
+      },
+      {
+        "node": "CONVERT-AMOUNT-TO-DISPLAY",
+        "type": "paragraph",
+        "is_entry_point": false,
+        "edges_to": []
+      },
+      {
+        "node": "CONVERT-DATE",
+        "type": "paragraph",
+        "is_entry_point": false,
+        "edges_to": [
+          {"target": "CICS_FORMATTIME", "transfer_type": "EXEC CICS FORMATTIME", "integration_type": "service"}
+        ]
+      },
+      {
+        "node": "DOGE-WTO",
+        "type": "paragraph",
+        "is_entry_point": false,
+        "edges_to": [
+          {"target": "CICS_WRITE_OPERATOR", "transfer_type": "EXEC CICS WRITE OPERATOR", "integration_type": "service"}
+        ]
+      }
+    ],
+    "path_to_critical": [
+      {
+        "path": ["00000-MAIN", "PARSE-OPTION", "DOGETRAN"],
+        "description": "Transaction History Access Path",
+        "criticality": "high",
+        "external_dependencies": ["DOGETRAN program"]
+      },
+      {
+        "path": ["00000-MAIN", "PARSE-OPTION", "DOGESEND"],
+        "description": "Transaction Send Path",
+        "criticality": "high",
+        "external_dependencies": ["DOGESEND program"]
+      },
+      {
+        "path": ["00000-MAIN", "DOGE-MAIN-SCREEN", "DOGEVSAM"],
+        "description": "VSAM File Access Path",
+        "criticality": "high",
+        "external_dependencies": ["DOGEVSAM file"]
+      },
+      {
+        "path": ["00000-MAIN", "PARSE-OPTION", "DOGEDEET"],
+        "description": "Transaction Details Path",
+        "criticality": "medium",
+        "external_dependencies": ["DOGEDEET program"]
+      }
+    ],
+    "external_integrations": [
+      {
+        "name": "DOGEVSAM",
+        "type": "file",
+        "operations": ["STARTBR", "READPREV", "READNEXT", "RESETBR", "ENDBR"],
+        "description": "VSAM file containing transaction data"
+      },
+      {
+        "name": "DOGECN1",
+        "type": "service",
+        "operations": ["SEND MAP"],
+        "description": "CICS map for displaying DOGE coin art"
+      },
+      {
+        "name": "DOGEMN1",
+        "type": "service",
+        "operations": ["SEND MAP", "RECEIVE MAP"],
+        "description": "CICS map for main menu interaction"
+      },
+      {
+        "name": "DOGETRAN",
+        "type": "external",
+        "operations": ["XCTL"],
+        "description": "Transaction history program"
+      },
+      {
+        "name": "DOGESEND",
+        "type": "external",
+        "operations": ["XCTL"],
+        "description": "Transaction send program"
+      },
+      {
+        "name": "DOGEDEET",
+        "type": "external",
+        "operations": ["XCTL"],
+        "description": "Transaction details program"
+      },
+      {
+        "name": "DOGEQUIT",
+        "type": "external",
+        "operations": ["XCTL"],
+        "description": "Program termination handler"
+      }
+    ],
+    "copybooks": [
+      "DOGECN",
+      "DOGEMN", 
+      "DFHAID",
+      "DFHBMSCA"
+    ],
+    "analysis_metadata": {
+      "analysis_date": "2025-07-03",
+      "entry_point_detection": "automatic",
+      "flow_complexity": "medium",
+      "external_dependency_count": 7,
+      "file_operations_count": 5,
+      "cics_operations_count": 8
+    }
+  }

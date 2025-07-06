@@ -1,27 +1,15 @@
 from fastmcp import FastMCP, Context
 from pathlib import Path
-from analysis import *
-from fastmcp.resources import TextResource
-from pydantic import AnyUrl
-from data_structure import cobol_data_structure
-from flow_analysis import get_file_flow
-import subprocess
-import os
-import json
-import git
-import re
-import sqlite3
-import json
-from cobol_analysis import extract_edges
 from graph_db import get_session, get_driver, get_repository
 from tools.fetch_repository import execute_fetch_repository
 from tools.classify_repository import execute_classify_repository
-from tools.extract_edges import execute_extract_edges
 from tools.expose_workspace import execute_expose_workspace
 from tools.extract_document_flow import extract_document_flow
+from tools.document import retreive_document_info, classify_document, get_file_content
+from tools.extract_document_flow import extract_language_specific_flow as extract_language_specific_flow_tool, extract_flow_with_specific_prompt
+from templates.code_analyzer_prompt_generator import flow_extraction
 
-# Create MCP Server
-mcp = FastMCP(name="Legacy Code Analysis Service")
+mcp = FastMCP(name="legacy-analyzer-v1")
 driver = get_driver()
 session = get_session(driver)
 
@@ -51,12 +39,24 @@ async def processed_repository(repository: str, ctx: Context) -> list[dict]:
     return files_in_repository
 
 
-@mcp.tool("find_edges", description="identify all points of interaction with external or internal components.")
-async def find_edges(repository: str, filename: str, ctx: Context) -> str:
-    """
-    all points of interaction with external or internal components
-    """
-    return await execute_extract_edges(session=session, repository_name=repository, filename=filename, ctx=ctx)
+
+@mcp.tool(name="extract_flow", description="Extracts the execution flow of a program, starting from its primary entry point, and returns it in a structured JSON format.")
+async def extract_flow(repository: str, filename: str, ctx: Context) -> str:
+    await ctx.info(f"Extracting flow for {filename} in {repository}")
+    document_info = retreive_document_info(session=session, repository=repository, filename=filename)
+    print(f"document_info: {document_info}")
+    if len(document_info) == 0:
+        return "No document info found"
+    analyzed_data =  await extract_document_flow(
+        mcp=mcp,
+        repository=repository,
+        filename=document_info[0]["full_path"],
+        classification=document_info[0]["language"],
+        ctx=ctx,
+    )    
+    print(f"analyzed_data: {analyzed_data}")
+    return analyzed_data
+
 
 
 @mcp.tool(name="get_map_files", description="Returns a list of map files from a processed repository by name.")
@@ -77,32 +77,6 @@ async def get_map_files(repository: str, ctx: Context) -> str:
     #    analyzed_data = await analyze_map(map, ctx) 
 
     return analyzed_data
-
-
-    
-@mcp.tool(name="extract_data_structure", description="Extracts COBOL data structures from a file inside a registered resource.")
-async def get_data_structure(repository: str, filename: str, ctx: Context) -> str:
-    return await cobol_data_structure(mcp, repository, filename, ctx)
-
-
-@mcp.tool(name="extract_flow", description="Extracts the execution flow of a program, starting from its primary entry point, and returns it in a structured JSON format.")
-async def extract_flow(repository: str, filename: str, ctx: Context) -> str:
-    content = get_file_content(repository, filename)
-    # classification_json = "COBOL" #await classify_file(content, filename, repository, ctx)
-    
-    # language = "Unknown"
-    # try:
-    #     classification_data = json.loads(classification_json)
-    #     language = classification_data.get("language", "Unknown")
-    # except (json.JSONDecodeError, TypeError):
-    #     await ctx.warning(f"Could not parse classification JSON for {filename}. Using 'Unknown'.")
-    return await get_file_flow(
-        mcp=mcp,
-        repository=repository,
-        filename=filename,
-        classification="COBOL",
-        ctx=ctx,
-    )
 
 
 @mcp.tool(name="find_copy_definition", description="Searches all files for a COBOL COPY label (e.g. DOGEDT) and returns the first file that contains it.")
@@ -145,7 +119,11 @@ def find_copy_definition(ctx: Context, resource_uri: str, copy_name: str) -> dic
         }
 
 
-
+@mcp.tool(name="get_document_info", description="Returns the information of a document.")
+async def get_document_info(repository: str, filename: str, ctx: Context) -> list[dict]:
+    document_info = retreive_document_info(session=session, repository=repository, filename=filename)
+    print(f"document_info: {document_info}")
+    return document_info
 
 @mcp.tool(name="return_workspace", description="Returns the workspace file names.")
 def return_workspace(ctx: Context) -> list[str]:
@@ -162,9 +140,8 @@ async def file_classification(repository_name: str, filename: str, ctx: Context)
     Takes filename and content as input to avoid file system operations.
     Returns programming language or file type classification.
     """
-    
-    content = get_file_content(repository_name, filename)   
-    classification = await classify_file(content=content, filename=filename, repository=repository_name, ctx=ctx)
+
+    classification = await classify_document(session=session, repository=repository_name, filename=filename, ctx=ctx)
     return classification
 
 @mcp.tool("retrieve_file_content", description="Retrieves the content of a file from the repository.")
@@ -174,27 +151,70 @@ async def retrieve_file_content(repository_name: str, filename: str, ctx: Contex
     Handles various file encodings and provides detailed error information.
     Returns just the file content for use by other tools.
     """
-    return get_file_content(repository_name, filename)
+    return await get_file_content(session=session, repository=repository_name, filename=filename, ctx=ctx)
+
+@mcp.tool("get_language_specific_prompt", description="Returns the language-specific prompt for the given language.")
+async def get_language_specific_prompt(language: str, source_code: str, repository_name: str, filename: str, ctx: Context) -> dict:
+    system_prompt, llm_prompt = flow_extraction(
+        source_code=source_code,
+        filename=filename,
+        repository_name=repository_name,
+        program_id=filename,
+        language=language
+    )
+
+    return {
+        "system_prompt": system_prompt,
+        "llm_prompt": llm_prompt
+    }    
+    
+@mcp.tool("extract_flow_with_specific_prompt", description="Extracts the execution flow of a program, starting from its primary entry point, and returns it in a structured JSON format.")
+async def extract_flow_with_prepared_prompt(system_prompt: str, llm_prompt: str, ctx: Context) -> str:
+    return await extract_flow_with_specific_prompt(mcp=mcp, llm_prompt=llm_prompt, system_prompt=system_prompt, ctx=ctx)
 
 
-# @mcp.tool("find_edges", description="identify all points of interaction with external or internal components.")
-# async def find_edges(repository: str, filename: str, ctx: Context) -> str:
-#     """
-#     all points of interaction with external or internal components
-#     """
-# execute_extract_edges
-#     print(f"repository_name: {repository} filename: {filename}")
-#     try:
-#         # content = get_file_content(repository, filename)
-#         full_path = get_file_full_path(repository, filename)
-#         print(f"full_path: {full_path[0]}")
-#         content = get_file_content_full_path(full_path[0])
-#         await ctx.info(f"Extracting edges from {filename}...")
-#         response = await extract_edges(content=content, ctx=ctx)
-#         return response
-#     except Exception as e:
-#         print(f"Error finding edges: {e}")
-#         await ctx.error(f"Error finding edges: {e}")
-#         return f"Error: {e}"    
+@mcp.tool("extract_language_specific_flow", description="Extracts the execution flow of a program, starting from its primary entry point, and returns it in a structured JSON format.")
+async def extract_language_specific_flow(language: str, source_code: str, repository_name: str, filename: str, ctx: Context) -> str:
+    return await extract_language_specific_flow_tool(mcp=mcp, language=language, source_code=source_code, repository_name=repository_name, filename=filename, ctx=ctx)
 
 
+@mcp.prompt(name="MCP_Server_Language-Aware_Code_Analysis_Prompt", description="Extracts the execution flow and external dependencies of any supported source code.")
+async def extract_code_flow(filename: str, repository_name: str, ctx: Context) -> str:
+    """
+    System-Level Prompt for MCP Server to perform language-aware static code analysis.
+    """
+
+    return f"""
+# MCP Server Language-Aware Code Analysis Prompt
+
+## System Instructions
+
+You are a language-agnostic static code analyzer operating within the MCP Server.
+
+### Analysis Workflow
+
+1. **Identify Programming Language**
+   - Use the tool `get_document_info` with repository: `{repository_name}`, filename: `{filename}`
+   - This returns metadata including detected language (e.g., Python, COBOL, CLIST, C)
+
+2. **Retrieve Source Code**
+   - Use `retrieve_file_content` with `{repository_name}` and `{filename}`
+   - Assign the result to `source_code`
+
+3. **Language-Specific Analysis**
+   - Based on the detected language, invoke `get_language_specific_prompt(language, source_code, filename, repository_name)`
+   - Use the returned prompt template for that language to perform in-depth static analysis
+
+4. **Produce JSON Output**
+   - Output strictly valid JSON as per the language-agnostic schema:
+   
+```json
+{{
+  "program_id": "unique program/module identifier",
+  "filename": "{filename}",
+  "language": "detected language",
+  "main_entry_points": ["entry points list"],
+  "flow_graph": [...],
+  "path_to_critical": [...]
+}}
+"""

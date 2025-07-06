@@ -1,0 +1,602 @@
+2025-07-02 23:45:32,181 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-02 23:46:11,548 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-02 23:46:39,124 - INFO - Processing request of type ListToolsRequest
+2025-07-02 23:47:33,329 - INFO - Processing request of type CallToolRequest
+2025-07-02 23:53:46,646 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-02 23:54:48,627 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-02 23:55:12,224 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-02 23:55:27,288 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-02 23:55:38,266 - INFO - Processing request of type ListToolsRequest
+2025-07-02 23:55:38,268 - INFO - Processing request of type ListToolsRequest
+2025-07-02 23:55:54,458 - INFO - Processing request of type CallToolRequest
+2025-07-02 23:59:26,208 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-02 23:59:36,840 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-02 23:59:43,177 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-03 00:00:01,437 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-03 00:00:33,400 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-03 00:00:33,486 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-03 00:01:08,924 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-03 00:01:38,756 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-03 00:01:38,819 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-03 00:02:15,819 - INFO - Processing request of type ListToolsRequest
+2025-07-03 00:02:15,829 - INFO - Processing request of type ListToolsRequest
+2025-07-03 00:02:51,424 - INFO - Processing request of type CallToolRequest
+2025-07-03 00:06:42,277 - INFO - Processing request of type ListToolsRequest
+2025-07-03 00:06:42,278 - INFO - Processing request of type ListToolsRequest
+2025-07-03 00:06:48,105 - INFO - Processing request of type ListToolsRequest
+2025-07-03 00:07:24,978 - INFO - Processing request of type ListToolsRequest
+2025-07-03 00:07:24,979 - INFO - Processing request of type ListToolsRequest
+2025-07-03 00:07:24,979 - INFO - Processing request of type ListToolsRequest
+2025-07-03 00:07:24,980 - INFO - Processing request of type ListToolsRequest
+2025-07-03 00:07:32,137 - INFO - Processing request of type ListToolsRequest
+2025-07-03 00:12:40,135 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 00:17:04,747 - INFO - Processing request of type PingRequest
+2025-07-03 00:17:04,750 - INFO - Processing request of type ListToolsRequest
+2025-07-03 00:17:04,754 - INFO - Processing request of type CallToolRequest
+2025-07-03 08:19:30,643 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 08:20:02,364 - INFO - Processing request of type ListToolsRequest
+2025-07-03 08:20:14,565 - INFO - Processing request of type CallToolRequest
+2025-07-03 08:29:58,020 - INFO - Processing request of type PingRequest
+2025-07-03 08:29:58,022 - INFO - Processing request of type ListToolsRequest
+2025-07-03 08:29:58,022 - INFO - Processing request of type CallToolRequest
+2025-07-03 08:30:16,143 - INFO - Processing request of type PingRequest
+2025-07-03 08:30:16,145 - INFO - Processing request of type ListToolsRequest
+2025-07-03 08:30:16,148 - INFO - Processing request of type CallToolRequest
+2025-07-03 08:39:37,571 - INFO - Processing request of type PingRequest
+2025-07-03 08:39:37,572 - INFO - Processing request of type ListToolsRequest
+2025-07-03 08:39:37,572 - INFO - Processing request of type CallToolRequest
+2025-07-03 08:40:40,131 - INFO - Processing request of type PingRequest
+2025-07-03 08:40:40,133 - INFO - Processing request of type ListToolsRequest
+2025-07-03 08:40:40,135 - INFO - Processing request of type CallToolRequest
+2025-07-03 08:41:11,533 - INFO - Processing request of type PingRequest
+2025-07-03 08:41:11,533 - INFO - Processing request of type ListToolsRequest
+2025-07-03 08:41:11,542 - INFO - Processing request of type CallToolRequest
+2025-07-03 08:42:20,423 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 08:42:27,103 - INFO - Processing request of type PingRequest
+2025-07-03 08:42:27,103 - INFO - Processing request of type ListToolsRequest
+2025-07-03 08:42:27,108 - INFO - Processing request of type CallToolRequest
+2025-07-03 08:43:37,424 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 08:43:42,192 - INFO - Processing request of type PingRequest
+2025-07-03 08:43:42,192 - INFO - Processing request of type ListToolsRequest
+2025-07-03 08:43:42,200 - INFO - Processing request of type CallToolRequest
+2025-07-03 09:28:16,675 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 09:28:24,751 - INFO - Processing request of type PingRequest
+2025-07-03 09:28:24,752 - INFO - Processing request of type ListToolsRequest
+2025-07-03 09:28:24,752 - INFO - Processing request of type CallToolRequest
+2025-07-03 09:29:41,642 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 09:29:45,863 - INFO - Processing request of type PingRequest
+2025-07-03 09:29:45,863 - INFO - Processing request of type ListToolsRequest
+2025-07-03 09:29:45,873 - INFO - Processing request of type CallToolRequest
+2025-07-03 09:33:47,650 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 09:33:52,242 - INFO - Processing request of type PingRequest
+2025-07-03 09:33:52,242 - INFO - Processing request of type ListToolsRequest
+2025-07-03 09:33:52,246 - INFO - Processing request of type CallToolRequest
+2025-07-03 09:41:27,116 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-03 09:41:41,730 - INFO - Processing request of type CallToolRequest
+2025-07-03 09:43:27,438 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 09:43:33,661 - INFO - Processing request of type PingRequest
+2025-07-03 09:43:33,663 - INFO - Processing request of type ListToolsRequest
+2025-07-03 09:43:33,663 - INFO - Processing request of type CallToolRequest
+2025-07-03 11:09:54,496 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 11:10:09,600 - INFO - Processing request of type ListPromptsRequest
+2025-07-03 11:10:20,961 - INFO - Processing request of type CompleteRequest
+2025-07-03 11:10:21,147 - INFO - Processing request of type CompleteRequest
+2025-07-03 11:10:53,747 - INFO - Processing request of type GetPromptRequest
+2025-07-03 15:29:31,555 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 15:29:38,035 - INFO - Processing request of type PingRequest
+2025-07-03 15:29:38,035 - INFO - Processing request of type ListToolsRequest
+2025-07-03 15:29:38,043 - INFO - Processing request of type CallToolRequest
+2025-07-03 15:33:06,135 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 15:33:10,037 - INFO - Processing request of type PingRequest
+2025-07-03 15:33:10,038 - INFO - Processing request of type ListToolsRequest
+2025-07-03 15:33:10,043 - INFO - Processing request of type CallToolRequest
+2025-07-03 15:34:54,151 - ERROR - Error calling tool 'extract_flow': 
+Traceback (most recent call last):
+  File "G:\source\python\mcp_legacy_analysis\sampling.py", line 21, in sample_helper
+    response = await ctx.sample(
+               ^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\server\context.py", line 233, in sample
+    result: CreateMessageResult = await self.request_context.session.create_message(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\mcp\server\session.py", line 221, in create_message
+    return await self.send_request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\mcp\shared\session.py", line 286, in send_request
+    raise McpError(response_or_error.error)
+mcp.shared.exceptions.McpError: Connection closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\source\python\mcp_legacy_analysis\tools\extract_document_flow.py", line 33, in extract_document_flow
+    response = await sample_helper(ctx=ctx, messages_for_llm=messages_for_llm, system_prompt=system_prompt, temperature=0)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\sampling.py", line 29, in sample_helper
+    await ctx.error(f"Sampling. Error calling LLM: {e}")
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\server\context.py", line 193, in error
+    await self.log(level="error", message=message, logger_name=logger_name)
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\server\context.py", line 155, in log
+    await self.request_context.session.send_log_message(
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\mcp\server\session.py", line 182, in send_log_message
+    await self.send_notification(
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\mcp\shared\session.py", line 315, in send_notification
+    await self._write_stream.send(session_message)
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\anyio\streams\memory.py", line 242, in send
+    self.send_nowait(item)
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\anyio\streams\memory.py", line 211, in send_nowait
+    raise ClosedResourceError
+anyio.ClosedResourceError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\tools\tool_manager.py", line 131, in call_tool
+    return await tool.run(arguments)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\tools\tool.py", line 187, in run
+    result = await result
+             ^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\legacy_analysis_server.py", line 49, in extract_flow
+    analyzed_data =  await extract_document_flow(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\tools\extract_document_flow.py", line 71, in extract_document_flow
+    await ctx.error(f"Error during flow extraction: {e}")
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\server\context.py", line 193, in error
+    await self.log(level="error", message=message, logger_name=logger_name)
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\server\context.py", line 155, in log
+    await self.request_context.session.send_log_message(
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\mcp\server\session.py", line 182, in send_log_message
+    await self.send_notification(
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\mcp\shared\session.py", line 315, in send_notification
+    await self._write_stream.send(session_message)
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\anyio\streams\memory.py", line 242, in send
+    self.send_nowait(item)
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\anyio\streams\memory.py", line 211, in send_nowait
+    raise ClosedResourceError
+anyio.ClosedResourceError
+2025-07-03 15:43:11,915 - INFO - Processing request of type PingRequest
+2025-07-03 15:43:11,917 - INFO - Processing request of type ListToolsRequest
+2025-07-03 15:43:11,920 - INFO - Processing request of type CallToolRequest
+2025-07-03 15:43:12,425 - INFO - Processing request of type CallToolRequest
+2025-07-03 15:49:04,121 - INFO - Processing request of type PingRequest
+2025-07-03 15:49:04,123 - INFO - Processing request of type ListToolsRequest
+2025-07-03 15:51:02,500 - INFO - Processing request of type PingRequest
+2025-07-03 15:51:02,502 - INFO - Processing request of type ListToolsRequest
+2025-07-03 15:51:49,591 - INFO - Processing request of type PingRequest
+2025-07-03 15:51:49,593 - INFO - Processing request of type ListToolsRequest
+2025-07-03 15:51:49,596 - INFO - Processing request of type CallToolRequest
+2025-07-03 15:51:50,054 - INFO - Processing request of type CallToolRequest
+2025-07-03 15:52:52,147 - INFO - Processing request of type PingRequest
+2025-07-03 15:52:52,149 - INFO - Processing request of type ListToolsRequest
+2025-07-03 15:52:52,152 - INFO - Processing request of type CallToolRequest
+2025-07-03 15:52:52,563 - INFO - Processing request of type CallToolRequest
+2025-07-03 15:54:17,556 - INFO - Processing request of type PingRequest
+2025-07-03 15:54:17,559 - INFO - Processing request of type ListToolsRequest
+2025-07-03 15:54:17,562 - INFO - Processing request of type CallToolRequest
+2025-07-03 15:54:17,968 - INFO - Processing request of type CallToolRequest
+2025-07-03 15:58:05,992 - INFO - Processing request of type PingRequest
+2025-07-03 15:58:05,994 - INFO - Processing request of type ListToolsRequest
+2025-07-03 15:58:05,997 - INFO - Processing request of type CallToolRequest
+2025-07-03 15:58:06,411 - INFO - Processing request of type CallToolRequest
+2025-07-03 15:59:20,602 - INFO - Processing request of type PingRequest
+2025-07-03 15:59:20,604 - INFO - Processing request of type ListToolsRequest
+2025-07-03 15:59:20,606 - INFO - Processing request of type CallToolRequest
+2025-07-03 15:59:21,022 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:00:15,320 - INFO - Processing request of type PingRequest
+2025-07-03 16:00:15,322 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:00:15,326 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:03:47,332 - INFO - Processing request of type PingRequest
+2025-07-03 16:03:47,333 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:03:47,336 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:04:11,696 - INFO - Processing request of type PingRequest
+2025-07-03 16:04:11,697 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:04:11,701 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:04:27,603 - INFO - Processing request of type PingRequest
+2025-07-03 16:04:27,605 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:04:27,608 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:04:54,743 - INFO - Processing request of type PingRequest
+2025-07-03 16:04:54,745 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:04:54,749 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:05:22,849 - INFO - Processing request of type PingRequest
+2025-07-03 16:05:22,851 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:05:22,854 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:05:49,203 - INFO - Processing request of type PingRequest
+2025-07-03 16:05:49,204 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:05:49,207 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:06:23,874 - INFO - Processing request of type PingRequest
+2025-07-03 16:06:23,877 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:06:23,880 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:06:44,199 - INFO - Processing request of type PingRequest
+2025-07-03 16:06:44,200 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:06:44,204 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:08:09,089 - INFO - Processing request of type PingRequest
+2025-07-03 16:08:09,090 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:08:09,094 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:08:09,238 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:08:09,304 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:08:09,305 - ERROR - Error calling tool 'get_language_specific_prompt': [Errno 2] No such file or directory: 'languages_config.json'
+Traceback (most recent call last):
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\tools\tool_manager.py", line 131, in call_tool
+    return await tool.run(arguments)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\tools\tool.py", line 187, in run
+    result = await result
+             ^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\legacy_analysis_server.py", line 157, in get_language_specific_prompt
+    return flow_extraction(source_code=source_code, filename=filename, repository_name=repository_name, program_id=filename, language=language)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\templates\code_analyzer_prompt_generator.py", line 66, in flow_extraction
+    supported = languages_from_json("languages_config.json")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\templates\code_analyzer_prompt_generator.py", line 57, in languages_from_json
+    with open(filepath, "r", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'languages_config.json'
+2025-07-03 16:10:56,541 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 16:11:00,696 - INFO - Processing request of type PingRequest
+2025-07-03 16:11:00,699 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:11:00,702 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:11:01,448 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:11:01,518 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:11:50,810 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 16:11:54,979 - INFO - Processing request of type PingRequest
+2025-07-03 16:11:54,982 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:11:54,984 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:11:55,633 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:11:55,704 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:18:52,377 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 16:18:56,660 - INFO - Processing request of type PingRequest
+2025-07-03 16:18:56,662 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:18:56,665 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:18:57,335 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:18:57,401 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:23:46,686 - INFO - Processing request of type PingRequest
+2025-07-03 16:23:46,688 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:23:46,691 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:23:47,072 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:23:47,139 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:25:31,559 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:25:31,949 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:25:32,035 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:27:22,517 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:27:22,971 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:27:23,038 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:29:55,839 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:29:56,224 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:29:56,309 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:32:57,501 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:32:57,876 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:32:57,956 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:37:05,413 - INFO - Processing request of type PingRequest
+2025-07-03 16:37:05,415 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:37:05,419 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:37:05,809 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:37:05,888 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:38:43,860 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:38:44,261 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:38:44,341 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:50:38,564 - ERROR - Error calling tool 'extract_language_specific_flow': 
+Traceback (most recent call last):
+  File "G:\source\python\mcp_legacy_analysis\sampling.py", line 21, in sample_helper
+    response = await ctx.sample(
+               ^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\server\context.py", line 233, in sample
+    result: CreateMessageResult = await self.request_context.session.create_message(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\mcp\server\session.py", line 221, in create_message
+    return await self.send_request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\mcp\shared\session.py", line 286, in send_request
+    raise McpError(response_or_error.error)
+mcp.shared.exceptions.McpError: Connection closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\tools\tool_manager.py", line 131, in call_tool
+    return await tool.run(arguments)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\tools\tool.py", line 187, in run
+    result = await result
+             ^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\legacy_analysis_server.py", line 162, in extract_language_specific_flow
+    return await extract_language_specific_flow_tool(mcp=mcp, language=language, source_code=source_code, repository_name=repository_name, filename=filename, ctx=ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\tools\extract_document_flow.py", line 21, in extract_language_specific_flow
+    response = await sample_helper(ctx=ctx, messages_for_llm=messages_for_llm, system_prompt=system_prompt, temperature=0)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\sampling.py", line 29, in sample_helper
+    await ctx.error(f"Sampling. Error calling LLM: {e}")
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\server\context.py", line 193, in error
+    await self.log(level="error", message=message, logger_name=logger_name)
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\server\context.py", line 155, in log
+    await self.request_context.session.send_log_message(
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\mcp\server\session.py", line 182, in send_log_message
+    await self.send_notification(
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\mcp\shared\session.py", line 315, in send_notification
+    await self._write_stream.send(session_message)
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\anyio\streams\memory.py", line 242, in send
+    self.send_nowait(item)
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\anyio\streams\memory.py", line 211, in send_nowait
+    raise ClosedResourceError
+anyio.ClosedResourceError
+2025-07-03 16:51:02,335 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-03 16:52:24,761 - INFO - Processing request of type PingRequest
+2025-07-03 16:52:24,763 - INFO - Processing request of type ListToolsRequest
+2025-07-03 16:52:24,767 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:52:27,573 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:52:29,170 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:52:29,209 - INFO - Processing request of type CallToolRequest
+2025-07-03 16:52:29,305 - INFO - Warning: DeprecationWarning: `id` is deprecated, use `element_id` instead
+2025-07-03 16:52:29,309 - INFO - Processing request of type CallToolRequest
+2025-07-04 15:50:44,852 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-04 15:56:21,205 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-04 15:56:38,202 - INFO - Processing request of type ListResourcesRequest
+2025-07-04 15:56:41,404 - INFO - Processing request of type ListResourceTemplatesRequest
+2025-07-04 15:56:43,609 - INFO - Processing request of type ListPromptsRequest
+2025-07-04 15:56:47,277 - INFO - Processing request of type GetPromptRequest
+2025-07-04 15:56:47,277 - ERROR - Error rendering prompt 'MCP_Server_Language-Aware_Code_Analysis_Prompt': Missing required arguments: {'filename', 'repository_name'}
+Traceback (most recent call last):
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\prompts\prompt_manager.py", line 105, in render_prompt
+    messages = await prompt.render(arguments)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\prompts\prompt.py", line 217, in render
+    raise ValueError(f"Missing required arguments: {missing}")
+ValueError: Missing required arguments: {'filename', 'repository_name'}
+2025-07-04 15:56:54,625 - INFO - Processing request of type CompleteRequest
+2025-07-04 15:57:08,354 - INFO - Processing request of type GetPromptRequest
+2025-07-04 15:57:34,035 - INFO - Processing request of type ListToolsRequest
+2025-07-04 15:57:59,820 - INFO - Processing request of type CallToolRequest
+2025-07-04 16:06:05,597 - INFO - Processing request of type CallToolRequest
+2025-07-04 16:06:48,258 - INFO - Processing request of type CallToolRequest
+2025-07-04 16:07:53,155 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-04 16:08:12,781 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-04 16:08:27,558 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-04 16:08:38,170 - WARNING - Failed to validate request: Received request before initialization was complete
+2025-07-04 16:08:46,009 - INFO - Processing request of type ListToolsRequest
+2025-07-04 16:08:59,738 - INFO - Processing request of type CallToolRequest
+2025-07-04 16:10:41,532 - INFO - Processing request of type CallToolRequest
+2025-07-04 16:11:15,015 - INFO - Processing request of type ListPromptsRequest
+2025-07-04 16:11:32,318 - INFO - Processing request of type CompleteRequest
+2025-07-04 16:11:38,923 - INFO - Processing request of type GetPromptRequest
+2025-07-04 16:57:06,068 - INFO - Processing request of type PingRequest
+2025-07-04 16:57:06,070 - INFO - Processing request of type ListToolsRequest
+2025-07-04 16:57:06,074 - INFO - Processing request of type CallToolRequest
+2025-07-04 16:57:06,505 - INFO - Processing request of type CallToolRequest
+2025-07-04 16:57:07,892 - INFO - Processing request of type CallToolRequest
+2025-07-04 16:57:07,930 - INFO - Processing request of type CallToolRequest
+2025-07-04 16:57:08,021 - INFO - Warning: DeprecationWarning: `id` is deprecated, use `element_id` instead
+2025-07-04 16:57:08,023 - INFO - Processing request of type CallToolRequest
+2025-07-05 22:40:50,737 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-06 00:07:36,719 - INFO - Processing request of type PingRequest
+2025-07-06 00:07:36,721 - INFO - Processing request of type ListToolsRequest
+2025-07-06 00:08:50,738 - INFO - Processing request of type PingRequest
+2025-07-06 00:08:50,741 - INFO - Processing request of type ListToolsRequest
+2025-07-06 00:14:13,954 - INFO - Processing request of type PingRequest
+2025-07-06 00:14:13,956 - INFO - Processing request of type ListToolsRequest
+2025-07-06 00:23:16,828 - INFO - Processing request of type PingRequest
+2025-07-06 00:23:16,829 - INFO - Processing request of type ListToolsRequest
+2025-07-06 00:25:29,606 - INFO - Processing request of type PingRequest
+2025-07-06 00:25:29,608 - INFO - Processing request of type ListToolsRequest
+2025-07-06 00:25:33,707 - INFO - Processing request of type PingRequest
+2025-07-06 00:25:33,714 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 00:26:04,119 - INFO - Processing request of type PingRequest
+2025-07-06 00:26:04,122 - INFO - Processing request of type ListToolsRequest
+2025-07-06 00:26:06,732 - INFO - Processing request of type PingRequest
+2025-07-06 00:26:06,733 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 11:47:56,331 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-06 12:13:32,292 - INFO - Processing request of type PingRequest
+2025-07-06 12:13:32,294 - INFO - Processing request of type ListToolsRequest
+2025-07-06 12:13:39,885 - INFO - Processing request of type PingRequest
+2025-07-06 12:13:39,887 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 12:21:45,563 - INFO - Processing request of type PingRequest
+2025-07-06 12:21:45,571 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 12:29:36,040 - INFO - Processing request of type PingRequest
+2025-07-06 12:29:36,042 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 12:32:31,730 - INFO - Processing request of type PingRequest
+2025-07-06 12:32:31,732 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 12:33:36,097 - INFO - Processing request of type GetPromptRequest
+2025-07-06 12:36:40,241 - INFO - Processing request of type PingRequest
+2025-07-06 12:36:40,245 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 12:37:40,236 - INFO - Processing request of type PingRequest
+2025-07-06 12:37:40,239 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 12:37:56,373 - INFO - Processing request of type GetPromptRequest
+2025-07-06 12:43:06,807 - INFO - Processing request of type PingRequest
+2025-07-06 12:43:06,810 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 12:43:56,852 - INFO - Processing request of type PingRequest
+2025-07-06 12:43:56,854 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 12:47:18,116 - INFO - Processing request of type PingRequest
+2025-07-06 12:47:18,118 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 12:47:37,991 - INFO - Processing request of type GetPromptRequest
+2025-07-06 12:48:48,171 - INFO - Processing request of type PingRequest
+2025-07-06 12:48:48,174 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 12:50:43,425 - INFO - Processing request of type PingRequest
+2025-07-06 12:50:43,430 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 12:50:58,250 - INFO - Processing request of type GetPromptRequest
+2025-07-06 12:54:59,098 - INFO - Processing request of type PingRequest
+2025-07-06 12:54:59,101 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 12:55:14,270 - INFO - Processing request of type GetPromptRequest
+2025-07-06 13:01:31,998 - INFO - Processing request of type PingRequest
+2025-07-06 13:01:32,000 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 13:01:48,186 - INFO - Processing request of type GetPromptRequest
+2025-07-06 16:46:23,668 - INFO - Processing request of type PingRequest
+2025-07-06 16:46:23,668 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 16:46:38,269 - INFO - Processing request of type GetPromptRequest
+2025-07-06 16:47:46,629 - INFO - Processing request of type GetPromptRequest
+2025-07-06 16:47:50,687 - INFO - Processing request of type GetPromptRequest
+2025-07-06 16:49:33,493 - INFO - Processing request of type PingRequest
+2025-07-06 16:49:33,495 - INFO - Processing request of type ListPromptsRequest
+2025-07-06 16:49:51,885 - INFO - Processing request of type GetPromptRequest
+2025-07-06 16:50:00,468 - INFO - Processing request of type GetPromptRequest
+2025-07-06 16:52:06,823 - INFO - Processing request of type GetPromptRequest
+2025-07-06 16:52:17,075 - INFO - Processing request of type GetPromptRequest
+2025-07-06 17:20:49,556 - INFO - Processing request of type PingRequest
+2025-07-06 17:20:49,558 - INFO - Processing request of type CallToolRequest
+2025-07-06 17:26:52,522 - INFO - Processing request of type PingRequest
+2025-07-06 17:26:52,524 - INFO - Processing request of type CallToolRequest
+2025-07-06 17:26:52,901 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:11:03,297 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-06 22:12:19,892 - INFO - Processing request of type PingRequest
+2025-07-06 22:12:19,894 - INFO - Processing request of type ListToolsRequest
+2025-07-06 22:12:42,028 - INFO - Processing request of type PingRequest
+2025-07-06 22:12:42,030 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:12:42,748 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:15:10,900 - INFO - Processing request of type PingRequest
+2025-07-06 22:15:10,901 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:15:11,377 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:16:06,472 - INFO - Processing request of type PingRequest
+2025-07-06 22:16:06,475 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:16:06,875 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:16:41,226 - INFO - Processing request of type PingRequest
+2025-07-06 22:16:41,229 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:16:41,628 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:21:13,432 - INFO - Processing request of type PingRequest
+2025-07-06 22:21:13,434 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:21:13,577 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:26:38,987 - INFO - Processing request of type PingRequest
+2025-07-06 22:26:38,989 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:26:39,174 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:31:16,234 - INFO - Processing request of type PingRequest
+2025-07-06 22:31:16,234 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:31:16,374 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:32:31,484 - INFO - Processing request of type PingRequest
+2025-07-06 22:32:31,486 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:32:31,632 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:34:30,109 - INFO - Processing request of type PingRequest
+2025-07-06 22:34:30,111 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:34:30,250 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:41:32,421 - INFO - Processing request of type PingRequest
+2025-07-06 22:41:32,423 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:41:32,701 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:43:41,026 - INFO - Processing request of type PingRequest
+2025-07-06 22:43:41,028 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:43:41,177 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:47:45,554 - INFO - Processing request of type PingRequest
+2025-07-06 22:47:45,556 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:47:45,763 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:49:44,766 - INFO - Processing request of type PingRequest
+2025-07-06 22:49:44,768 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:49:44,903 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:51:17,287 - INFO - Processing request of type PingRequest
+2025-07-06 22:51:17,289 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:51:17,435 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:56:12,978 - INFO - Processing request of type PingRequest
+2025-07-06 22:56:12,981 - INFO - Processing request of type CallToolRequest
+2025-07-06 22:56:13,132 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:02:13,076 - INFO - Processing request of type PingRequest
+2025-07-06 23:02:13,078 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:02:13,227 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:04:04,430 - INFO - Processing request of type PingRequest
+2025-07-06 23:04:04,432 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:04:04,575 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:12:20,651 - INFO - Processing request of type PingRequest
+2025-07-06 23:12:20,654 - INFO - Processing request of type ListToolsRequest
+2025-07-06 23:17:53,316 - INFO - Processing request of type PingRequest
+2025-07-06 23:17:53,318 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:17:53,987 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:17:54,054 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:17:54,055 - ERROR - Error calling tool 'extract_language_specific_flow': 1 validation error for call[extract_language_specific_flow]
+source_code
+  Input should be a valid string [type=string_type, input_value=[{'type': 'text', 'text':...PACES TO WTO-MESSAGE."}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+Traceback (most recent call last):
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\tools\tool_manager.py", line 131, in call_tool
+    return await tool.run(arguments)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\tools\tool.py", line 185, in run
+    result = type_adapter.validate_python(arguments)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\pydantic\type_adapter.py", line 421, in validate_python
+    return self.validator.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for call[extract_language_specific_flow]
+source_code
+  Input should be a valid string [type=string_type, input_value=[{'type': 'text', 'text':...PACES TO WTO-MESSAGE."}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-07-06 23:24:40,218 - INFO - Processing request of type PingRequest
+2025-07-06 23:24:40,220 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:24:40,451 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:24:40,525 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:24:40,525 - ERROR - Error calling tool 'extract_language_specific_flow': 1 validation error for call[extract_language_specific_flow]
+source_code
+  Input should be a valid string [type=string_type, input_value=[{'type': 'text', 'text':...PACES TO WTO-MESSAGE."}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+Traceback (most recent call last):
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\tools\tool_manager.py", line 131, in call_tool
+    return await tool.run(arguments)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\fastmcp\tools\tool.py", line 185, in run
+    result = type_adapter.validate_python(arguments)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\source\python\mcp_legacy_analysis\.venv\Lib\site-packages\pydantic\type_adapter.py", line 421, in validate_python
+    return self.validator.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for call[extract_language_specific_flow]
+source_code
+  Input should be a valid string [type=string_type, input_value=[{'type': 'text', 'text':...PACES TO WTO-MESSAGE."}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/string_type
+2025-07-06 23:29:44,417 - INFO - Processing request of type PingRequest
+2025-07-06 23:29:44,419 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:29:44,561 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:29:44,627 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:30:54,569 - INFO - Processing request of type PingRequest
+2025-07-06 23:30:54,571 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:30:54,700 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:30:54,764 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:39:12,286 - ERROR - Failed to run: cannot import name 'flow_extraction' from 'templates.code_analyzer_prompt_generator' (G:\source\python\mcp_legacy_analysis\templates\code_analyzer_prompt_generator.py)
+2025-07-06 23:40:53,179 - ERROR - Failed to run: cannot import name 'flow_extraction' from 'templates.code_analyzer_prompt_generator' (G:\source\python\mcp_legacy_analysis\templates\code_analyzer_prompt_generator.py)
+2025-07-06 23:41:40,781 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-06 23:42:05,461 - INFO - Processing request of type PingRequest
+2025-07-06 23:42:05,464 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:42:06,151 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:42:06,239 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:43:15,530 - INFO - Processing request of type PingRequest
+2025-07-06 23:43:15,532 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:43:15,944 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:43:16,010 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:43:40,361 - INFO - Processing request of type PingRequest
+2025-07-06 23:43:40,363 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:43:40,787 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:43:40,850 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:50:41,407 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-06 23:51:24,882 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-06 23:51:54,407 - INFO - Processing request of type PingRequest
+2025-07-06 23:51:54,409 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:51:55,152 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:51:55,218 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:54:33,259 - INFO - Processing request of type PingRequest
+2025-07-06 23:54:33,261 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:54:33,646 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:54:33,710 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:55:43,088 - INFO - Processing request of type PingRequest
+2025-07-06 23:55:43,090 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:55:57,415 - INFO - Processing request of type PingRequest
+2025-07-06 23:55:57,417 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:55:57,793 - INFO - Processing request of type CallToolRequest
+2025-07-06 23:55:57,864 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:01:33,050 - INFO - Processing request of type PingRequest
+2025-07-07 00:01:33,052 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:01:33,194 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:01:33,262 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:02:42,535 - INFO - Processing request of type PingRequest
+2025-07-07 00:02:42,537 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:02:42,678 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:02:42,750 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:09:02,144 - WARNING - Tool already exists: extract_language_specific_flow
+2025-07-07 00:09:02,155 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-07 00:16:54,139 - INFO - Processing request of type PingRequest
+2025-07-07 00:16:54,141 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:16:54,835 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:16:54,901 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:16:54,905 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:17:25,126 - INFO - Starting MCP server 'legacy-analyzer-v1' with transport 'sse' on http://127.0.0.1:9000/sse
+2025-07-07 00:17:45,593 - INFO - Processing request of type PingRequest
+2025-07-07 00:17:45,595 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:17:46,269 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:17:46,336 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:17:46,340 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:20:08,082 - INFO - Processing request of type PingRequest
+2025-07-07 00:20:08,084 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:20:08,481 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:20:08,552 - INFO - Processing request of type CallToolRequest
+2025-07-07 00:20:08,555 - INFO - Processing request of type CallToolRequest

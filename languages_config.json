@@ -1,0 +1,31 @@
+{
+    "COBOL": {
+      "rules": "COBOL is a compiled language for business applications.",
+      "entry_points_hint": "\"list of ENTRY or program start points\""
+    },
+    "C": {
+      "rules": "C is a compiled language for system-level programming.",
+      "entry_points_hint": "\"main\", \"other detected entry points\""
+    },
+    "C++": {
+      "rules": "C++ extends C with object-oriented features.",
+      "entry_points_hint": "\"main\", \"other detected entry points\""
+    },
+    "C#": {
+      "rules": "C# is a managed, object-oriented language for the .NET platform.",
+      "entry_points_hint": "\"main\", \"other detected entry points\""
+    },
+    "Java": {
+      "rules": "Java is a portable, object-oriented language.",
+      "entry_points_hint": "\"main\", \"other detected entry points\""
+    },
+    "Python": {
+      "rules": "Python is an interpreted, high-level language.",
+      "entry_points_hint": "\"__main__\", \"other entry points\""
+    },
+    "CLIST": {
+      "rules": "CLIST is a scripting language for TSO/ISPF environments.",
+      "entry_points_hint": "\"list of PROC or start points\""
+    }
+  }
+  

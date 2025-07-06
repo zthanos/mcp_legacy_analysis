@@ -3,6 +3,7 @@ import os
 from sampling import sample_helper
 from templates.classify_file_template import classify_file_template
 from templates.analyze_cobol_map import prepare_bms_analysis_prompt
+from tools.document import retreive_document_info
 
 WORKSPACE = Path("./workspace")
 WORKSPACE.mkdir(exist_ok=True)
@@ -62,7 +63,14 @@ def get_file_content(repository_name: str, filename: str) -> str:
     except Exception as e:
         return f"ERROR: Unable to retrieve file content: {str(e)}"    
 
-async def classify_file(content: str, filename: str, repository: str, ctx) -> str:
+async def classify_file(session,content: str, filename: str, repository: str, ctx) -> str:
+    try:
+        document_info = retreive_document_info(session=session, repository=repository, filename=filename)[0]
+    except Exception as e:
+        await ctx.error(f"Error: Unable to retrieve document info: {str(e)}")
+        return "Error: Unable to retrieve document info"
+
+    content = get_file_content_full_path(document_info["full_path"])
     try:    
         system_prompt, messages_for_llm = classify_file_template(filename=filename, content=content, repository=repository)
         response = await sample_helper(ctx=ctx, messages_for_llm=messages_for_llm, system_prompt=system_prompt, temperature=0.7)
