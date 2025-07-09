@@ -4,15 +4,16 @@ def upsert_repository(session, repository_name):
     """, repository_name=repository_name)
 
 
-def upsert_document(session, repository_name, filename, full_path, language, classification):
+def upsert_document(session, repository_name, filename, full_path, language, classification, analysis):
     session.run("""
         MATCH (r:Repository {repository_name: $repository_name})
         MERGE (d:Document {filename: $filename})
         SET d.full_path = $full_path,
             d.language = $language,
-            d.classification = $classification
+            d.classification = $classification,
+            d.analysis = $analysis
         MERGE (r)-[:CONTAINS]->(d)
-    """, repository_name=repository_name, filename=filename, full_path=full_path, language=language, classification=classification)
+    """, repository_name=repository_name, filename=filename, full_path=full_path, language=language, classification=classification, analysis=analysis)
 
 
 def upsert_entry_point(session, document_filename, name, node_type, is_entry_point):

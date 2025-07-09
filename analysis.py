@@ -63,7 +63,7 @@ def get_file_content(repository_name: str, filename: str) -> str:
     except Exception as e:
         return f"ERROR: Unable to retrieve file content: {str(e)}"    
 
-async def classify_file(session,content: str, filename: str, repository: str, ctx) -> str:
+async def classify_file(session, content: str, filename: str, repository: str, ctx) -> str:
     try:
         document_info = retreive_document_info(session=session, repository=repository, filename=filename)[0]
     except Exception as e:

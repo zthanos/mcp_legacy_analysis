@@ -12,9 +12,9 @@ from sampling import sample_helper
 from tools.document import get_file_content_full_path
 from templates.code_analyzer_prompt_generator import flow_extraction
 
+
 import re
 import json
-
 
 async def extract_language_specific_flow(mcp, language: str, source_code: str, repository_name: str, filename: str, ctx) -> str:
     system_prompt, messages_for_llm = flow_extraction(source_code=source_code, filename=filename, repository_name=repository_name, program_id=filename, language=language)
@@ -26,13 +26,25 @@ async def extract_language_specific_flow(mcp, language: str, source_code: str, r
     parsed = safe_extract_json(response)
     return response
 
-async def extract_flow_with_specific_prompt(mcp,system_prompt: str, llm_prompt: str, ctx) -> str:
+async def extract_flow_with_specific_prompt(mcp, system_prompt: str, llm_prompt: str, ctx) -> str:
     response = await sample_helper(ctx=ctx, messages_for_llm=llm_prompt, system_prompt=system_prompt, temperature=0)
-    print(f"response: {response}")
+    print(f"system_prompt: {system_prompt}")
+    print(f"messages_for_llm: {llm_prompt}")
+    await ctx.debug(f"response: {response}")
     if not response:
         await ctx.error("Empty response from LLM")
         return "Error: Empty response from LLM"
-    parsed = safe_extract_json(response)
+    print(f"response: {response}")
+
+    response = await sample_helper(ctx=ctx, messages_for_llm=response, system_prompt=system_prompt, temperature=0)
+    await ctx.debug(f"response: {response}")
+    match = re.search(r"```json\s*([\s\S]*?)\s*```", response)
+    if match:
+        json_str = match.group(1).strip()
+        await ctx.debug(json_str)
+        return json_str
+
+    
     return response    
 
 

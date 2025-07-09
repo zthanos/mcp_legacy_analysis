@@ -1,31 +1,51 @@
 {
-    "COBOL": {
-      "rules": "COBOL is a compiled language for business applications.",
-      "entry_points_hint": "\"list of ENTRY or program start points\""
-    },
-    "C": {
-      "rules": "C is a compiled language for system-level programming.",
-      "entry_points_hint": "\"main\", \"other detected entry points\""
-    },
-    "C++": {
-      "rules": "C++ extends C with object-oriented features.",
-      "entry_points_hint": "\"main\", \"other detected entry points\""
-    },
-    "C#": {
-      "rules": "C# is a managed, object-oriented language for the .NET platform.",
-      "entry_points_hint": "\"main\", \"other detected entry points\""
-    },
-    "Java": {
-      "rules": "Java is a portable, object-oriented language.",
-      "entry_points_hint": "\"main\", \"other detected entry points\""
-    },
-    "Python": {
-      "rules": "Python is an interpreted, high-level language.",
-      "entry_points_hint": "\"__main__\", \"other entry points\""
-    },
-    "CLIST": {
-      "rules": "CLIST is a scripting language for TSO/ISPF environments.",
-      "entry_points_hint": "\"list of PROC or start points\""
-    }
+  "COBOL": {
+    "system_prompt":"",
+    "rules": "COBOL is a compiled language for business applications.",
+    "entry_points_hint": "\"list of ENTRY or program start points\"",
+    "analysis_rules": "Represent the flow as a directed graph where:\n- Nodes are paragraphs, sections, or subprograms\n- Edges represent control flow (PERFORM, CALL, GO TO, FALLTHROUGH)\n- Integration types include 'internal', 'external', 'database', 'file', 'service'"
+  },
+  "C": {
+    "system_prompt":"",
+    "rules": "C is a compiled language for system-level programming.",
+    "entry_points_hint": "\"main\", \"other detected entry points\"",
+    "analysis_rules": "Identify functions, control structures, and external interactions:\n- Nodes: functions, code blocks\n- Edges: function calls, conditionals, loops\n- Integration types: 'internal', 'external-program' (system calls), 'external-other'"
+  },
+  "C++": {
+    "system_prompt":"",
+    "rules": "C++ extends C with object-oriented features.",
+    "entry_points_hint": "\"main\", \"other detected entry points\"",
+    "analysis_rules": "Same as C, plus:\n- Nodes: classes, methods, constructors\n- Detect inheritance relationships\n- External dependencies: libraries, system calls"
+  },
+  "C#": {
+    "system_prompt":"",
+    "rules": "C# is a managed, object-oriented language for the .NET platform.",
+    "entry_points_hint": "\"main\", \"other detected entry points\"",
+    "analysis_rules": "Include detection of:\n- Classes, interfaces, controllers, services\n- Methods, async flows\n- External calls to web services, databases, or system components"
+  },
+  "Java": {
+    "system_prompt":"",
+    "rules": "Java is a portable, object-oriented language.",
+    "entry_points_hint": "\"main\", \"other detected entry points\"",
+    "analysis_rules": "Identify:\n- Classes, interfaces, methods\n- Inheritance, implementations\n- Calls to external services, databases, or libraries"
+  },
+  "Python": {
+    "system_prompt":"",
+    "rules": "Python is an interpreted, high-level language.",
+    "entry_points_hint": "\"__main__\", \"other entry points\"",
+    "analysis_rules": "Detect:\n- Functions, classes, control structures\n- External dependencies: database, APIs, subprocesses\n- Integration types: 'internal', 'external-db', 'external-service', 'external-program'"
+  },
+  "CLIST": {
+    "system_prompt":"You are an expert in analyzing TSO/ISPF CLIST scripts for execution flow extraction.",
+    "rules": "CLIST is a scripting language for TSO/ISPF environments.",
+    "entry_points_hint": "\"list of PROC or start points\"",
+    "analysis_rules": "Your task is to extract the control flow of the provided CLIST script and represent it as a directed graph.\nFocus on control structures (IF, DO, SELECT), label jumps (GOTO), procedure calls, and system command execution.\nEnsure output follows exactly the JSON structure below, matching the COBOL model for system-wide consistency.Identify:\n- PROC statements, IF/ELSE, DO/END, GOTO, CALLs\n- System commands: ALLOC, FREE, CONTROL\n- Integration types: 'internal', 'file', 'external-program'"
+  },
+  "JCL": {
+    "system_prompt": "You are an expert in analyzing JCL (Job Control Language) scripts for mainframe execution flow extraction.",
+    "rules": "JCL is a declarative scripting language used to define and control batch jobs in IBM mainframe systems.",
+    "entry_points_hint": "\"list of JOB steps (EXEC PGM=xxx) that represent entry points in the batch execution flow\"",
+    "analysis_rules": "Your task is to extract the control flow and structure of the provided JCL script.\n\nFocus on:\n- JOB, EXEC, DD statements\n- Step sequencing and dependencies\n- Programs invoked via PGM= (e.g., IEFBR14, IDCAMS, COBOL programs)\n- SYSIN and DD * in-stream data blocks\n- File operations (ALLOC, DELETE, DEFINE, REPRO)\n\nReturn a directed graph JSON representation where:\n- Each node is a JCL step (EXEC)\n- Each edge represents job step sequencing\n- For each node, include:\n  - \"type\": always \"jcl-step\"\n  - \"pgm\": program name in EXEC PGM=xxx\n  - \"dd_statements\": list of datasets used in DDs\n  - \"has_sysin\": true/false\n- For each edge, include:\n  - \"source\": current step name\n  - \"target\": next step\n  - \"transfer_type\": always \"step-sequence\"\n\nAlso identify integration_type for each step:\n- 'internal' for utility programs (IEFBR14, IDCAMS, etc.)\n- 'external-program' for COBOL or site-specific PGM names\n- 'file' for data-related steps (REPRO, DELETE, ALLOC)"
   }
-  
+
+}

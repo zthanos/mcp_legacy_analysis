@@ -858,6 +858,14 @@
         "documentation": {}
     },
     {
+        "label": "extract_flow_with_specific_prompt",
+        "importPath": "tools.extract_document_flow",
+        "description": "tools.extract_document_flow",
+        "isExtraImport": true,
+        "detail": "tools.extract_document_flow",
+        "documentation": {}
+    },
+    {
         "label": "asyncio",
         "kind": 6,
         "isExtraImport": true,
@@ -992,7 +1000,7 @@
         "kind": 2,
         "importPath": "templates.code_analyzer_prompt_generator",
         "description": "templates.code_analyzer_prompt_generator",
-        "peekOfCode": "def generate_common_json_template(program_id: str, filename: str, repository_name: str, language: str, entry_points_hint: str, source_code: str) -> str:\n    return f\"\"\"\nProduce valid JSON in this format:\n{{\n  \"program_id\": \"{program_id}\",\n  \"filename\": \"{filename}\",\n  \"repository_name\": \"{repository_name}\",\n  \"language\": \"{language}\",\n  \"main_entry_points\": [{entry_points_hint}],\n  \"flow_graph\": [",
+        "peekOfCode": "def generate_common_json_template(program_id: str, filename: str, repository_name: str, language: str, entry_points_hint: str, source_code: str, analysis_rules: str) -> str:\n    return f\"\"\"\nYou are a senior {language} Engineer.\nYour task is to perform a **code review** on the following script.\nPlease identify and explain:\n- The overall **purpose** of the script\n- Key **internal operations**, especially main flows or steps\n- Any **external system integrations** (e.g. RPC, socket, JCL, file I/O)\n- Which **data** is being read, generated, or transmitted\n- Any dependencies or technologies involved (e.g., Dogecoin wallet, TK4-, VSAM)",
         "detail": "templates.code_analyzer_prompt_generator",
         "documentation": {}
     },
@@ -1010,7 +1018,7 @@
         "kind": 2,
         "importPath": "templates.code_analyzer_prompt_generator",
         "description": "templates.code_analyzer_prompt_generator",
-        "peekOfCode": "def generate_common_system_prompt(language: str) -> str:\n    return f\"You are a {language} static code analysis expert for legacy systems. Extract execution flow, external interactions, inheritance, and critical paths.\"\ndef flow_extraction(source_code: str, filename: str, repository_name: str, program_id: str, language: str) -> tuple[str, str]:\n    supported = languages_from_json(\"languages_config.json\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    system_prompt = generate_common_system_prompt(language)\n    print(f\"system_prompt: {system_prompt}\")",
+        "peekOfCode": "def generate_common_system_prompt(language: str) -> str:\n    return f\"You are a {language} static code analysis expert for legacy systems. Extract execution flow, external interactions, inheritance, and critical paths.\"\ndef flow_extraction(source_code: str, filename: str, repository_name: str, program_id: str, language: str) -> tuple[str, str]:\n    supported = languages_from_json(\"languages_config.json\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    system_prompt = generate_common_system_prompt(language)\n    entry_points_hint = supported[language][\"entry_points_hint\"]",
         "detail": "templates.code_analyzer_prompt_generator",
         "documentation": {}
     },
@@ -1019,7 +1027,7 @@
         "kind": 2,
         "importPath": "templates.code_analyzer_prompt_generator",
         "description": "templates.code_analyzer_prompt_generator",
-        "peekOfCode": "def flow_extraction(source_code: str, filename: str, repository_name: str, program_id: str, language: str) -> tuple[str, str]:\n    supported = languages_from_json(\"languages_config.json\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    system_prompt = generate_common_system_prompt(language)\n    print(f\"system_prompt: {system_prompt}\")\n    entry_points_hint = supported[language][\"entry_points_hint\"]\n    llm_message = generate_common_json_template(program_id, filename, repository_name, language, entry_points_hint, source_code)",
+        "peekOfCode": "def flow_extraction(source_code: str, filename: str, repository_name: str, program_id: str, language: str) -> tuple[str, str]:\n    supported = languages_from_json(\"languages_config.json\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    system_prompt = generate_common_system_prompt(language)\n    entry_points_hint = supported[language][\"entry_points_hint\"]\n    analysis_rules = supported[language]['analysis_rules']\n    llm_message = generate_common_json_template(program_id, filename, repository_name, language, entry_points_hint, source_code, analysis_rules)",
         "detail": "templates.code_analyzer_prompt_generator",
         "documentation": {}
     },
@@ -1867,6 +1875,15 @@
         "description": "to_be_removed.database",
         "peekOfCode": "DATABASE_PATH = \"mcp_analysis_data.db\"\ndef connect_to_database() -> sqlite3.Connection:\n    return sqlite3.connect(DATABASE_PATH)\ndef init_database():\n    with connect_to_database() as conn:\n        cursor = conn.cursor()\n        cursor.execute(\"\"\"\n            CREATE TABLE IF NOT EXISTS repository (\n                id INTEGER PRIMARY KEY AUTOINCREMENT,\n                repository_name TEXT,",
         "detail": "to_be_removed.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "kind": 2,
+        "importPath": "utils.logger",
+        "description": "utils.logger",
+        "peekOfCode": "def get_logger(name=None):\n    logger = logging.getLogger(name)\n    if not logger.hasHandlers():\n        logger.setLevel(logging.DEBUG)\n        formatter = logging.Formatter('[%(asctime)s] %(levelname)s %(name)s: %(message)s')\n        # Stream handler (console)\n        stream_handler = logging.StreamHandler()\n        stream_handler.setFormatter(formatter)\n        logger.addHandler(stream_handler)\n        # File handler",
+        "detail": "utils.logger",
         "documentation": {}
     },
     {

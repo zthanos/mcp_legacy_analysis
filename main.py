@@ -7,7 +7,7 @@ logging.basicConfig(
     filemode='a',
     encoding='utf-8',
     format='%(asctime)s - %(levelname)s - %(message)s',
-    level=logging.INFO
+    level=logging.DEBUG
 )
 
 from legacy_analysis_server import mcp
