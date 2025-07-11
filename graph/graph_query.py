@@ -1,3 +1,5 @@
+from helpers.response_helper import graph_to_json
+
 def get_all_repositories(session):
     result = session.run("""
         MATCH (r:Repository)
@@ -7,6 +9,7 @@ def get_all_repositories(session):
 
 
 def get_documents_by_repository(session, repository_name):
+    print(f"MATCH (r:Repository {{repository_name: ${repository_name}}})-[:CONTAINS]->(d:Document) ")
     result = session.run("""
         MATCH (r:Repository {repository_name: $repository_name})-[:CONTAINS]->(d:Document)
         RETURN d

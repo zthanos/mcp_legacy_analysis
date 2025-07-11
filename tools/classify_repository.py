@@ -1,11 +1,9 @@
 import re
 import json
 from pathlib import Path
-import analysis
 from graph.graph_upsert import upsert_document
-from analysis import classify_file
-from tools.extract_document_flow import extract_flow_with_specific_prompt
-from templates.code_analyzer_prompt_generator import flow_extraction
+from tools.document import document_analysis
+from sampling import sample_helper
 
 WORKSPACE = Path("./workspace")
 WORKSPACE.mkdir(exist_ok=True)
@@ -26,7 +24,9 @@ async def execute_classify_repository(session, ctx, repository_name):
         file_type, language, classification = classify_by_extension(file_path)
 
         if file_type == "skip":
-            await register_document(session, repository_name, file_path, language, classification, "")
+            await register_document(
+                session, repository_name, file_path, language, classification, ""
+            )
             continue
 
         print(f"Processing file: {file_path}")
@@ -37,28 +37,24 @@ async def execute_classify_repository(session, ctx, repository_name):
             continue
 
         try:
-            classification_json = await classify_file(session, content, str(file_path.name), repository_name, ctx)
-            extracted_json = extract_json_from_text(classification_json)
+            print(f"Document Analysis: {file_path.name}")
 
-            language = extracted_json.get("language", "Unknown")
-            classification = extracted_json.get("classification", "Unknown")
-
-            print(f"Language: {language} | Classification: {classification} | Encoding: {encoding_used}")
-
-            # flow_extraction is not awaitable, so remove await
-            extract_flow_prompt, system_prompt = flow_extraction(
-                content, str(file_path.name), repository_name, str(file_path.name), language
-            )
-            # Pass required arguments to extract_flow_with_specific_prompt
-            analysis_data = await extract_flow_with_specific_prompt(
-                mcp=content,
-                system_prompt=system_prompt,
-                llm_prompt=extract_flow_prompt,
+            analysis_data = await document_analysis(
+                session=session,
+                repository_name=repository_name,
+                filename=file_path.name,
                 ctx=ctx
             )
             print(analysis_data)
 
-            await register_document(session, repository_name, file_path, language, classification, analysis_data)
+            await register_document(
+                session,
+                repository_name,
+                file_path,
+                language,
+                classification,
+                analysis_data,
+            )
 
         except Exception as e:
             print(f"Error classifying file {file_path}: {e}")
@@ -84,7 +80,7 @@ def classify_by_extension(file_path):
 
 
 def safe_read_file(file_path):
-    for encoding in ['utf-8', 'cp1252', 'iso-8859-1', 'cp037']:
+    for encoding in ["utf-8", "cp1252", "iso-8859-1", "cp037"]:
         try:
             with open(file_path, "r", encoding=encoding, errors="replace") as f:
                 return f.read(), encoding
@@ -93,14 +89,9 @@ def safe_read_file(file_path):
     return None, None
 
 
-def extract_json_from_text(text):
-    matches = re.findall(r"```json\s*(\{.*?\})\s*```", text, re.DOTALL)
-    if not matches:
-        raise ValueError("No valid JSON found in LLM response")
-    return json.loads(matches[0])
-
-
-async def register_document(session, repository_name, file_path, language, classification, analysis_data):
+async def register_document(
+    session, repository_name, file_path, language, classification, analysis_data
+):
     upsert_document(
         session=session,
         repository_name=repository_name,
@@ -108,6 +99,6 @@ async def register_document(session, repository_name, file_path, language, class
         filename=str(file_path.name),
         language=language,
         classification=classification,
-        analysis=analysis_data
+        analysis=analysis_data,
     )
     print(f"Registered {file_path} as {classification}")

@@ -1,37 +1,5 @@
 [
     {
-        "label": "cobol_context_prompt",
-        "importPath": "templates.cobol_context_prompt",
-        "description": "templates.cobol_context_prompt",
-        "isExtraImport": true,
-        "detail": "templates.cobol_context_prompt",
-        "documentation": {}
-    },
-    {
-        "label": "cobol_flow_extraction",
-        "importPath": "templates.extract_cobol_template",
-        "description": "templates.extract_cobol_template",
-        "isExtraImport": true,
-        "detail": "templates.extract_cobol_template",
-        "documentation": {}
-    },
-    {
-        "label": "clist_flow_extraction",
-        "importPath": "templates.extract_clist_template",
-        "description": "templates.extract_clist_template",
-        "isExtraImport": true,
-        "detail": "templates.extract_clist_template",
-        "documentation": {}
-    },
-    {
-        "label": "python_flow_extraction",
-        "importPath": "templates.extract_python_template",
-        "description": "templates.extract_python_template",
-        "isExtraImport": true,
-        "detail": "templates.extract_python_template",
-        "documentation": {}
-    },
-    {
         "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
@@ -328,35 +296,299 @@
         "documentation": {}
     },
     {
-        "label": "classify_file",
-        "importPath": "analysis",
-        "description": "analysis",
+        "label": "document_analysis",
+        "importPath": "tools.document",
+        "description": "tools.document",
         "isExtraImport": true,
-        "detail": "analysis",
+        "detail": "tools.document",
         "documentation": {}
     },
     {
-        "label": "get_file_content_full_path",
-        "importPath": "analysis",
-        "description": "analysis",
+        "label": "retreive_document_info",
+        "importPath": "tools.document",
+        "description": "tools.document",
         "isExtraImport": true,
-        "detail": "analysis",
+        "detail": "tools.document",
         "documentation": {}
     },
     {
-        "label": "get_file_content_full_path",
-        "importPath": "analysis",
-        "description": "analysis",
+        "label": "get_document_content_full_path",
+        "importPath": "tools.document",
+        "description": "tools.document",
         "isExtraImport": true,
-        "detail": "analysis",
+        "detail": "tools.document",
+        "documentation": {}
+    },
+    {
+        "label": "retreive_document_info",
+        "importPath": "tools.document",
+        "description": "tools.document",
+        "isExtraImport": true,
+        "detail": "tools.document",
+        "documentation": {}
+    },
+    {
+        "label": "classify_document",
+        "importPath": "tools.document",
+        "description": "tools.document",
+        "isExtraImport": true,
+        "detail": "tools.document",
+        "documentation": {}
+    },
+    {
+        "label": "get_document_content",
+        "importPath": "tools.document",
+        "description": "tools.document",
+        "isExtraImport": true,
+        "detail": "tools.document",
+        "documentation": {}
+    },
+    {
+        "label": "get_documents_by_repository",
+        "importPath": "tools.document",
+        "description": "tools.document",
+        "isExtraImport": true,
+        "detail": "tools.document",
+        "documentation": {}
+    },
+    {
+        "label": "document_analysis",
+        "importPath": "tools.document",
+        "description": "tools.document",
+        "isExtraImport": true,
+        "detail": "tools.document",
+        "documentation": {}
+    },
+    {
+        "label": "sample_helper",
+        "importPath": "sampling",
+        "description": "sampling",
+        "isExtraImport": true,
+        "detail": "sampling",
+        "documentation": {}
+    },
+    {
+        "label": "sample_helper",
+        "importPath": "sampling",
+        "description": "sampling",
+        "isExtraImport": true,
+        "detail": "sampling",
+        "documentation": {}
+    },
+    {
+        "label": "sample_helper",
+        "importPath": "sampling",
+        "description": "sampling",
+        "isExtraImport": true,
+        "detail": "sampling",
+        "documentation": {}
+    },
+    {
+        "label": "sample_helper",
+        "importPath": "sampling",
+        "description": "sampling",
+        "isExtraImport": true,
+        "detail": "sampling",
+        "documentation": {}
+    },
+    {
+        "label": "sample_helper",
+        "importPath": "sampling",
+        "description": "sampling",
+        "isExtraImport": true,
+        "detail": "sampling",
+        "documentation": {}
+    },
+    {
+        "label": "sample_helper",
+        "importPath": "sampling",
+        "description": "sampling",
+        "isExtraImport": true,
+        "detail": "sampling",
+        "documentation": {}
+    },
+    {
+        "label": "sample_helper",
+        "importPath": "sampling",
+        "description": "sampling",
+        "isExtraImport": true,
+        "detail": "sampling",
+        "documentation": {}
+    },
+    {
+        "label": "TextResource",
+        "importPath": "fastmcp.resources",
+        "description": "fastmcp.resources",
+        "isExtraImport": true,
+        "detail": "fastmcp.resources",
+        "documentation": {}
+    },
+    {
+        "label": "resource_manager",
+        "importPath": "fastmcp.resources",
+        "description": "fastmcp.resources",
+        "isExtraImport": true,
+        "detail": "fastmcp.resources",
+        "documentation": {}
+    },
+    {
+        "label": "TextResource",
+        "importPath": "fastmcp.resources",
+        "description": "fastmcp.resources",
+        "isExtraImport": true,
+        "detail": "fastmcp.resources",
+        "documentation": {}
+    },
+    {
+        "label": "TextResource",
+        "importPath": "fastmcp.resources",
+        "description": "fastmcp.resources",
+        "isExtraImport": true,
+        "detail": "fastmcp.resources",
+        "documentation": {}
+    },
+    {
+        "label": "resource_manager",
+        "importPath": "fastmcp.resources",
+        "description": "fastmcp.resources",
+        "isExtraImport": true,
+        "detail": "fastmcp.resources",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "ast",
+        "description": "ast",
+        "isExtraImport": true,
+        "detail": "ast",
+        "documentation": {}
+    },
+    {
+        "label": "graph_to_json",
+        "importPath": "helpers.response_helper",
+        "description": "helpers.response_helper",
+        "isExtraImport": true,
+        "detail": "helpers.response_helper",
+        "documentation": {}
+    },
+    {
+        "label": "safe_extract_json",
+        "importPath": "helpers.response_helper",
+        "description": "helpers.response_helper",
+        "isExtraImport": true,
+        "detail": "helpers.response_helper",
+        "documentation": {}
+    },
+    {
+        "label": "graph_to_json",
+        "importPath": "helpers.response_helper",
+        "description": "helpers.response_helper",
+        "isExtraImport": true,
+        "detail": "helpers.response_helper",
+        "documentation": {}
+    },
+    {
+        "label": "classify_document_template",
+        "importPath": "templates.classify_document_template",
+        "description": "templates.classify_document_template",
+        "isExtraImport": true,
+        "detail": "templates.classify_document_template",
+        "documentation": {}
+    },
+    {
+        "label": "get_documents_by_repository",
+        "importPath": "graph.graph_query",
+        "description": "graph.graph_query",
+        "isExtraImport": true,
+        "detail": "graph.graph_query",
+        "documentation": {}
+    },
+    {
+        "label": "get_document_details",
+        "importPath": "graph.graph_query",
+        "description": "graph.graph_query",
+        "isExtraImport": true,
+        "detail": "graph.graph_query",
+        "documentation": {}
+    },
+    {
+        "label": "safe_read_file",
+        "importPath": "utils.utils",
+        "description": "utils.utils",
+        "isExtraImport": true,
+        "detail": "utils.utils",
         "documentation": {}
     },
     {
         "label": "get_file_content",
-        "importPath": "analysis",
-        "description": "analysis",
+        "importPath": "utils.utils",
+        "description": "utils.utils",
         "isExtraImport": true,
-        "detail": "analysis",
+        "detail": "utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "languages_from_json",
+        "importPath": "utils.utils",
+        "description": "utils.utils",
+        "isExtraImport": true,
+        "detail": "utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_document_analysis_prompt",
+        "importPath": "prompts.code_analysis_prompt",
+        "description": "prompts.code_analysis_prompt",
+        "isExtraImport": true,
+        "detail": "prompts.code_analysis_prompt",
+        "documentation": {}
+    },
+    {
+        "label": "processed_data_to_json",
+        "importPath": "prompts.code_analysis_prompt",
+        "description": "prompts.code_analysis_prompt",
+        "isExtraImport": true,
+        "detail": "prompts.code_analysis_prompt",
+        "documentation": {}
+    },
+    {
+        "label": "get_code_analysis_prompt",
+        "importPath": "prompts.code_analysis_prompt",
+        "description": "prompts.code_analysis_prompt",
+        "isExtraImport": true,
+        "detail": "prompts.code_analysis_prompt",
+        "documentation": {}
+    },
+    {
+        "label": "get_session",
+        "importPath": "graph_db",
+        "description": "graph_db",
+        "isExtraImport": true,
+        "detail": "graph_db",
+        "documentation": {}
+    },
+    {
+        "label": "get_driver",
+        "importPath": "graph_db",
+        "description": "graph_db",
+        "isExtraImport": true,
+        "detail": "graph_db",
+        "documentation": {}
+    },
+    {
+        "label": "get_session",
+        "importPath": "graph_db",
+        "description": "graph_db",
+        "isExtraImport": true,
+        "detail": "graph_db",
+        "documentation": {}
+    },
+    {
+        "label": "insert_flow_graph",
+        "importPath": "graph_db",
+        "description": "graph_db",
+        "isExtraImport": true,
+        "detail": "graph_db",
         "documentation": {}
     },
     {
@@ -397,294 +629,6 @@
         "description": "graph_db",
         "isExtraImport": true,
         "detail": "graph_db",
-        "documentation": {}
-    },
-    {
-        "label": "get_session",
-        "importPath": "graph_db",
-        "description": "graph_db",
-        "isExtraImport": true,
-        "detail": "graph_db",
-        "documentation": {}
-    },
-    {
-        "label": "insert_flow_graph",
-        "importPath": "graph_db",
-        "description": "graph_db",
-        "isExtraImport": true,
-        "detail": "graph_db",
-        "documentation": {}
-    },
-    {
-        "label": "get_session",
-        "importPath": "graph_db",
-        "description": "graph_db",
-        "isExtraImport": true,
-        "detail": "graph_db",
-        "documentation": {}
-    },
-    {
-        "label": "get_driver",
-        "importPath": "graph_db",
-        "description": "graph_db",
-        "isExtraImport": true,
-        "detail": "graph_db",
-        "documentation": {}
-    },
-    {
-        "label": "get_repository",
-        "importPath": "graph_db",
-        "description": "graph_db",
-        "isExtraImport": true,
-        "detail": "graph_db",
-        "documentation": {}
-    },
-    {
-        "label": "extract_edges_prompt",
-        "importPath": "templates.extract_edges",
-        "description": "templates.extract_edges",
-        "isExtraImport": true,
-        "detail": "templates.extract_edges",
-        "documentation": {}
-    },
-    {
-        "label": "extract_edges_prompt",
-        "importPath": "templates.extract_edges",
-        "description": "templates.extract_edges",
-        "isExtraImport": true,
-        "detail": "templates.extract_edges",
-        "documentation": {}
-    },
-    {
-        "label": "sample_helper",
-        "importPath": "sampling",
-        "description": "sampling",
-        "isExtraImport": true,
-        "detail": "sampling",
-        "documentation": {}
-    },
-    {
-        "label": "sample_helper",
-        "importPath": "sampling",
-        "description": "sampling",
-        "isExtraImport": true,
-        "detail": "sampling",
-        "documentation": {}
-    },
-    {
-        "label": "sample_helper",
-        "importPath": "sampling",
-        "description": "sampling",
-        "isExtraImport": true,
-        "detail": "sampling",
-        "documentation": {}
-    },
-    {
-        "label": "sample_helper",
-        "importPath": "sampling",
-        "description": "sampling",
-        "isExtraImport": true,
-        "detail": "sampling",
-        "documentation": {}
-    },
-    {
-        "label": "sample_helper",
-        "importPath": "sampling",
-        "description": "sampling",
-        "isExtraImport": true,
-        "detail": "sampling",
-        "documentation": {}
-    },
-    {
-        "label": "sample_helper",
-        "importPath": "sampling",
-        "description": "sampling",
-        "isExtraImport": true,
-        "detail": "sampling",
-        "documentation": {}
-    },
-    {
-        "label": "TextResource",
-        "importPath": "fastmcp.resources",
-        "description": "fastmcp.resources",
-        "isExtraImport": true,
-        "detail": "fastmcp.resources",
-        "documentation": {}
-    },
-    {
-        "label": "resource_manager",
-        "importPath": "fastmcp.resources",
-        "description": "fastmcp.resources",
-        "isExtraImport": true,
-        "detail": "fastmcp.resources",
-        "documentation": {}
-    },
-    {
-        "label": "TextResource",
-        "importPath": "fastmcp.resources",
-        "description": "fastmcp.resources",
-        "isExtraImport": true,
-        "detail": "fastmcp.resources",
-        "documentation": {}
-    },
-    {
-        "label": "TextResource",
-        "importPath": "fastmcp.resources",
-        "description": "fastmcp.resources",
-        "isExtraImport": true,
-        "detail": "fastmcp.resources",
-        "documentation": {}
-    },
-    {
-        "label": "resource_manager",
-        "importPath": "fastmcp.resources",
-        "description": "fastmcp.resources",
-        "isExtraImport": true,
-        "detail": "fastmcp.resources",
-        "documentation": {}
-    },
-    {
-        "label": "process_execution_flow",
-        "importPath": "helpers.graph_flow_processor",
-        "description": "helpers.graph_flow_processor",
-        "isExtraImport": true,
-        "detail": "helpers.graph_flow_processor",
-        "documentation": {}
-    },
-    {
-        "label": "upsert_technology_system",
-        "importPath": "graph.graph_upsert_archimate",
-        "description": "graph.graph_upsert_archimate",
-        "isExtraImport": true,
-        "detail": "graph.graph_upsert_archimate",
-        "documentation": {}
-    },
-    {
-        "label": "upsert_technology_artifact",
-        "importPath": "graph.graph_upsert_archimate",
-        "description": "graph.graph_upsert_archimate",
-        "isExtraImport": true,
-        "detail": "graph.graph_upsert_archimate",
-        "documentation": {}
-    },
-    {
-        "label": "upsert_technology_function",
-        "importPath": "graph.graph_upsert_archimate",
-        "description": "graph.graph_upsert_archimate",
-        "isExtraImport": true,
-        "detail": "graph.graph_upsert_archimate",
-        "documentation": {}
-    },
-    {
-        "label": "upsert_internal_flow",
-        "importPath": "graph.graph_upsert_archimate",
-        "description": "graph.graph_upsert_archimate",
-        "isExtraImport": true,
-        "detail": "graph.graph_upsert_archimate",
-        "documentation": {}
-    },
-    {
-        "label": "upsert_external_interaction",
-        "importPath": "graph.graph_upsert_archimate",
-        "description": "graph.graph_upsert_archimate",
-        "isExtraImport": true,
-        "detail": "graph.graph_upsert_archimate",
-        "documentation": {}
-    },
-    {
-        "label": "get_flow_extraction_prompt",
-        "importPath": "templates.prompt_templates",
-        "description": "templates.prompt_templates",
-        "isExtraImport": true,
-        "detail": "templates.prompt_templates",
-        "documentation": {}
-    },
-    {
-        "label": "get_flow_extraction_prompt",
-        "importPath": "templates.prompt_templates",
-        "description": "templates.prompt_templates",
-        "isExtraImport": true,
-        "detail": "templates.prompt_templates",
-        "documentation": {}
-    },
-    {
-        "label": "get_file_content_full_path",
-        "importPath": "tools.document",
-        "description": "tools.document",
-        "isExtraImport": true,
-        "detail": "tools.document",
-        "documentation": {}
-    },
-    {
-        "label": "retreive_document_info",
-        "importPath": "tools.document",
-        "description": "tools.document",
-        "isExtraImport": true,
-        "detail": "tools.document",
-        "documentation": {}
-    },
-    {
-        "label": "retreive_document_info",
-        "importPath": "tools.document",
-        "description": "tools.document",
-        "isExtraImport": true,
-        "detail": "tools.document",
-        "documentation": {}
-    },
-    {
-        "label": "classify_document",
-        "importPath": "tools.document",
-        "description": "tools.document",
-        "isExtraImport": true,
-        "detail": "tools.document",
-        "documentation": {}
-    },
-    {
-        "label": "get_file_content",
-        "importPath": "tools.document",
-        "description": "tools.document",
-        "isExtraImport": true,
-        "detail": "tools.document",
-        "documentation": {}
-    },
-    {
-        "label": "flow_extraction",
-        "importPath": "templates.code_analyzer_prompt_generator",
-        "description": "templates.code_analyzer_prompt_generator",
-        "isExtraImport": true,
-        "detail": "templates.code_analyzer_prompt_generator",
-        "documentation": {}
-    },
-    {
-        "label": "flow_extraction",
-        "importPath": "templates.code_analyzer_prompt_generator",
-        "description": "templates.code_analyzer_prompt_generator",
-        "isExtraImport": true,
-        "detail": "templates.code_analyzer_prompt_generator",
-        "documentation": {}
-    },
-    {
-        "label": "graph_to_json",
-        "importPath": "helpers.response_helper",
-        "description": "helpers.response_helper",
-        "isExtraImport": true,
-        "detail": "helpers.response_helper",
-        "documentation": {}
-    },
-    {
-        "label": "classify_file_template",
-        "importPath": "templates.classify_file_template",
-        "description": "templates.classify_file_template",
-        "isExtraImport": true,
-        "detail": "templates.classify_file_template",
-        "documentation": {}
-    },
-    {
-        "label": "classify_file_template",
-        "importPath": "templates.classify_file_template",
-        "description": "templates.classify_file_template",
-        "isExtraImport": true,
-        "detail": "templates.classify_file_template",
         "documentation": {}
     },
     {
@@ -745,12 +689,149 @@
         "documentation": {}
     },
     {
+        "label": "get_flow_extraction_prompt",
+        "importPath": "templates.prompt_templates",
+        "description": "templates.prompt_templates",
+        "isExtraImport": true,
+        "detail": "templates.prompt_templates",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_content_full_path",
+        "importPath": "analysis",
+        "description": "analysis",
+        "isExtraImport": true,
+        "detail": "analysis",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_content",
+        "importPath": "analysis",
+        "description": "analysis",
+        "isExtraImport": true,
+        "detail": "analysis",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_content_full_path",
+        "importPath": "analysis",
+        "description": "analysis",
+        "isExtraImport": true,
+        "detail": "analysis",
+        "documentation": {}
+    },
+    {
         "label": "sqlite3",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "sqlite3",
         "description": "sqlite3",
         "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "classify_file_template",
+        "importPath": "templates.classify_file_template",
+        "description": "templates.classify_file_template",
+        "isExtraImport": true,
+        "detail": "templates.classify_file_template",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_bms_analysis_prompt",
+        "importPath": "templates.analyze_cobol_map",
+        "description": "templates.analyze_cobol_map",
+        "isExtraImport": true,
+        "detail": "templates.analyze_cobol_map",
+        "documentation": {}
+    },
+    {
+        "label": "cobol_context_prompt",
+        "importPath": "templates.cobol_context_prompt",
+        "description": "templates.cobol_context_prompt",
+        "isExtraImport": true,
+        "detail": "templates.cobol_context_prompt",
+        "documentation": {}
+    },
+    {
+        "label": "cobol_flow_extraction",
+        "importPath": "templates.extract_cobol_template",
+        "description": "templates.extract_cobol_template",
+        "isExtraImport": true,
+        "detail": "templates.extract_cobol_template",
+        "documentation": {}
+    },
+    {
+        "label": "clist_flow_extraction",
+        "importPath": "templates.extract_clist_template",
+        "description": "templates.extract_clist_template",
+        "isExtraImport": true,
+        "detail": "templates.extract_clist_template",
+        "documentation": {}
+    },
+    {
+        "label": "python_flow_extraction",
+        "importPath": "templates.extract_python_template",
+        "description": "templates.extract_python_template",
+        "isExtraImport": true,
+        "detail": "templates.extract_python_template",
+        "documentation": {}
+    },
+    {
+        "label": "process_execution_flow",
+        "importPath": "helpers.graph_flow_processor",
+        "description": "helpers.graph_flow_processor",
+        "isExtraImport": true,
+        "detail": "helpers.graph_flow_processor",
+        "documentation": {}
+    },
+    {
+        "label": "upsert_technology_system",
+        "importPath": "graph.graph_upsert_archimate",
+        "description": "graph.graph_upsert_archimate",
+        "isExtraImport": true,
+        "detail": "graph.graph_upsert_archimate",
+        "documentation": {}
+    },
+    {
+        "label": "upsert_technology_artifact",
+        "importPath": "graph.graph_upsert_archimate",
+        "description": "graph.graph_upsert_archimate",
+        "isExtraImport": true,
+        "detail": "graph.graph_upsert_archimate",
+        "documentation": {}
+    },
+    {
+        "label": "upsert_technology_function",
+        "importPath": "graph.graph_upsert_archimate",
+        "description": "graph.graph_upsert_archimate",
+        "isExtraImport": true,
+        "detail": "graph.graph_upsert_archimate",
+        "documentation": {}
+    },
+    {
+        "label": "upsert_internal_flow",
+        "importPath": "graph.graph_upsert_archimate",
+        "description": "graph.graph_upsert_archimate",
+        "isExtraImport": true,
+        "detail": "graph.graph_upsert_archimate",
+        "documentation": {}
+    },
+    {
+        "label": "upsert_external_interaction",
+        "importPath": "graph.graph_upsert_archimate",
+        "description": "graph.graph_upsert_archimate",
+        "isExtraImport": true,
+        "detail": "graph.graph_upsert_archimate",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
         "documentation": {}
     },
     {
@@ -775,14 +856,6 @@
         "description": "legacy_analysis_server",
         "isExtraImport": true,
         "detail": "legacy_analysis_server",
-        "documentation": {}
-    },
-    {
-        "label": "prepare_bms_analysis_prompt",
-        "importPath": "templates.analyze_cobol_map",
-        "description": "templates.analyze_cobol_map",
-        "isExtraImport": true,
-        "detail": "templates.analyze_cobol_map",
         "documentation": {}
     },
     {
@@ -818,6 +891,14 @@
         "documentation": {}
     },
     {
+        "label": "response_helper",
+        "importPath": "helpers",
+        "description": "helpers",
+        "isExtraImport": true,
+        "detail": "helpers",
+        "documentation": {}
+    },
+    {
         "label": "execute_fetch_repository",
         "importPath": "tools.fetch_repository",
         "description": "tools.fetch_repository",
@@ -839,30 +920,6 @@
         "description": "tools.expose_workspace",
         "isExtraImport": true,
         "detail": "tools.expose_workspace",
-        "documentation": {}
-    },
-    {
-        "label": "extract_document_flow",
-        "importPath": "tools.extract_document_flow",
-        "description": "tools.extract_document_flow",
-        "isExtraImport": true,
-        "detail": "tools.extract_document_flow",
-        "documentation": {}
-    },
-    {
-        "label": "extract_language_specific_flow",
-        "importPath": "tools.extract_document_flow",
-        "description": "tools.extract_document_flow",
-        "isExtraImport": true,
-        "detail": "tools.extract_document_flow",
-        "documentation": {}
-    },
-    {
-        "label": "extract_flow_with_specific_prompt",
-        "importPath": "tools.extract_document_flow",
-        "description": "tools.extract_document_flow",
-        "isExtraImport": true,
-        "detail": "tools.extract_document_flow",
         "documentation": {}
     },
     {
@@ -915,57 +972,20 @@
         "documentation": {}
     },
     {
-        "label": "cobol_flow_extraction",
-        "kind": 2,
-        "importPath": "templates.extract_cobol_template",
-        "description": "templates.extract_cobol_template",
-        "peekOfCode": "def cobol_flow_extraction(filename: str, source_code: str) -> tuple[str, str]:\n    system_prompt = cobol_context_prompt\n    llm_message = f\"\"\"\nYou are an expert COBOL programmer and a seasoned static analysis tool.\nYour task is to analyze the provided COBOL code and extract its execution flow, starting from its primary entry point (typically the first executable statement after PROCEDURE DIVISION, or an explicit ENTRY point).\nRepresent the flow as a directed graph in JSON format, where:\n- Each node is a COBOL paragraph, section, or program/subprogram name.\n- Each edge represents a control flow transfer (e.g., PERFORM, CALL, GO TO, implicit fall-through).\n- For each node, include:\n  - \"type\" (e.g., \"paragraph\", \"section\", \"program\")",
-        "detail": "templates.extract_cobol_template",
+        "label": "extract_edges_prompt",
+        "importPath": "templates.extract_edges",
+        "description": "templates.extract_edges",
+        "isExtraImport": true,
+        "detail": "templates.extract_edges",
         "documentation": {}
     },
     {
-        "label": "get_flow_extraction_prompt",
+        "label": "classify_document_template",
         "kind": 2,
-        "importPath": "templates.prompt_templates",
-        "description": "templates.prompt_templates",
-        "peekOfCode": "def get_flow_extraction_prompt(filename: str, classification: str, source_code: str) -> tuple[str, str]:\n    classification = classification.lower()\n    if classification == \"cobol\":\n        return cobol_flow_extraction(filename=filename, source_code=source_code)\n    elif classification == \"clist\":\n        return clist_flow_extraction(filename=filename, source_code=source_code)    \n    elif classification == \"python\":\n        return python_flow_extraction(filename=filename, source_code=source_code)\n    else:\n        raise ValueError(f\"Unknown classification: {classification}\")",
-        "detail": "templates.prompt_templates",
-        "documentation": {}
-    },
-    {
-        "label": "python_flow_extraction",
-        "kind": 2,
-        "importPath": "templates.extract_python_template",
-        "description": "templates.extract_python_template",
-        "peekOfCode": "def python_flow_extraction(source_code: str, filename: str, program_id: str=\"program_id\") -> tuple[str, str]:\n    system_prompt = (\n        \"You are an expert in Python programming, static code analysis, and legacy system mapping.\\n\"\n        \"Your task is to extract the execution flow of the provided Python source code and produce a valid JSON representation.\\n\"\n        \"This analysis is for system-wide integration mapping and impact assessment, especially detecting external dependencies.\\n\"\n    )\n    llm_messages = f\"\"\"\nAnalyze the following Python source code strictly based on the provided content (static analysis only, no assumptions).\nYour output must be a valid JSON matching this structure:\n{{",
-        "detail": "templates.extract_python_template",
-        "documentation": {}
-    },
-    {
-        "label": "clist_flow_extraction",
-        "kind": 2,
-        "importPath": "templates.extract_clist_template",
-        "description": "templates.extract_clist_template",
-        "peekOfCode": "def clist_flow_extraction(filename: str, source_code: str) -> tuple[str, str]:\n    system_prompt = (\n        \"You are an expert in analyzing TSO/ISPF CLIST scripts for execution flow extraction.\\n\"\n        \"Your task is to extract the control flow of the provided CLIST script and represent it as a directed graph.\\n\"\n        \"Focus on control structures (IF, DO, SELECT), label jumps (GOTO), procedure calls, and system command execution.\\n\"\n        \"Ensure output follows exactly the JSON structure below, matching the COBOL model for system-wide consistency.\"\n    )\n    llm_message = f\"\"\"\nAnalyze the following CLIST script and return a valid JSON matching this structure:\n{{",
-        "detail": "templates.extract_clist_template",
-        "documentation": {}
-    },
-    {
-        "label": "classify_file_template",
-        "kind": 2,
-        "importPath": "templates.classify_file_template",
-        "description": "templates.classify_file_template",
-        "peekOfCode": "def classify_file_template(filename, content: str, repository: str) -> tuple[str, str]:\n    system_prompt = \"\"\"You are an expert in programming languages and file formats, including legacy \nmainframe technologies such as COBOL, CLIST, JCL, BMS maps, and others. Pay special attention to \nCLIST files which typically start with PROC statements and use TSO commands like ALLOC, FREE, and CONTROL.\"\"\"\n    llm_message = f\"\"\"\n### You must return ONLY a JSON object with the following format:\n{{\n  \"filename\": \"example.clist\",\n  \"repository\": \"SAMPLE-REPO\",\n  \"classification\": \"CLIST Script\",",
-        "detail": "templates.classify_file_template",
-        "documentation": {}
-    },
-    {
-        "label": "cobol_context_prompt",
-        "kind": 5,
-        "importPath": "templates.cobol_context_prompt",
-        "description": "templates.cobol_context_prompt",
-        "peekOfCode": "cobol_context_prompt = \"\"\"\nCOBOL (Common Business-Oriented Language) is a procedural, structured language widely used in legacy enterprise systems such as banking, insurance, and government infrastructure.\nA COBOL program consists of four main DIVISIONS:\n1. **IDENTIFICATION DIVISION**: Contains metadata such as the program name.\n2. **ENVIRONMENT DIVISION**: Describes input/output devices and runtime context.\n3. **DATA DIVISION**: Declares variables, files, records, constants, and memory layouts.\n4. **PROCEDURE DIVISION**: Contains the actual business logic and control flow.\n---\n### 💡 Key Syntax and Concepts:\n#### 🧱 Program Structure:",
-        "detail": "templates.cobol_context_prompt",
+        "importPath": "templates.classify_document_template",
+        "description": "templates.classify_document_template",
+        "peekOfCode": "def classify_document_template(filename, content: str, repository: str) -> tuple[str, str]:\n    system_prompt = \"\"\"You are an expert in programming languages and file formats, including legacy \nmainframe technologies such as COBOL, CLIST, JCL, BMS maps, and others. Pay special attention to \nCLIST files which typically start with PROC statements and use TSO commands like ALLOC, FREE, and CONTROL.\"\"\"\n    llm_message = f\"\"\"\n### You must return ONLY a JSON object with the following format:\n{{\n  \"filename\": \"example.clist\",\n  \"repository\": \"SAMPLE-REPO\",\n  \"classification\": \"CLIST Script\",",
+        "detail": "templates.classify_document_template",
         "documentation": {}
     },
     {
@@ -984,51 +1004,6 @@
         "description": "templates.analyze_cobol_map",
         "peekOfCode": "def prepare_bms_analysis_prompt(clean_content: str) -> tuple[str, str]:\n    system_prompt = \"You are an expert in COBOL, HLASM, and CICS BMS MAP screen parsing. Output only valid JSON, no explanations.\"\n    llm_message = f\"\"\"\nI will provide a filtered BMS copybook definition written in HLASM syntax.\nYour task:\n- Locate all labeled DFHMDF fields\n- Output a JSON array with:\n    - `name`: Field name as defined before DFHMDF\n    - `type`: 'X' for alphanumeric, '9' for numeric\n    - `size`: Length from LENGTH attribute",
         "detail": "templates.analyze_cobol_map",
-        "documentation": {}
-    },
-    {
-        "label": "extract_edges_prompt",
-        "kind": 2,
-        "importPath": "templates.extract_edges",
-        "description": "templates.extract_edges",
-        "peekOfCode": "def extract_edges_prompt(content: str) -> tuple[str, str]:\n    system_prompt = \"You are an expert COBOL programmer and a seasoned static analysis tool.\"\n    llm_message = f\"\"\"\nYou will analyze the following source code and identify all points of interaction with external or internal components. This includes:\n- File operations such as `READ`, `WRITE`, `OPEN`, `CLOSE`, `SELECT`, `ASSIGN`\n- Database access via `EXEC SQL`, embedded SQL statements\n- Calls to other programs or modules using `CALL`\n- Service or transaction instructions like `EXEC TRU`, `EXEC CICS`, `SEND`, `RECEIVE`\nFor each interaction, return a JSON object containing:\n- `edge_type`: one of `file`, `database`, `service`, `program`",
-        "detail": "templates.extract_edges",
-        "documentation": {}
-    },
-    {
-        "label": "generate_common_json_template",
-        "kind": 2,
-        "importPath": "templates.code_analyzer_prompt_generator",
-        "description": "templates.code_analyzer_prompt_generator",
-        "peekOfCode": "def generate_common_json_template(program_id: str, filename: str, repository_name: str, language: str, entry_points_hint: str, source_code: str, analysis_rules: str) -> str:\n    return f\"\"\"\nYou are a senior {language} Engineer.\nYour task is to perform a **code review** on the following script.\nPlease identify and explain:\n- The overall **purpose** of the script\n- Key **internal operations**, especially main flows or steps\n- Any **external system integrations** (e.g. RPC, socket, JCL, file I/O)\n- Which **data** is being read, generated, or transmitted\n- Any dependencies or technologies involved (e.g., Dogecoin wallet, TK4-, VSAM)",
-        "detail": "templates.code_analyzer_prompt_generator",
-        "documentation": {}
-    },
-    {
-        "label": "languages_from_json",
-        "kind": 2,
-        "importPath": "templates.code_analyzer_prompt_generator",
-        "description": "templates.code_analyzer_prompt_generator",
-        "peekOfCode": "def languages_from_json(filepath: str) -> dict:\n    import json\n    with open(filepath, \"r\", encoding=\"utf-8\") as f:\n        return json.load(f)\ndef generate_common_system_prompt(language: str) -> str:\n    return f\"You are a {language} static code analysis expert for legacy systems. Extract execution flow, external interactions, inheritance, and critical paths.\"\ndef flow_extraction(source_code: str, filename: str, repository_name: str, program_id: str, language: str) -> tuple[str, str]:\n    supported = languages_from_json(\"languages_config.json\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")",
-        "detail": "templates.code_analyzer_prompt_generator",
-        "documentation": {}
-    },
-    {
-        "label": "generate_common_system_prompt",
-        "kind": 2,
-        "importPath": "templates.code_analyzer_prompt_generator",
-        "description": "templates.code_analyzer_prompt_generator",
-        "peekOfCode": "def generate_common_system_prompt(language: str) -> str:\n    return f\"You are a {language} static code analysis expert for legacy systems. Extract execution flow, external interactions, inheritance, and critical paths.\"\ndef flow_extraction(source_code: str, filename: str, repository_name: str, program_id: str, language: str) -> tuple[str, str]:\n    supported = languages_from_json(\"languages_config.json\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    system_prompt = generate_common_system_prompt(language)\n    entry_points_hint = supported[language][\"entry_points_hint\"]",
-        "detail": "templates.code_analyzer_prompt_generator",
-        "documentation": {}
-    },
-    {
-        "label": "flow_extraction",
-        "kind": 2,
-        "importPath": "templates.code_analyzer_prompt_generator",
-        "description": "templates.code_analyzer_prompt_generator",
-        "peekOfCode": "def flow_extraction(source_code: str, filename: str, repository_name: str, program_id: str, language: str) -> tuple[str, str]:\n    supported = languages_from_json(\"languages_config.json\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    system_prompt = generate_common_system_prompt(language)\n    entry_points_hint = supported[language][\"entry_points_hint\"]\n    analysis_rules = supported[language]['analysis_rules']\n    llm_message = generate_common_json_template(program_id, filename, repository_name, language, entry_points_hint, source_code, analysis_rules)",
-        "detail": "templates.code_analyzer_prompt_generator",
         "documentation": {}
     },
     {
@@ -1333,16 +1308,7 @@
         "kind": 2,
         "importPath": "tools.classify_repository",
         "description": "tools.classify_repository",
-        "peekOfCode": "def safe_read_file(file_path):\n    for encoding in ['utf-8', 'cp1252', 'iso-8859-1', 'cp037']:\n        try:\n            with open(file_path, \"r\", encoding=encoding, errors=\"replace\") as f:\n                return f.read(), encoding\n        except (UnicodeDecodeError, UnicodeError):\n            continue\n    return None, None\ndef extract_json_from_text(text):\n    matches = re.findall(r\"```json\\s*(\\{.*?\\})\\s*```\", text, re.DOTALL)",
-        "detail": "tools.classify_repository",
-        "documentation": {}
-    },
-    {
-        "label": "extract_json_from_text",
-        "kind": 2,
-        "importPath": "tools.classify_repository",
-        "description": "tools.classify_repository",
-        "peekOfCode": "def extract_json_from_text(text):\n    matches = re.findall(r\"```json\\s*(\\{.*?\\})\\s*```\", text, re.DOTALL)\n    if not matches:\n        raise ValueError(\"No valid JSON found in LLM response\")\n    return json.loads(matches[0])\nasync def register_document(session, repository_name, file_path, language, classification):\n    upsert_document(\n        session=session,\n        repository_name=repository_name,\n        full_path=str(file_path),",
+        "peekOfCode": "def safe_read_file(file_path):\n    for encoding in [\"utf-8\", \"cp1252\", \"iso-8859-1\", \"cp037\"]:\n        try:\n            with open(file_path, \"r\", encoding=encoding, errors=\"replace\") as f:\n                return f.read(), encoding\n        except (UnicodeDecodeError, UnicodeError):\n            continue\n    return None, None\nasync def register_document(\n    session, repository_name, file_path, language, classification, analysis_data",
         "detail": "tools.classify_repository",
         "documentation": {}
     },
@@ -1374,29 +1340,29 @@
         "documentation": {}
     },
     {
-        "label": "safe_extract_json",
-        "kind": 2,
-        "importPath": "tools.extract_document_flow",
-        "description": "tools.extract_document_flow",
-        "peekOfCode": "def safe_extract_json(response_text):\n    try:\n        json_match = re.search(r'(\\{.*\\})', response_text, re.DOTALL)\n        json_content = json_match.group(1) if json_match else response_text\n        return json.loads(json_content)\n    except Exception:\n        return None",
-        "detail": "tools.extract_document_flow",
-        "documentation": {}
-    },
-    {
         "label": "retreive_document_info",
         "kind": 2,
         "importPath": "tools.document",
         "description": "tools.document",
-        "peekOfCode": "def retreive_document_info(session, repository, filename):\n    result = session.run(\"\"\"\n        MATCH (documentInfo:Document {filename: $filename})\n        RETURN documentInfo\n    \"\"\", filename=filename)\n    document_info = graph_to_json(result, \"documentInfo\")\n    # print(f\"document_info: {document_info}\")\n    return document_info\nasync def classify_document(session, repository, filename, ctx):\n    try:",
+        "peekOfCode": "def retreive_document_info(session, repository, filename):\n    result = session.run(\n        \"\"\"\n        MATCH (documentInfo:Document {filename: $filename})\n        RETURN documentInfo\n    \"\"\",\n        filename=filename,\n    )\n    document_info = graph_to_json(result, \"documentInfo\")\n    # print(f\"document_info: {document_info}\")",
         "detail": "tools.document",
         "documentation": {}
     },
     {
-        "label": "get_file_content_full_path",
+        "label": "get_document_content_full_path",
         "kind": 2,
         "importPath": "tools.document",
         "description": "tools.document",
-        "peekOfCode": "def get_file_content_full_path(full_path: str) -> str:\n    with open(full_path, \"r\") as f:\n        return f.read()\nasync def get_file_content(session, repository, filename, ctx) -> str:\n    try:\n        document_info = retreive_document_info(session=session, repository=repository, filename=filename)[0]\n    except Exception as e:\n        await ctx.error(f\"Error: Unable to retrieve document info: {str(e)}\")\n        return \"Error: Unable to retrieve document info\"\n    return get_file_content_full_path(document_info[\"full_path\"])",
+        "peekOfCode": "def get_document_content_full_path(full_path: str) -> str:\n    with open(full_path, \"r\") as f:\n        return f.read()\nasync def get_document_content(session, repository, filename, ctx) -> str:\n    try:\n        document_info = retreive_document_info(\n            session=session, repository=repository, filename=filename\n        )[0]\n    except Exception as e:\n        await ctx.error(f\"Error: Unable to retrieve document info: {str(e)}\")",
+        "detail": "tools.document",
+        "documentation": {}
+    },
+    {
+        "label": "get_documents_by_repository",
+        "kind": 2,
+        "importPath": "tools.document",
+        "description": "tools.document",
+        "peekOfCode": "def get_documents_by_repository(session, repository_name: str):\n    json_data = get_documents_query(session, repository_name)\n    return graph_to_json(json_data, \"documentInfo\")\nasync def document_analysis(session, repository_name, filename: str, ctx) -> str:\n    # Locate Document\n    # Read Document Content\n    content = get_file_content(repository_name, filename)\n    if not content:\n        error_str = f\"Error: Skipping unreadable file: {filename}\"\n        await ctx.error(error_str)",
         "detail": "tools.document",
         "documentation": {}
     },
@@ -1405,7 +1371,7 @@
         "kind": 2,
         "importPath": "graph.graph_upsert",
         "description": "graph.graph_upsert",
-        "peekOfCode": "def upsert_repository(session, repository_name):\n    session.run(\"\"\"\n        MERGE (r:Repository {repository_name: $repository_name})\n    \"\"\", repository_name=repository_name)\ndef upsert_document(session, repository_name, filename, full_path, language, classification):\n    session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name})\n        MERGE (d:Document {filename: $filename})\n        SET d.full_path = $full_path,\n            d.language = $language,",
+        "peekOfCode": "def upsert_repository(session, repository_name):\n    session.run(\"\"\"\n        MERGE (r:Repository {repository_name: $repository_name})\n    \"\"\", repository_name=repository_name)\ndef upsert_document(session, repository_name, filename, full_path, language, classification, analysis):\n    session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name})\n        MERGE (d:Document {filename: $filename})\n        SET d.full_path = $full_path,\n            d.language = $language,",
         "detail": "graph.graph_upsert",
         "documentation": {}
     },
@@ -1414,7 +1380,7 @@
         "kind": 2,
         "importPath": "graph.graph_upsert",
         "description": "graph.graph_upsert",
-        "peekOfCode": "def upsert_document(session, repository_name, filename, full_path, language, classification):\n    session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name})\n        MERGE (d:Document {filename: $filename})\n        SET d.full_path = $full_path,\n            d.language = $language,\n            d.classification = $classification\n        MERGE (r)-[:CONTAINS]->(d)\n    \"\"\", repository_name=repository_name, filename=filename, full_path=full_path, language=language, classification=classification)\ndef upsert_entry_point(session, document_filename, name, node_type, is_entry_point):",
+        "peekOfCode": "def upsert_document(session, repository_name, filename, full_path, language, classification, analysis):\n    session.run(\"\"\"\n        MATCH (r:Repository {repository_name: $repository_name})\n        MERGE (d:Document {filename: $filename})\n        SET d.full_path = $full_path,\n            d.language = $language,\n            d.classification = $classification,\n            d.analysis = $analysis\n        MERGE (r)-[:CONTAINS]->(d)\n    \"\"\", repository_name=repository_name, filename=filename, full_path=full_path, language=language, classification=classification, analysis=analysis)",
         "detail": "graph.graph_upsert",
         "documentation": {}
     },
@@ -1488,15 +1454,6 @@
         "description": "graph.graph_query",
         "peekOfCode": "def get_cross_document_integrations(session, filename):\n    \"\"\"\n    Επιστρέφει τις INTEGRATES_WITH σχέσεις του αρχείου προς άλλα Documents\n    \"\"\"\n    result = session.run(\"\"\"\n        MATCH (src:Document {filename: $filename})-[:INTEGRATES_WITH]->(target:Document)\n        RETURN src, target\n    \"\"\", filename=filename)\n    return result.data()",
         "detail": "graph.graph_query",
-        "documentation": {}
-    },
-    {
-        "label": "process_flow_response",
-        "kind": 2,
-        "importPath": "graph.graph_flow_upsert",
-        "description": "graph.graph_flow_upsert",
-        "peekOfCode": "def process_flow_response(session, repository_name, filename, language, classification, flow_data):\n    \"\"\"\n    Παίρνει τα δεδομένα flow του αρχείου και τα εισάγει στο GraphDB με Upserts\n    \"\"\"\n    # 1. Upsert το Document\n    upsert_document(\n        session=session,\n        repository_name=repository_name,\n        filename=filename,\n        full_path=filename,  # Εδώ βάζεις το πλήρες path αν το έχεις αλλού",
-        "detail": "graph.graph_flow_upsert",
         "documentation": {}
     },
     {
@@ -1878,6 +1835,105 @@
         "documentation": {}
     },
     {
+        "label": "extract_edges_prompt",
+        "kind": 2,
+        "importPath": "to_be_removed.extract_edges",
+        "description": "to_be_removed.extract_edges",
+        "peekOfCode": "def extract_edges_prompt(content: str) -> tuple[str, str]:\n    system_prompt = \"You are an expert COBOL programmer and a seasoned static analysis tool.\"\n    llm_message = f\"\"\"\nYou will analyze the following source code and identify all points of interaction with external or internal components. This includes:\n- File operations such as `READ`, `WRITE`, `OPEN`, `CLOSE`, `SELECT`, `ASSIGN`\n- Database access via `EXEC SQL`, embedded SQL statements\n- Calls to other programs or modules using `CALL`\n- Service or transaction instructions like `EXEC TRU`, `EXEC CICS`, `SEND`, `RECEIVE`\nFor each interaction, return a JSON object containing:\n- `edge_type`: one of `file`, `database`, `service`, `program`",
+        "detail": "to_be_removed.extract_edges",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_content_full_path",
+        "kind": 2,
+        "importPath": "to_be_removed.analysis",
+        "description": "to_be_removed.analysis",
+        "peekOfCode": "def get_file_content_full_path(full_path: str) -> str:\n    with open(full_path, \"r\") as f:\n        return f.read()\ndef get_file_content(repository_name: str, filename: str) -> str:\n    \"\"\"\n    Helper function to retrieve file content from the repository.\n    This is used internally by the retrieve_file_content tool.\n    \"\"\"\n    try:\n        repo_alias = repository_name.replace(\"resource://\", \"\")",
+        "detail": "to_be_removed.analysis",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_content",
+        "kind": 2,
+        "importPath": "to_be_removed.analysis",
+        "description": "to_be_removed.analysis",
+        "peekOfCode": "def get_file_content(repository_name: str, filename: str) -> str:\n    \"\"\"\n    Helper function to retrieve file content from the repository.\n    This is used internally by the retrieve_file_content tool.\n    \"\"\"\n    try:\n        repo_alias = repository_name.replace(\"resource://\", \"\")\n        repo_path = WORKSPACE / repo_alias\n        # Handle both absolute and relative paths\n        if os.path.isabs(filename):",
+        "detail": "to_be_removed.analysis",
+        "documentation": {}
+    },
+    {
+        "label": "WORKSPACE",
+        "kind": 5,
+        "importPath": "to_be_removed.analysis",
+        "description": "to_be_removed.analysis",
+        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\ndef get_file_content_full_path(full_path: str) -> str:\n    with open(full_path, \"r\") as f:\n        return f.read()\ndef get_file_content(repository_name: str, filename: str) -> str:\n    \"\"\"\n    Helper function to retrieve file content from the repository.\n    This is used internally by the retrieve_file_content tool.\n    \"\"\"",
+        "detail": "to_be_removed.analysis",
+        "documentation": {}
+    },
+    {
+        "label": "clist_flow_extraction",
+        "kind": 2,
+        "importPath": "to_be_removed.extract_clist_template",
+        "description": "to_be_removed.extract_clist_template",
+        "peekOfCode": "def clist_flow_extraction(filename: str, source_code: str) -> tuple[str, str]:\n    system_prompt = (\n        \"You are an expert in analyzing TSO/ISPF CLIST scripts for execution flow extraction.\\n\"\n        \"Your task is to extract the control flow of the provided CLIST script and represent it as a directed graph.\\n\"\n        \"Focus on control structures (IF, DO, SELECT), label jumps (GOTO), procedure calls, and system command execution.\\n\"\n        \"Ensure output follows exactly the JSON structure below, matching the COBOL model for system-wide consistency.\"\n    )\n    llm_message = f\"\"\"\nAnalyze the following CLIST script and return a valid JSON matching this structure:\n{{",
+        "detail": "to_be_removed.extract_clist_template",
+        "documentation": {}
+    },
+    {
+        "label": "cobol_flow_extraction",
+        "kind": 2,
+        "importPath": "to_be_removed.extract_cobol_template",
+        "description": "to_be_removed.extract_cobol_template",
+        "peekOfCode": "def cobol_flow_extraction(filename: str, source_code: str) -> tuple[str, str]:\n    system_prompt = cobol_context_prompt\n    llm_message = f\"\"\"\nYou are an expert COBOL programmer and a seasoned static analysis tool.\nYour task is to analyze the provided COBOL code and extract its execution flow, starting from its primary entry point (typically the first executable statement after PROCEDURE DIVISION, or an explicit ENTRY point).\nRepresent the flow as a directed graph in JSON format, where:\n- Each node is a COBOL paragraph, section, or program/subprogram name.\n- Each edge represents a control flow transfer (e.g., PERFORM, CALL, GO TO, implicit fall-through).\n- For each node, include:\n  - \"type\" (e.g., \"paragraph\", \"section\", \"program\")",
+        "detail": "to_be_removed.extract_cobol_template",
+        "documentation": {}
+    },
+    {
+        "label": "python_flow_extraction",
+        "kind": 2,
+        "importPath": "to_be_removed.extract_python_template",
+        "description": "to_be_removed.extract_python_template",
+        "peekOfCode": "def python_flow_extraction(source_code: str, filename: str, program_id: str=\"program_id\") -> tuple[str, str]:\n    system_prompt = (\n        \"You are an expert in Python programming, static code analysis, and legacy system mapping.\\n\"\n        \"Your task is to extract the execution flow of the provided Python source code and produce a valid JSON representation.\\n\"\n        \"This analysis is for system-wide integration mapping and impact assessment, especially detecting external dependencies.\\n\"\n    )\n    llm_messages = f\"\"\"\nAnalyze the following Python source code strictly based on the provided content (static analysis only, no assumptions).\nYour output must be a valid JSON matching this structure:\n{{",
+        "detail": "to_be_removed.extract_python_template",
+        "documentation": {}
+    },
+    {
+        "label": "get_flow_extraction_prompt",
+        "kind": 2,
+        "importPath": "to_be_removed.prompt_templates",
+        "description": "to_be_removed.prompt_templates",
+        "peekOfCode": "def get_flow_extraction_prompt(filename: str, classification: str, source_code: str) -> tuple[str, str]:\n    classification = classification.lower()\n    if classification == \"cobol\":\n        return cobol_flow_extraction(filename=filename, source_code=source_code)\n    elif classification == \"clist\":\n        return clist_flow_extraction(filename=filename, source_code=source_code)    \n    elif classification == \"python\":\n        return python_flow_extraction(filename=filename, source_code=source_code)\n    else:\n        raise ValueError(f\"Unknown classification: {classification}\")",
+        "detail": "to_be_removed.prompt_templates",
+        "documentation": {}
+    },
+    {
+        "label": "cobol_context_prompt",
+        "kind": 5,
+        "importPath": "to_be_removed.cobol_context_prompt",
+        "description": "to_be_removed.cobol_context_prompt",
+        "peekOfCode": "cobol_context_prompt = \"\"\"\nCOBOL (Common Business-Oriented Language) is a procedural, structured language widely used in legacy enterprise systems such as banking, insurance, and government infrastructure.\nA COBOL program consists of four main DIVISIONS:\n1. **IDENTIFICATION DIVISION**: Contains metadata such as the program name.\n2. **ENVIRONMENT DIVISION**: Describes input/output devices and runtime context.\n3. **DATA DIVISION**: Declares variables, files, records, constants, and memory layouts.\n4. **PROCEDURE DIVISION**: Contains the actual business logic and control flow.\n---\n### 💡 Key Syntax and Concepts:\n#### 🧱 Program Structure:",
+        "detail": "to_be_removed.cobol_context_prompt",
+        "documentation": {}
+    },
+    {
+        "label": "process_flow_response",
+        "kind": 2,
+        "importPath": "to_be_removed.graph_flow_upsert",
+        "description": "to_be_removed.graph_flow_upsert",
+        "peekOfCode": "def process_flow_response(session, repository_name, filename, language, classification, flow_data):\n    \"\"\"\n    Παίρνει τα δεδομένα flow του αρχείου και τα εισάγει στο GraphDB με Upserts\n    \"\"\"\n    # 1. Upsert το Document\n    upsert_document(\n        session=session,\n        repository_name=repository_name,\n        filename=filename,\n        full_path=filename,  # Εδώ βάζεις το πλήρες path αν το έχεις αλλού",
+        "detail": "to_be_removed.graph_flow_upsert",
+        "documentation": {}
+    },
+    {
+        "label": "safe_extract_json",
+        "kind": 2,
+        "importPath": "to_be_removed.extract_document_flow",
+        "description": "to_be_removed.extract_document_flow",
+        "peekOfCode": "def safe_extract_json(response_text):\n    try:\n        json_match = re.search(r'(\\{.*\\})', response_text, re.DOTALL)\n        json_content = json_match.group(1) if json_match else response_text\n        return json.loads(json_content)\n    except Exception:\n        return None",
+        "detail": "to_be_removed.extract_document_flow",
+        "documentation": {}
+    },
+    {
         "label": "get_logger",
         "kind": 2,
         "importPath": "utils.logger",
@@ -1887,30 +1943,138 @@
         "documentation": {}
     },
     {
+        "label": "languages_from_json",
+        "kind": 2,
+        "importPath": "utils.utils",
+        "description": "utils.utils",
+        "peekOfCode": "def languages_from_json(filepath: str) -> dict:\n    import json\n    with open(filepath, \"r\", encoding=\"utf-8\") as f:\n        return json.load(f)\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\ndef extract_json_from_text(text):\n    matches = re.findall(r\"```json\\s*(\\{.*?\\})\\s*```\", text, re.DOTALL)\n    if not matches:\n        raise ValueError(\"No valid JSON found in LLM response\")",
+        "detail": "utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "extract_json_from_text",
+        "kind": 2,
+        "importPath": "utils.utils",
+        "description": "utils.utils",
+        "peekOfCode": "def extract_json_from_text(text):\n    matches = re.findall(r\"```json\\s*(\\{.*?\\})\\s*```\", text, re.DOTALL)\n    if not matches:\n        raise ValueError(\"No valid JSON found in LLM response\")\n    return json.loads(matches[0])    \ndef safe_read_file(file_path):\n    for encoding in ['utf-8', 'cp1252', 'iso-8859-1', 'cp037']:\n        try:\n            with open(file_path, \"r\", encoding=encoding, errors=\"replace\") as f:\n                return f.read(), encoding",
+        "detail": "utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "safe_read_file",
+        "kind": 2,
+        "importPath": "utils.utils",
+        "description": "utils.utils",
+        "peekOfCode": "def safe_read_file(file_path):\n    for encoding in ['utf-8', 'cp1252', 'iso-8859-1', 'cp037']:\n        try:\n            with open(file_path, \"r\", encoding=encoding, errors=\"replace\") as f:\n                return f.read(), encoding\n        except (UnicodeDecodeError, UnicodeError):\n            continue\n    return None, None\ndef get_file_content_full_path(full_path: str) -> str:\n    with open(full_path, \"r\") as f:",
+        "detail": "utils.utils",
+        "documentation": {}
+    },
+    {
         "label": "get_file_content_full_path",
         "kind": 2,
-        "importPath": "analysis",
-        "description": "analysis",
-        "peekOfCode": "def get_file_content_full_path(full_path: str) -> str:\n    with open(full_path, \"r\") as f:\n        return f.read()\ndef get_file_content(repository_name: str, filename: str) -> str:\n    \"\"\"\n    Helper function to retrieve file content from the repository.\n    This is used internally by the retrieve_file_content tool.\n    \"\"\"\n    try:\n        repo_alias = repository_name.replace(\"resource://\", \"\")",
-        "detail": "analysis",
+        "importPath": "utils.utils",
+        "description": "utils.utils",
+        "peekOfCode": "def get_file_content_full_path(full_path: str) -> str:\n    with open(full_path, \"r\") as f:\n        return f.read()\ndef get_file_content(repository_name: str, filename: str) -> str:\n    \"\"\"\n    Helper function to retrieve file content from the repository.\n    This is used internally by the retrieve_file_content tool.\n    \"\"\"\n    try:\n        repo_path = WORKSPACE / repository_name",
+        "detail": "utils.utils",
         "documentation": {}
     },
     {
         "label": "get_file_content",
         "kind": 2,
-        "importPath": "analysis",
-        "description": "analysis",
-        "peekOfCode": "def get_file_content(repository_name: str, filename: str) -> str:\n    \"\"\"\n    Helper function to retrieve file content from the repository.\n    This is used internally by the retrieve_file_content tool.\n    \"\"\"\n    try:\n        repo_alias = repository_name.replace(\"resource://\", \"\")\n        repo_path = WORKSPACE / repo_alias\n        # Handle both absolute and relative paths\n        if os.path.isabs(filename):",
-        "detail": "analysis",
+        "importPath": "utils.utils",
+        "description": "utils.utils",
+        "peekOfCode": "def get_file_content(repository_name: str, filename: str) -> str:\n    \"\"\"\n    Helper function to retrieve file content from the repository.\n    This is used internally by the retrieve_file_content tool.\n    \"\"\"\n    try:\n        repo_path = WORKSPACE / repository_name\n        # Handle both absolute and relative paths\n        if os.path.isabs(filename):\n            file_path = Path(filename)",
+        "detail": "utils.utils",
         "documentation": {}
     },
     {
         "label": "WORKSPACE",
         "kind": 5,
-        "importPath": "analysis",
-        "description": "analysis",
-        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\ndef get_file_content_full_path(full_path: str) -> str:\n    with open(full_path, \"r\") as f:\n        return f.read()\ndef get_file_content(repository_name: str, filename: str) -> str:\n    \"\"\"\n    Helper function to retrieve file content from the repository.\n    This is used internally by the retrieve_file_content tool.\n    \"\"\"",
-        "detail": "analysis",
+        "importPath": "utils.utils",
+        "description": "utils.utils",
+        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\ndef extract_json_from_text(text):\n    matches = re.findall(r\"```json\\s*(\\{.*?\\})\\s*```\", text, re.DOTALL)\n    if not matches:\n        raise ValueError(\"No valid JSON found in LLM response\")\n    return json.loads(matches[0])    \ndef safe_read_file(file_path):\n    for encoding in ['utf-8', 'cp1252', 'iso-8859-1', 'cp037']:\n        try:",
+        "detail": "utils.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_code_analysis_prompt",
+        "kind": 2,
+        "importPath": "prompts.code_analysis_prompt",
+        "description": "prompts.code_analysis_prompt",
+        "peekOfCode": "def get_code_analysis_prompt(document, repository_name: str) -> str:\n    return f\"\"\"\n# MCP Server Language-Aware Code Analysis Prompt\n## System Instructions\nYou are a language-agnostic static code analyzer operating within the MCP Server.\n### Analysis Workflow\n1. **Identify Programming Language**\n   - Use the tool `get_document_info` with repository: `{repository_name}`, filename: `{document}`\n   - This returns metadata including detected language (e.g., Python, COBOL, CLIST, C)\n2. **Retrieve Source Code**",
+        "detail": "prompts.code_analysis_prompt",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_document_analysis_prompt",
+        "kind": 2,
+        "importPath": "prompts.code_analysis_prompt",
+        "description": "prompts.code_analysis_prompt",
+        "peekOfCode": "def prepare_document_analysis_prompt(source_code: str, filename: str, repository_name: str, program_id: str, language: str) -> tuple[str, str]:\n    supported = languages_from_json(\"languages_config.json\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    if language not in supported:\n        raise ValueError(f\"Unsupported language: {language}\")\n    system_prompt = prepare_common_system_prompt(language)\n    entry_points_hint = supported[language][\"entry_points_hint\"]\n    analysis_rules = supported[language]['analysis_rules']\n    llm_message = generate_common_json_template(program_id, filename, repository_name, language, entry_points_hint, source_code, analysis_rules)",
+        "detail": "prompts.code_analysis_prompt",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_common_system_prompt",
+        "kind": 2,
+        "importPath": "prompts.code_analysis_prompt",
+        "description": "prompts.code_analysis_prompt",
+        "peekOfCode": "def prepare_common_system_prompt(language: str) -> str:\n    return f\"You are a {language} static code analysis expert for legacy systems. Extract execution flow, external interactions, inheritance, and critical paths.\"\ndef processed_data_to_json(llm_response: str) -> str:\n  return \"\"\"\nBased on the following analysis, generate structured JSON with the following schema:\n{\n  \"purpose\": string,\n  \"impact_analysis\": {\n    \"internal_operations\": [string],\n    \"external_interactions\": [string]",
+        "detail": "prompts.code_analysis_prompt",
+        "documentation": {}
+    },
+    {
+        "label": "processed_data_to_json",
+        "kind": 2,
+        "importPath": "prompts.code_analysis_prompt",
+        "description": "prompts.code_analysis_prompt",
+        "peekOfCode": "def processed_data_to_json(llm_response: str) -> str:\n  return \"\"\"\nBased on the following analysis, generate structured JSON with the following schema:\n{\n  \"purpose\": string,\n  \"impact_analysis\": {\n    \"internal_operations\": [string],\n    \"external_interactions\": [string]\n  },\n  \"integrations\": {",
+        "detail": "prompts.code_analysis_prompt",
+        "documentation": {}
+    },
+    {
+        "label": "generate_common_json_template",
+        "kind": 2,
+        "importPath": "prompts.code_analysis_prompt",
+        "description": "prompts.code_analysis_prompt",
+        "peekOfCode": "def generate_common_json_template(program_id: str, filename: str, repository_name: str, language: str, entry_points_hint: str, source_code: str, analysis_rules: str) -> str:\n    unique_id = uuid.uuid4()\n    language = language if language else \"\"\n    return f\"\"\"\nReview Session {unique_id} – Expert Legacy Integration Analysis\nYou are a senior {language} Engineer.\nYour task is to perform a **code review** on the following script.\nPlease identify and explain:\n- The overall **purpose** of the script\n- Key **internal operations**, especially main flows or steps",
+        "detail": "prompts.code_analysis_prompt",
+        "documentation": {}
+    },
+    {
+        "label": "generate_common_json_template",
+        "kind": 2,
+        "importPath": "prompts.code_analyzer_prompt_generator",
+        "description": "prompts.code_analyzer_prompt_generator",
+        "peekOfCode": "def generate_common_json_template(program_id: str, filename: str, repository_name: str, language: str, entry_points_hint: str, source_code: str, analysis_rules: str) -> str:\n    unique_id = uuid.uuid4()\n    language = language if language else \"\"\n    return f\"\"\"\nReview Session {unique_id} – Expert Legacy Integration Analysis\nYou are a senior {language} Engineer.\nYour task is to perform a **code review** on the following script.\nPlease identify and explain:\n- The overall **purpose** of the script\n- Key **internal operations**, especially main flows or steps",
+        "detail": "prompts.code_analyzer_prompt_generator",
+        "documentation": {}
+    },
+    {
+        "label": "processed_data_to_json",
+        "kind": 2,
+        "importPath": "prompts.code_analyzer_prompt_generator",
+        "description": "prompts.code_analyzer_prompt_generator",
+        "peekOfCode": "def processed_data_to_json(llm_response: str) -> str:\n  return \"\"\"\nBased on the following analysis, generate structured JSON with the following schema:\n{\n  \"purpose\": string,\n  \"impact_analysis\": {\n    \"internal_operations\": [string],\n    \"external_interactions\": [string]\n  },\n  \"integrations\": {",
+        "detail": "prompts.code_analyzer_prompt_generator",
+        "documentation": {}
+    },
+    {
+        "label": "languages_from_json",
+        "kind": 2,
+        "importPath": "prompts.code_analyzer_prompt_generator",
+        "description": "prompts.code_analyzer_prompt_generator",
+        "peekOfCode": "def languages_from_json(filepath: str) -> dict:\n    import json\n    with open(filepath, \"r\", encoding=\"utf-8\") as f:\n        return json.load(f)\ndef generate_common_system_prompt(language: str) -> str:\n    return f\"You are a {language} static code analysis expert for legacy systems. Extract execution flow, external interactions, inheritance, and critical paths.\"",
+        "detail": "prompts.code_analyzer_prompt_generator",
+        "documentation": {}
+    },
+    {
+        "label": "generate_common_system_prompt",
+        "kind": 2,
+        "importPath": "prompts.code_analyzer_prompt_generator",
+        "description": "prompts.code_analyzer_prompt_generator",
+        "peekOfCode": "def generate_common_system_prompt(language: str) -> str:\n    return f\"You are a {language} static code analysis expert for legacy systems. Extract execution flow, external interactions, inheritance, and critical paths.\"",
+        "detail": "prompts.code_analyzer_prompt_generator",
         "documentation": {}
     },
     {
@@ -1918,16 +2082,7 @@
         "kind": 2,
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
-        "peekOfCode": "def extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  \n@mcp.tool(name=\"classify_repository\", description=\"Classifies files in a repository by programming language or file type.\")\nasync def classify_repository(repository_name: str, ctx: Context) -> str:\n    return await execute_classify_repository(session=session, ctx=ctx, repository_name=repository_name)\n@mcp.tool(name=\"processed_repository\", description=\"Returns a list of file from a processed repository by name.\")\nasync def processed_repository(repository: str, ctx: Context) -> list[dict]:",
-        "detail": "legacy_analysis_server",
-        "documentation": {}
-    },
-    {
-        "label": "find_copy_definition",
-        "kind": 2,
-        "importPath": "legacy_analysis_server",
-        "description": "legacy_analysis_server",
-        "peekOfCode": "def find_copy_definition(ctx: Context, resource_uri: str, copy_name: str) -> dict:\n    import re\n    # ctx.log.info(f\"Searching for COPY definition: {copy_name} in {resource_uri}\")\n    repo_alias = resource_uri.replace(\"resource://\", \"\")\n    base_path = WORKSPACE / repo_alias\n    matched_files = []\n    # Traverse all files like list_cobol_files does\n    for file_path in base_path.rglob(\"*\"):\n        # ctx.log.info(f\"Checking file: {file_path}\")\n        if not file_path.is_file():",
+        "peekOfCode": "def extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n# Exposing Tools\n@mcp.tool(\n    name=\"fetch_repository\",\n    description=\"Clones a COBOL repository and registers it as a resource.\",\n)\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)\n@mcp.tool(",
         "detail": "legacy_analysis_server",
         "documentation": {}
     },
@@ -1936,7 +2091,7 @@
         "kind": 2,
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
-        "peekOfCode": "def return_workspace(ctx: Context) -> list[str]:\n    results = execute_expose_workspace(ctx)\n    if results is None:\n        return []\n    return results\n@mcp.tool(\"file_classification\", description=\"Classifies file content by programming language or file type.\")\nasync def file_classification(repository_name: str, filename: str, ctx: Context) -> str:\n    \"\"\"\n    Classifies a file based on its content and filename.\n    Takes filename and content as input to avoid file system operations.",
+        "peekOfCode": "def return_workspace(ctx: Context) -> list[str]:\n    results = execute_expose_workspace(ctx)\n    if results is None:\n        return []\n    return results\n@mcp.tool(\n    \"document_classification\",\n    description=\"Classifies file content by programming language or file type.\",\n)\nasync def ducument_classification(",
         "detail": "legacy_analysis_server",
         "documentation": {}
     },
@@ -1945,7 +2100,7 @@
         "kind": 5,
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
-        "peekOfCode": "mcp = FastMCP(name=\"legacy-analyzer-v1\")\ndriver = get_driver()\nsession = get_session(driver)\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:",
+        "peekOfCode": "mcp = FastMCP(name=\"legacy-analyzer-v1\")\ndriver = get_driver()\nsession = get_session(driver)\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n# Exposing Tools\n@mcp.tool(",
         "detail": "legacy_analysis_server",
         "documentation": {}
     },
@@ -1954,7 +2109,7 @@
         "kind": 5,
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
-        "peekOfCode": "driver = get_driver()\nsession = get_session(driver)\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  ",
+        "peekOfCode": "driver = get_driver()\nsession = get_session(driver)\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n# Exposing Tools\n@mcp.tool(\n    name=\"fetch_repository\",",
         "detail": "legacy_analysis_server",
         "documentation": {}
     },
@@ -1963,7 +2118,7 @@
         "kind": 5,
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
-        "peekOfCode": "session = get_session(driver)\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  \n@mcp.tool(name=\"classify_repository\", description=\"Classifies files in a repository by programming language or file type.\")",
+        "peekOfCode": "session = get_session(driver)\nWORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n# Exposing Tools\n@mcp.tool(\n    name=\"fetch_repository\",\n    description=\"Clones a COBOL repository and registers it as a resource.\",",
         "detail": "legacy_analysis_server",
         "documentation": {}
     },
@@ -1972,7 +2127,7 @@
         "kind": 5,
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
-        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  \n@mcp.tool(name=\"classify_repository\", description=\"Classifies files in a repository by programming language or file type.\")\nasync def classify_repository(repository_name: str, ctx: Context) -> str:",
+        "peekOfCode": "WORKSPACE = Path(\"./workspace\")\nWORKSPACE.mkdir(exist_ok=True)\n_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n# Exposing Tools\n@mcp.tool(\n    name=\"fetch_repository\",\n    description=\"Clones a COBOL repository and registers it as a resource.\",\n)",
         "detail": "legacy_analysis_server",
         "documentation": {}
     },
@@ -1981,7 +2136,7 @@
         "kind": 5,
         "importPath": "legacy_analysis_server",
         "description": "legacy_analysis_server",
-        "peekOfCode": "_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n@mcp.tool(name=\"fetch_repository\", description=\"Clones a COBOL repository and registers it as a resource.\")\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)  \n@mcp.tool(name=\"classify_repository\", description=\"Classifies files in a repository by programming language or file type.\")\nasync def classify_repository(repository_name: str, ctx: Context) -> str:\n    return await execute_classify_repository(session=session, ctx=ctx, repository_name=repository_name)\n@mcp.tool(name=\"processed_repository\", description=\"Returns a list of file from a processed repository by name.\")",
+        "peekOfCode": "_repo_registry = {}  # Keeps track of aliases and paths\ndef extract_alias_from_url(repo_url: str) -> str:\n    return Path(repo_url.rstrip(\"/\").split(\"/\")[-1]).stem\n# Exposing Tools\n@mcp.tool(\n    name=\"fetch_repository\",\n    description=\"Clones a COBOL repository and registers it as a resource.\",\n)\nasync def fetch_repository(repo_url: str, ctx: Context) -> str:\n    return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)",
         "detail": "legacy_analysis_server",
         "documentation": {}
     },
@@ -2046,6 +2201,15 @@
         "description": "graph_db",
         "peekOfCode": "def get_repository(session, repository_name):\n    result = session.run(\"MATCH (r:Repository {repository_name: $repository_name}) RETURN r\", repository_name=repository_name)\n    return [node_to_dict(record[\"r\"]) for record in result]",
         "detail": "graph_db",
+        "documentation": {}
+    },
+    {
+        "label": "find_copy_definition",
+        "kind": 2,
+        "importPath": "tools_to_be_removed",
+        "description": "tools_to_be_removed",
+        "peekOfCode": "def find_copy_definition(ctx: Context, resource_uri: str, copy_name: str) -> dict:\n    import re\n    # ctx.log.info(f\"Searching for COPY definition: {copy_name} in {resource_uri}\")\n    repo_alias = resource_uri.replace(\"resource://\", \"\")\n    base_path = WORKSPACE / repo_alias\n    matched_files = []\n    # Traverse all files like list_cobol_files does\n    for file_path in base_path.rglob(\"*\"):\n        # ctx.log.info(f\"Checking file: {file_path}\")\n        if not file_path.is_file():",
+        "detail": "tools_to_be_removed",
         "documentation": {}
     }
 ]
