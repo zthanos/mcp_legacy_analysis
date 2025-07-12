@@ -11,3 +11,4 @@ workspace/
 .venv
 .env
 .uv.config.toml
+*.log

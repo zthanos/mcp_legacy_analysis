@@ -19,7 +19,7 @@ from prompts.code_analysis_prompt import (
 )
 
 
-def retreive_document_info(session, repository, filename):
+def retrieve_document_info(session, repository, filename):
     result = session.run(
         """
         MATCH (documentInfo:Document {filename: $filename})
@@ -35,7 +35,7 @@ def retreive_document_info(session, repository, filename):
 
 async def classify_document(session, repository, filename, ctx):
     try:
-        document_info = retreive_document_info(
+        document_info = retrieve_document_info(
             session=session, repository=repository, filename=filename
         )[0]
     except Exception as e:
@@ -77,7 +77,7 @@ def get_document_content_full_path(full_path: str) -> str:
 
 async def get_document_content(session, repository, filename, ctx) -> str:
     try:
-        document_info = retreive_document_info(
+        document_info = retrieve_document_info(
             session=session, repository=repository, filename=filename
         )[0]
     except Exception as e:

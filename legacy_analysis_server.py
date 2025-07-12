@@ -1,171 +1,236 @@
 from fastmcp import FastMCP, Context
 from pathlib import Path
 from graph_db import get_session, get_driver
-from helpers import response_helper
-from tools.fetch_repository import execute_fetch_repository
-from tools.classify_repository import execute_classify_repository
-from tools.expose_workspace import execute_expose_workspace
+from tools.repository import (
+    execute_fetch_repository, 
+    get_repository_summary,
+    execute_classify_repository
+)
+
+from tools.workspace import execute_expose_workspace
 from tools.document import (
-    retreive_document_info,
+    retrieve_document_info,
     classify_document,
     get_document_content,
     get_documents_by_repository,
-    document_analysis
+    document_analysis,
 )
-# from tools.extract_document_flow import (
-#     extract_language_specific_flow as extract_language_specific_flow_tool,
-#     extract_flow_with_specific_prompt,
-# )
 from prompts.code_analysis_prompt import get_code_analysis_prompt
 
 mcp = FastMCP(name="legacy-analyzer-v1")
 driver = get_driver()
 session = get_session(driver)
 
-
 WORKSPACE = Path("./workspace")
 WORKSPACE.mkdir(exist_ok=True)
 
-_repo_registry = {}  # Keeps track of aliases and paths
+_repo_registry = {}  # Tracks repository aliases and paths
 
 
 def extract_alias_from_url(repo_url: str) -> str:
+    """
+    Extracts a short alias from the repository URL.
+
+    Args:
+        repo_url (str): Full URL of the repository.
+
+    Returns:
+        str: Alias derived from the URL.
+    """
     return Path(repo_url.rstrip("/").split("/")[-1]).stem
 
 
-# Exposing Tools
-
+# ─── Exposed MCP Tools ──────────────────────────────────────────────────────────
 
 @mcp.tool(
     name="fetch_repository",
-    description="Clones a COBOL repository and registers it as a resource.",
+    description="Clones a repository (e.g., COBOL) and registers it as a resource.",
 )
 async def fetch_repository(repo_url: str, ctx: Context) -> str:
+    """
+    Fetches and registers a repository.
+
+    Args:
+        repo_url (str): Repository URL.
+        ctx (Context): MCP execution context.
+
+    Returns:
+        str: Status message.
+    """
     return await execute_fetch_repository(session=session, ctx=ctx, repo_url=repo_url)
 
 
 @mcp.tool(
     name="classify_repository",
-    description="Classifies files in a repository by programming language or file type.",
+    description="Analyzes and classifies files in a repository by programming language or file type.",
 )
 async def classify_repository(repository_name: str, ctx: Context) -> str:
-    await ctx.info(f"Classifing repository {repository_name}")
-    response = ""
+    """
+    Classifies files within a repository.
+
+    Args:
+        repository_name (str): Repository alias.
+        ctx (Context): MCP execution context.
+
+    Returns:
+        str: Classification results.
+    """
+    await ctx.info(f"Classifying repository '{repository_name}'")
     try:
-        response = await execute_classify_repository(
+        return await execute_classify_repository(
             session=session, ctx=ctx, repository_name=repository_name
         )
     except Exception as ex:
-        await ctx.error(f"Error while classifying repository \n{ex}")
-    return response
+        await ctx.error(f"Error while classifying repository: {ex}")
+        return "Classification failed."
 
 
 @mcp.tool(
     name="summarize_repository_scope",
-    description="Summarizes the purpose of the repository",
+    description="Generates a high-level summary of the repository content and purpose.",
 )
-async def summarize_repository_scope(repository_name: str, ctx: Context):
-    await ctx.info(f"Retrieving documents from repository {repository_name}")
-    data = get_documents_by_repository(session, repository_name)
-    print(data)
-    return data
+async def summarize_repository_scope(repository_name: str, ctx: Context) -> str:
+    """
+    Summarizes repository content.
+
+    Args:
+        repository_name (str): Repository alias.
+        ctx (Context): MCP execution context.
+
+    Returns:
+        str: Repository summary.
+    """
+    await ctx.info(f"Retrieving summary for repository '{repository_name}'")
+    data = await get_repository_summary(session, repository_name)
+    size_kb = len(str(data).encode('utf-8')) / 1024
+    await ctx.debug(f"Summary size: {size_kb:.2f} KB")
+    return str(data)
 
 
 @mcp.tool(
-    name="get_document_info", description="Returns the information of a document."
+    name="get_document_info",
+    description="Retrieves metadata and attributes of a specific document.",
 )
 async def get_document_info(repository: str, filename: str, ctx: Context) -> list[dict]:
-    document_info = retreive_document_info(
+    """
+    Retrieves document information.
+
+    Args:
+        repository (str): Repository alias.
+        filename (str): Document name.
+        ctx (Context): MCP execution context.
+
+    Returns:
+        list[dict]: Document metadata.
+    """
+    return retrieve_document_info(
         session=session, repository=repository, filename=filename
     )
-    print(f"document_info: {document_info}")
-    return document_info
-
-
-@mcp.tool(name="return_workspace", description="Returns the workspace file names.")
-def return_workspace(ctx: Context) -> list[str]:
-    results = execute_expose_workspace(ctx)
-    if results is None:
-        return []
-    return results
 
 
 @mcp.tool(
-    "document_classification",
-    description="Classifies file content by programming language or file type.",
+    name="list_workspace_files",
+    description="Lists all file names currently stored in the workspace.",
 )
-async def ducument_classification(
-    repository_name: str, filename: str, ctx: Context
-) :
+def list_workspace_files(ctx: Context) -> list[str]:
     """
-    Classifies a document based on its content and filename.
-    Takes filename and content as input to avoid file system operations.
-    Returns programming language or file type classification.
-    """
+    Lists workspace files.
 
-    classification = await classify_document(
+    Args:
+        ctx (Context): MCP execution context.
+
+    Returns:
+        list[str]: Filenames in workspace.
+    """
+    results = execute_expose_workspace(ctx)
+    return results or []
+
+
+@mcp.tool(
+    name="classify_document_content",
+    description="Classifies the content of a document by programming language or type.",
+)
+async def classify_document_content(repository_name: str, filename: str, ctx: Context) -> str:
+    """
+    Classifies a document's content.
+
+    Args:
+        repository_name (str): Repository alias.
+        filename (str): Document name.
+        ctx (Context): MCP execution context.
+
+    Returns:
+        str: Classification result.
+    """
+    response =  await classify_document(
         session=session, repository=repository_name, filename=filename, ctx=ctx
     )
-    return classification
+    if response:
+        return response
+    return "Unable to Classify Document"
 
 
 @mcp.tool(
-    "retrieve_document_content",
-    description="Retrieves the content of a file from the repository.",
+    name="retrieve_document_content",
+    description="Retrieves the full text content of a document from the repository.",
 )
-async def retrieve_document_content(
-    repository_name: str, filename: str, ctx: Context
-) -> str:
+async def retrieve_document_content(repository_name: str, filename: str, ctx: Context) -> str:
     """
-    Retrieves file content from the repository.
-    Handles various file encodings and provides detailed error information.
-    Returns just the file content for use by other tools.
+    Retrieves document content.
+
+    Args:
+        repository_name (str): Repository alias.
+        filename (str): Document name.
+        ctx (Context): MCP execution context.
+
+    Returns:
+        str: Document content.
     """
     return await get_document_content(
         session=session, repository=repository_name, filename=filename, ctx=ctx
     )
 
 
-@mcp.tool("analyze_document",
-    description="Performs documnt analysis, and returns it in a structured JSON format.",
+@mcp.tool(
+    name="analyze_document",
+    description="Performs static analysis on a document and returns a structured JSON result.",
 )
+async def analyze_document(repository_name: str, filename: str, ctx: Context) -> str:
+    """
+    Analyzes a document and returns analysis results.
 
-async def analyze_document(repository_name, filename: str, ctx: Context) -> str:
-        analysis_data = await document_analysis(
-                session=session,
-                repository_name=repository_name,
-                filename=filename,
-                ctx=ctx
-            )
-        return analysis_data
+    Args:
+        repository_name (str): Repository alias.
+        filename (str): Document name.
+        ctx (Context): MCP execution context.
 
-
-# @mcp.tool(
-#     "extract_language_specific_flow",
-#     description="Extracts the execution flow of a program, starting from its primary entry point, and returns it in a structured JSON format.",
-# )
-# async def extract_language_specific_flow(
-#     language: str, source_code: str, repository_name: str, filename: str, ctx: Context
-# ) -> str:
-#     return await extract_language_specific_flow_tool(
-#         mcp=mcp,
-#         language=language,
-#         source_code=source_code,
-#         repository_name=repository_name,
-#         filename=filename,
-#         ctx=ctx,
-#     )
+    Returns:
+        str: Analysis data in JSON format.
+    """
+    return await document_analysis(
+        session=session,
+        repository_name=repository_name,
+        filename=filename,
+        ctx=ctx,
+    )
 
 
-# Exposing Prompts
-
+# ─── Exposed Prompts ───────────────────────────────────────────────────────────
 
 @mcp.prompt(
-    name="MCP_Server_Language-Aware_Code_Analysis_Prompt",
-    description="Extracts the execution flow and external dependencies of any supported source code.",
+    name="code_analysis_prompt",
+    description="Generates a system-level prompt for extracting code execution flow and dependencies.",
 )
-async def extract_code_flow(filename: str, repository_name: str, ctx: Context) -> str:
+async def generate_code_analysis_prompt(filename: str, repository_name: str, ctx: Context) -> str:
     """
-    System-Level Prompt for MCP Server to perform language-aware static code analysis.
+    Generates a language-aware code analysis prompt.
+
+    Args:
+        filename (str): Document name.
+        repository_name (str): Repository alias.
+        ctx (Context): MCP execution context.
+
+    Returns:
+        str: Prepared prompt string.
     """
     return get_code_analysis_prompt(filename, repository_name)

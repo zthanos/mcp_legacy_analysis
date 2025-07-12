@@ -1,6 +1,13 @@
-from helpers.response_helper import graph_to_json
-
 def get_all_repositories(session):
+    """
+    Retrieves all repositories.
+
+    Args:
+        session (neo4j.Session): Active session.
+
+    Returns:
+        list[neo4j.Node]: Repository nodes.
+    """
     result = session.run("""
         MATCH (r:Repository)
         RETURN r
@@ -9,7 +16,16 @@ def get_all_repositories(session):
 
 
 def get_documents_by_repository(session, repository_name):
-    print(f"MATCH (r:Repository {{repository_name: ${repository_name}}})-[:CONTAINS]->(d:Document) ")
+    """
+    Retrieves all documents in a repository.
+
+    Args:
+        session (neo4j.Session): Active session.
+        repository_name (str): Repository name.
+
+    Returns:
+        list[neo4j.Node]: Document nodes.
+    """
     result = session.run("""
         MATCH (r:Repository {repository_name: $repository_name})-[:CONTAINS]->(d:Document)
         RETURN d
@@ -17,7 +33,35 @@ def get_documents_by_repository(session, repository_name):
     return [record["d"] for record in result]
 
 
+def get_documents_analysis(session, repository_name):
+    """
+    Retrieves filenames and analyses for documents in a repository.
+
+    Args:
+        session (neo4j.Session): Active session.
+        repository_name (str): Repository name.
+
+    Returns:
+        list[dict]: Filenames and analysis data.
+    """
+    result = session.run("""
+        MATCH (r:Repository {repository_name: $repository_name})-[:CONTAINS]->(d:Document)
+        RETURN d.filename AS filename, d.analysis AS analysis
+    """, repository_name=repository_name)
+    return [{"filename": record["filename"], "analysis": record["analysis"]} for record in result]
+
+
 def get_document_details(session, filename):
+    """
+    Retrieves document details by filename.
+
+    Args:
+        session (neo4j.Session): Active session.
+        filename (str): Document filename.
+
+    Returns:
+        neo4j.Node | None: Document node or None.
+    """
     result = session.run("""
         MATCH (d:Document {filename: $filename})
         RETURN d
@@ -28,7 +72,14 @@ def get_document_details(session, filename):
 
 def get_document_flow(session, filename):
     """
-    Επιστρέφει το EntryPoint και όλες τις ροές προς Internal και External Calls για το αρχείο
+    Retrieves entry points and flow (internal, external) for a document.
+
+    Args:
+        session (neo4j.Session): Active session.
+        filename (str): Document filename.
+
+    Returns:
+        list[dict]: Flow paths.
     """
     result = session.run("""
         MATCH (d:Document {filename: $filename})-[:FLOWS_TO]->(e:EntryPoint)
@@ -40,7 +91,14 @@ def get_document_flow(session, filename):
 
 def get_cross_document_integrations(session, filename):
     """
-    Επιστρέφει τις INTEGRATES_WITH σχέσεις του αρχείου προς άλλα Documents
+    Retrieves cross-document integration relationships.
+
+    Args:
+        session (neo4j.Session): Active session.
+        filename (str): Document filename.
+
+    Returns:
+        list[dict]: Integration paths.
     """
     result = session.run("""
         MATCH (src:Document {filename: $filename})-[:INTEGRATES_WITH]->(target:Document)
